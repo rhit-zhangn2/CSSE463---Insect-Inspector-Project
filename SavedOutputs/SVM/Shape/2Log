@@ -1,0 +1,132 @@
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.74357 |     0.25483 |     0.74357 |     0.74357 |     0.016494 |            - |   polynomial |            4 |
+|    2 | Best   |       0.735 |     0.16443 |       0.735 |     0.73556 |    0.0021372 |            - |       linear |            - |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 2 reached.
+Total function evaluations: 2
+Total elapsed time: 1.0221 seconds
+Total objective function evaluation time: 0.41926
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+      0.0021372          NaN            linear              NaN      
+
+Observed objective function value = 0.735
+Estimated objective function value = 0.73556
+Function evaluation time = 0.16443
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+      0.0021372          NaN            linear              NaN      
+
+Estimated objective function value = 0.73556
+Estimated function evaluation time = 0.20463
+
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.74857 |      3.7389 |     0.74857 |     0.74857 |       218.36 |     0.090961 |     gaussian |            - |
+|    2 | Accept |     0.76643 |     0.40315 |     0.74857 |     0.75123 |       4.8832 |    0.0030874 |     gaussian |            - |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 2 reached.
+Total function evaluations: 2
+Total elapsed time: 4.73 seconds
+Total objective function evaluation time: 4.1421
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       218.36         0.090961         gaussian             NaN      
+
+Observed objective function value = 0.74857
+Estimated objective function value = 0.75123
+Function evaluation time = 3.7389
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       218.36         0.090961         gaussian             NaN      
+
+Estimated objective function value = 0.75123
+Estimated function evaluation time = 1.2277
+
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.74071 |     0.24299 |     0.74071 |     0.74071 |     0.011579 |            - |   polynomial |            3 |
+|    2 | Best   |     0.73357 |     0.93502 |     0.73357 |     0.73427 |       193.74 |            - |       linear |            - |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 2 reached.
+Total function evaluations: 2
+Total elapsed time: 1.6275 seconds
+Total objective function evaluation time: 1.178
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       193.74            NaN            linear              NaN      
+
+Observed objective function value = 0.73357
+Estimated objective function value = 0.73427
+Function evaluation time = 0.93502
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       193.74            NaN            linear              NaN      
+
+Estimated objective function value = 0.73427
+Estimated function evaluation time = 0.47735
+
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.72643 |      0.2709 |     0.72643 |     0.72643 |       4.7251 |       3.3705 |     gaussian |            - |
+|    2 | Accept |        0.74 |     0.22469 |     0.72643 |     0.72697 |     0.084554 |            - |   polynomial |            3 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 2 reached.
+Total function evaluations: 2
+Total elapsed time: 0.93736 seconds
+Total objective function evaluation time: 0.49559
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       4.7251          3.3705          gaussian             NaN      
+
+Observed objective function value = 0.72643
+Estimated objective function value = 0.72697
+Function evaluation time = 0.2709
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       4.7251          3.3705          gaussian             NaN      
+
+Estimated objective function value = 0.72697
+Estimated function evaluation time = 0.24812
+

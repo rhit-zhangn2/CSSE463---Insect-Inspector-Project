@@ -1,0 +1,149 @@
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.72786 |     0.34534 |     0.72786 |     0.72786 |    0.0048203 |            - |       linear |            - |
+|    2 | Accept |     0.74643 |     0.19981 |     0.72786 |     0.73714 |    0.0016848 |            - |   polynomial |            2 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 2 reached.
+Total function evaluations: 2
+Total elapsed time: 1.1243 seconds
+Total objective function evaluation time: 0.54514
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+      0.0048203          NaN            linear              NaN      
+
+Observed objective function value = 0.72786
+Estimated objective function value = 0.73714
+Function evaluation time = 0.34534
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+      0.0048203          NaN            linear              NaN      
+
+Estimated objective function value = 0.73714
+Estimated function evaluation time = 0.26268
+
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FullClassificationRegressionModel.prepareDataCR', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FullClassificationRegressionModel.m', 251)" style="font-weight:bold">classreg.learning.FullClassificationRegressionModel.prepareDataCR</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FullClassificationRegressionModel.m',251,0)">line 251</a>)
+X and Y must have the same number of observations.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.FullClassificationModel.prepareData', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\FullClassificationModel.m', 871)" style="font-weight:bold">classreg.learning.classif.FullClassificationModel.prepareData</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\FullClassificationModel.m',871,0)">line 871</a>)
+                classreg.learning.FullClassificationRegressionModel.prepareDataCR(...
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC.prepareData', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 58)" style="font-weight:bold">ClassificationECOC.prepareData</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',58,0)">line 58</a>)
+                classreg.learning.classif.FullClassificationModel.prepareData(X,Y,varargin{:});
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.createObjFcn>createStaticCVP', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m', 658)" style="font-weight:bold">classreg.learning.paramoptim.createObjFcn>createStaticCVP</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m',658,0)">line 658</a>)
+    [~,PrunedY] = BOInfo.PrepareDataFcn(Predictors, Response, FitFunctionArgs{:}, 'IgnoreExtraParameters', true);
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.createObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m', 17)" style="font-weight:bold">classreg.learning.paramoptim.createObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m',17,0)">line 17</a>)
+    ValidationVal    = createStaticCVP(BOInfo, Predictors, Response, FitFunctionArgs, ValidationMethod, ValidationVal);
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 39)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',39,0)">line 39</a>)
+    objFcn = classreg.learning.paramoptim.createObjFcn(BOInfo, FitFunctionArgs, Predictors, Response, ...
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 24)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',24,0)">line 24</a>)
+    [obj, varargout{1:nargout-1}] = classreg.learning.paramoptim.fitoptimizing('fitcecoc',X,Y,varargin{:});
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 9)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',9,0)">line 9</a>)
+mdl = fitcecoc(x, y, 'Learners', t, OptimizeHyperparameters={'BoxConstraint', 'KernelScale', 'KernelFunction', 'PolynomialOrder'} ...
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 68)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',68,0)">line 68</a>)
+createSVM_wrapper("LST_HOG_SVM.mat", X_COMB_LST_HOG_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+{Unrecognized function or variable 'X_SHAPE'.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 46)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',46,0)">line 46</a>)
+X_COMB_LST_SHAPE_Train = [X_SHAPE, X_LST];
+                          ^^^^^^^
+} 
+testSVMPerformance
+{The logical indices contain a true value outside of the array bounds.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 53)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',53,0)">line 53</a>)
+X_COMB_LST_HOG_SHAPE_Train = X_COMB_LST_HOG_SHAPE_Valid(trainMask);
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+Creating HOG SVM...[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',3,0)">line 3</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 76)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',76,0)">line 76</a>)] 
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |       0.735 |     0.25356 |       0.735 |       0.735 |       18.054 |            - |       linear |            - |
+|    2 | Accept |        0.74 |     0.16477 |       0.735 |     0.73595 |    0.0048037 |            - |       linear |            - |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 2 reached.
+Total function evaluations: 2
+Total elapsed time: 0.85963 seconds
+Total objective function evaluation time: 0.41833
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       18.054            NaN            linear              NaN      
+
+Observed objective function value = 0.735
+Estimated objective function value = 0.73595
+Function evaluation time = 0.25356
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       18.054            NaN            linear              NaN      
+
+Estimated objective function value = 0.73595
+Estimated function evaluation time = 0.20441
+
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.73571 |      3.4969 |     0.73571 |     0.73571 |       972.91 |            - |       linear |            - |
+|    2 | Best   |     0.73429 |     0.17081 |     0.73429 |     0.73499 |      0.27351 |            - |       linear |            - |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 2 reached.
+Total function evaluations: 2
+Total elapsed time: 4.1328 seconds
+Total objective function evaluation time: 3.6677
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       0.27351           NaN            linear              NaN      
+
+Observed objective function value = 0.73429
+Estimated objective function value = 0.73499
+Function evaluation time = 0.17081
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       0.27351           NaN            linear              NaN      
+
+Estimated objective function value = 0.73499
+Estimated function evaluation time = 0.77113
+

@@ -1,0 +1,888 @@
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.75071 |      1.1043 |     0.75071 |     0.75071 |    0.0058188 |    0.0016499 |     gaussian |            - |
+|    2 | Best   |     0.74286 |     0.28904 |     0.74286 |       0.744 |       15.342 |            - |       linear |            - |
+|    3 | Accept |     0.74286 |     0.25178 |     0.74286 |     0.74321 |        62.71 |       124.48 |     gaussian |            - |
+|    4 | Best   |        0.74 |     0.17076 |        0.74 |     0.74067 |     0.016528 |            - |       linear |            - |
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.svmutils.solve', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m', 14)" style="font-weight:bold">classreg.learning.svmutils.solve</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m',14,0)">line 14</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.impl.SVMImpl.make', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m', 574)" style="font-weight:bold">classreg.learning.impl.SVMImpl.make</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m',574,0)">line 574</a>)
+                    classreg.learning.svmutils.solve(...
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationSVM', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m', 188)" style="font-weight:bold">ClassificationSVM</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m',188,0)">line 188</a>)
+            this.Impl = classreg.learning.impl.SVMImpl.make(...
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC/loopBody', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 346)" style="font-weight:bold">ClassificationECOC>localFitECOC/loopBody</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',346,0)">line 346</a>)
+            full = fit(tmp{l},x,y,'ClassNames',[-1 1],'Prior',lPrior,...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('internal.stats.parallel.smartForSliceout', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m', 174)" style="font-weight:bold">internal.stats.parallel.smartForSliceout</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m',174,0)">line 174</a>)
+            [slice{:}] = loopbody(iter, S);
+                         ^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 260)" style="font-weight:bold">ClassificationECOC>localFitECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',260,0)">line 260</a>)
+    internal.stats.parallel.smartForSliceout(L,@loopBody,useParallel,RNGscheme);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 116)" style="font-weight:bold">ClassificationECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',116,0)">line 116</a>)
+                localFitECOC(learners,M,X,C,this.W,dataSummary.BinEdges,...
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/serialFit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 331)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/serialFit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',331,0)">line 331</a>)
+                        trainableH = fit(learners{l},X,Y,'weights',W,optArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/fitWeakLearners', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 436)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/fitWeakLearners</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',436,0)">line 436</a>)
+                [this,trained,generator,modifier,ntrained] = serialFit(...
+                                                             ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble/fitEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 198)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble/fitEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',198,0)">line 198</a>)
+                fitWeakLearners(this,nlearn,this.ModelParams.NPrint);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 33)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',33,0)">line 33</a>)
+                this = fitEnsemble(this,nlearn);
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedModel', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m', 87)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedModel</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m',87,0)">line 87</a>)
+            this.Ensemble = classreg.learning.classif.ClassificationEnsemble(...
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m', 22)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m',22,0)">line 22</a>)
+            this = this@classreg.learning.partition.ClassificationPartitionedModel(...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC.fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 49)" style="font-weight:bold">ClassificationECOC.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',49,0)">line 49</a>)
+            this = fit(temp,X,Y);
+                   ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 103)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',103,0)">line 103</a>)
+    obj = ClassificationECOC.fit(X,Y,extraArgs{:},'Learners',learners);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m', 71)" style="font-weight:bold">classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m',71,0)">line 71</a>)
+        PartitionedModel = BOInfo.FitFcn(Predictors, Response, ValidationMethod, ValidationVal, NewFitFunctionArgs{:});
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjNormally', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m', 20)" style="font-weight:bold">BayesianOptimization/callObjNormally</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m',20,0)">line 20</a>)
+            [Objective, ConstraintViolations, UserData] = this.ObjectiveFcn(conditionalizeX(this, X));
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m', 11)" style="font-weight:bold">BayesianOptimization/callObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m',11,0)">line 11</a>)
+        = callObjNormally(this, X);
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/runSerial', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m', 24)" style="font-weight:bold">BayesianOptimization/runSerial</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m',24,0)">line 24</a>)
+        ObjectiveFcnObjectiveEvaluationTime, ObjectiveNargout] = callObjFcn(this, this.XNext);
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/run', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m', 9)" style="font-weight:bold">BayesianOptimization/run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m',9,0)">line 9</a>)
+    this = runSerial(this);
+           ^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m', 64)" style="font-weight:bold">BayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m',64,0)">line 64</a>)
+                this = run(this);
+                       ^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.SupervisedLearningBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m', 20)" style="font-weight:bold">classreg.learning.paramoptim.SupervisedLearningBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m',20,0)">line 20</a>)
+            this = this@BayesianOptimization(Options);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 168)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',168,0)">line 168</a>)
+OptimizationResults = classreg.learning.paramoptim.SupervisedLearningBayesianOptimization(Options);
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 52)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',52,0)">line 52</a>)
+            [OptimizationResultsOutput, XBest] = doBayesianOptimization(objFcn, BOInfo, VariableDescriptions, HyperparameterOptimizationOptions,abo);
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 24)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',24,0)">line 24</a>)
+    [obj, varargout{1:nargout-1}] = classreg.learning.paramoptim.fitoptimizing('fitcecoc',X,Y,varargin{:});
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 9)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',9,0)">line 9</a>)
+mdl = fitcecoc(x, y, 'Learners', t, OptimizeHyperparameters={'BoxConstraint', 'KernelScale', 'KernelFunction', 'PolynomialOrder'} ...
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 40)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',40,0)">line 40</a>)
+    hog_svm = createSVM(iterations, X_HOG_Train, Y_Train, "HOG");
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 19)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',19,0)">line 19</a>)
+        fprintf("Creating %s SVM...", type)
+                                      ^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 123)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',123,0)">line 123</a>)
+createSVM_wrapper("test.mat", X_shape);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 19)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',19,0)">line 19</a>)
+        fprintf("Creating %s SVM...", type)
+                                      ^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 123)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',123,0)">line 123</a>)
+createSVM_wrapper("test.mat", X_shape, "test");
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+Creating test SVM...{Unrecognized function or variable 'iterations'.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+        svm = createSVM(iterations, X_train, Y_Train, type);
+                        ^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 123)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',123,0)">line 123</a>)
+createSVM_wrapper("test.mat", X_shape, fresh, "test");
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+Creating test SVM...{Unrecognized function or variable 'Y_Train'.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+        svm = createSVM(iterations, X_train, Y_Train, type);
+                                             ^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 123)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',123,0)">line 123</a>)
+createSVM_wrapper("test.mat", X_shape, "test", fresh, iterations);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+Creating test SVM...|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.70857 |     0.23922 |     0.70857 |     0.70857 |    0.0012139 |      0.30994 |     gaussian |            - |
+|    2 | Accept |     0.73643 |     0.18829 |     0.70857 |     0.70968 |      0.16606 |            - |   polynomial |            2 |
+|    3 | Accept |     0.73214 |     0.36292 |     0.70857 |     0.70859 |       46.796 |            - |       linear |            - |
+|    4 | Accept |     0.72786 |     0.79004 |     0.70857 |      0.7086 |       2.3366 |            - |   polynomial |            3 |
+|    5 | Accept |     0.73143 |      4.6764 |     0.70857 |     0.70858 |       777.75 |      0.25348 |     gaussian |            - |
+|    6 | Accept |     0.76929 |     0.30676 |     0.70857 |     0.70943 |    0.0046037 |    0.0010628 |     gaussian |            - |
+|    7 | Accept |     0.72214 |     0.24487 |     0.70857 |     0.71147 |    0.0011543 |       0.4182 |     gaussian |            - |
+|    8 | Best   |     0.70786 |     0.25097 |     0.70786 |     0.70786 |    0.0014658 |      0.24829 |     gaussian |            - |
+|    9 | Accept |     0.71071 |     0.23027 |     0.70786 |     0.70786 |     0.026903 |        0.281 |     gaussian |            - |
+|   10 | Accept |     0.71786 |     0.24818 |     0.70786 |     0.70785 |    0.0010258 |      0.10911 |     gaussian |            - |
+|   11 | Accept |     0.72929 |     0.33059 |     0.70786 |     0.70785 |    0.0011908 |     0.045151 |     gaussian |            - |
+|   12 | Accept |     0.73929 |     0.24783 |     0.70786 |     0.70785 |       19.159 |       990.79 |     gaussian |            - |
+|   13 | Accept |       0.755 |       32.29 |     0.70786 |     0.70738 |       796.74 |     0.079279 |     gaussian |            - |
+|   14 | Accept |     0.71143 |     0.79343 |     0.70786 |       0.708 |    0.0011369 |      0.22507 |     gaussian |            - |
+|   15 | Accept |        0.71 |     0.76026 |     0.70786 |     0.70893 |    0.0013422 |      0.27918 |     gaussian |            - |
+|   16 | Best   |     0.70714 |     0.83557 |     0.70714 |     0.70828 |    0.0016963 |      0.27047 |     gaussian |            - |
+|   17 | Accept |        0.71 |      0.8051 |     0.70714 |     0.70865 |    0.0017337 |      0.27995 |     gaussian |            - |
+|   18 | Best   |     0.70643 |     0.77686 |     0.70643 |     0.70829 |    0.0042931 |      0.26767 |     gaussian |            - |
+|   19 | Accept |     0.70857 |     0.73955 |     0.70643 |     0.70798 |    0.0067332 |      0.24712 |     gaussian |            - |
+|   20 | Accept |     0.73214 |     0.83387 |     0.70643 |     0.70794 |       940.06 |       44.846 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|   21 | Accept |     0.70714 |     0.76804 |     0.70643 |     0.70763 |    0.0053906 |       0.2557 |     gaussian |            - |
+|   22 | Accept |     0.70786 |     0.75309 |     0.70643 |     0.70764 |    0.0055598 |      0.27287 |     gaussian |            - |
+|   23 | Accept |     0.73857 |     0.76449 |     0.70643 |     0.70651 |    0.0010295 |       10.257 |     gaussian |            - |
+|   24 | Accept |     0.71286 |      0.6915 |     0.70643 |     0.70765 |    0.0019147 |      0.34211 |     gaussian |            - |
+|   25 | Accept |     0.73857 |     0.86105 |     0.70643 |     0.70764 |    0.0010315 |       153.98 |     gaussian |            - |
+|   26 | Accept |     0.75571 |      9.6972 |     0.70643 |     0.70767 |       947.27 |    0.0084715 |     gaussian |            - |
+|   27 | Accept |     0.72214 |      3.5853 |     0.70643 |     0.70765 |       802.22 |       2.8003 |     gaussian |            - |
+|   28 | Accept |     0.73357 |      1.1945 |     0.70643 |     0.70765 |       815.61 |       225.69 |     gaussian |            - |
+|   29 | Accept |     0.75857 |      2.0164 |     0.70643 |     0.70774 |    0.0011491 |    0.0079438 |     gaussian |            - |
+|   30 | Accept |     0.73143 |      1.0336 |     0.70643 |     0.70775 |       823.08 |       10.216 |     gaussian |            - |
+|   31 | Accept |     0.73929 |     0.81567 |     0.70643 |     0.70778 |    0.0010058 |            - |       linear |            - |
+|   32 | Accept |     0.72929 |       1.184 |     0.70643 |     0.70785 |    0.0011139 |        2.461 |     gaussian |            - |
+|   33 | Accept |     0.73714 |      1.1662 |     0.70643 |     0.70788 |      0.00105 |       39.013 |     gaussian |            - |
+|   34 | Accept |     0.79357 |      3.4166 |     0.70643 |     0.70813 |       983.03 |    0.0020053 |     gaussian |            - |
+|   35 | Accept |     0.73929 |      1.2458 |     0.70643 |     0.70815 |    0.0010345 |       477.03 |     gaussian |            - |
+|   36 | Accept |     0.71357 |      21.783 |     0.70643 |     0.70811 |       953.41 |      0.96202 |     gaussian |            - |
+|   37 | Accept |     0.71857 |      1.5508 |     0.70643 |     0.70817 |        26.04 |       1.4491 |     gaussian |            - |
+|   38 | Accept |     0.74286 |     0.31025 |     0.70643 |     0.70812 |     0.001003 |            - |   polynomial |            4 |
+|   39 | Accept |     0.74929 |      7.8797 |     0.70643 |     0.70819 |          855 |     0.024778 |     gaussian |            - |
+|   40 | Accept |     0.71143 |     0.37142 |     0.70643 |     0.70841 |    0.0071172 |      0.23578 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|   41 | Accept |     0.76143 |     0.49872 |     0.70643 |     0.70838 |    0.0010082 |    0.0029898 |     gaussian |            - |
+|   42 | Accept |     0.73929 |     0.37752 |     0.70643 |     0.70847 |    0.0019619 |       999.79 |     gaussian |            - |
+|   43 | Accept |     0.73857 |     0.37788 |     0.70643 |      0.7085 |       6.6125 |       96.626 |     gaussian |            - |
+|   44 | Accept |     0.71857 |      284.36 |     0.70643 |     0.70851 |       998.46 |            - |   polynomial |            4 |
+|   45 | Accept |     0.73214 |      1.2138 |     0.70643 |     0.70862 |        3.437 |       20.877 |     gaussian |            - |
+|   46 | Accept |     0.78714 |      2.1489 |     0.70643 |     0.70874 |       233.53 |    0.0010019 |     gaussian |            - |
+|   47 | Accept |     0.73143 |      1.1762 |     0.70643 |      0.7088 |      0.52689 |       5.1636 |     gaussian |            - |
+|   48 | Accept |     0.73857 |       1.198 |     0.70643 |     0.70883 |       960.44 |        538.3 |     gaussian |            - |
+|   49 | Accept |     0.71143 |      1.1654 |     0.70643 |     0.70878 |    0.0011315 |      0.22228 |     gaussian |            - |
+|   50 | Accept |     0.74643 |      1.7362 |     0.70643 |     0.70892 |    0.0011047 |     0.018752 |     gaussian |            - |
+|   51 | Accept |     0.73857 |      1.1242 |     0.70643 |     0.70897 |      0.95532 |       305.77 |     gaussian |            - |
+|   52 | Accept |     0.75429 |      1.9196 |     0.70643 |     0.70839 |       2.4341 |    0.0043753 |     gaussian |            - |
+|   53 | Accept |     0.72286 |      1.1551 |     0.70643 |     0.70839 |    0.0010483 |       1.0457 |     gaussian |            - |
+|   54 | Accept |     0.73786 |      1.1189 |     0.70643 |     0.70842 |    0.0010453 |       75.367 |     gaussian |            - |
+|   55 | Accept |     0.72429 |      21.634 |     0.70643 |     0.70844 |       971.85 |      0.49776 |     gaussian |            - |
+|   56 | Accept |     0.73857 |       1.187 |     0.70643 |     0.70847 |    0.0010467 |       19.959 |     gaussian |            - |
+|   57 | Accept |     0.74286 |      58.039 |     0.70643 |     0.70945 |       994.76 |     0.045573 |     gaussian |            - |
+|   58 | Accept |     0.75143 |       1.818 |     0.70643 |     0.70833 |       1.1848 |     0.027692 |     gaussian |            - |
+|   59 | Accept |     0.72357 |      2.2987 |     0.70643 |     0.70834 |       965.36 |       5.2275 |     gaussian |            - |
+|   60 | Accept |     0.75429 |      1.9052 |     0.70643 |     0.70835 |        2.954 |     0.013327 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|   61 | Accept |     0.73357 |      1.1264 |     0.70643 |     0.70837 |     0.001023 |       4.8806 |     gaussian |            - |
+|   62 | Accept |     0.73357 |       1.189 |     0.70643 |     0.70838 |       991.57 |       23.762 |     gaussian |            - |
+|   63 | Accept |     0.73429 |      31.494 |     0.70643 |     0.70832 |       979.01 |      0.14189 |     gaussian |            - |
+|   64 | Accept |     0.76286 |      1.6435 |     0.70643 |     0.70976 |     0.001037 |    0.0017227 |     gaussian |            - |
+|   65 | Accept |     0.73214 |       12.35 |     0.70643 |     0.70977 |       997.53 |            - |       linear |            - |
+|   66 | Accept |     0.73429 |     0.78098 |     0.70643 |     0.70979 |      0.11621 |            - |       linear |            - |
+|   67 | Accept |     0.77786 |      1.6345 |     0.70643 |     0.70983 |       0.6731 |    0.0015846 |     gaussian |            - |
+|   68 | Accept |     0.73929 |      1.1451 |     0.70643 |     0.70981 |       773.23 |        967.4 |     gaussian |            - |
+|   69 | Accept |     0.71071 |      1.3431 |     0.70643 |     0.70972 |       2.4632 |      0.71722 |     gaussian |            - |
+|   70 | Accept |     0.73286 |      1.5545 |     0.70643 |     0.70973 |      0.95957 |     0.082186 |     gaussian |            - |
+|   71 | Accept |     0.73714 |      1.1416 |     0.70643 |     0.70974 |      0.24029 |       46.129 |     gaussian |            - |
+|   72 | Accept |     0.73643 |      1.1366 |     0.70643 |     0.70976 |      0.10796 |       1.6573 |     gaussian |            - |
+|   73 | Accept |       0.735 |      1.1427 |     0.70643 |     0.70975 |       874.13 |       106.76 |     gaussian |            - |
+|   74 | Accept |     0.73929 |      1.1241 |     0.70643 |     0.70975 |       0.1234 |       662.32 |     gaussian |            - |
+|   75 | Accept |     0.73857 |       1.158 |     0.70643 |     0.70821 |      0.19366 |       11.336 |     gaussian |            - |
+|   76 | Accept |     0.73857 |      1.1079 |     0.70643 |     0.70822 |    0.0010285 |          251 |     gaussian |            - |
+|   77 | Accept |     0.78071 |      4.4874 |     0.70643 |     0.70965 |       991.59 |    0.0035322 |     gaussian |            - |
+|   78 | Accept |     0.72786 |      1.6007 |     0.70643 |     0.70982 |       11.116 |      0.21314 |     gaussian |            - |
+|   79 | Accept |     0.73857 |      1.1401 |     0.70643 |     0.70981 |     0.062903 |       137.68 |     gaussian |            - |
+|   80 | Accept |     0.73286 |      1.3049 |     0.70643 |     0.70981 |       23.611 |         7.64 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|   81 | Accept |     0.71214 |      1.5815 |     0.70643 |     0.70969 |       10.262 |      0.43054 |     gaussian |            - |
+|   82 | Accept |     0.75857 |      1.6679 |     0.70643 |     0.70971 |     0.063795 |    0.0083248 |     gaussian |            - |
+|   83 | Accept |        0.73 |       1.199 |     0.70643 |     0.70968 |       13.027 |       3.0769 |     gaussian |            - |
+|   84 | Accept |     0.72286 |      1.4686 |     0.70643 |     0.70964 |     0.028033 |     0.058893 |     gaussian |            - |
+|   85 | Accept |     0.73214 |      1.1114 |     0.70643 |     0.70962 |       24.179 |       41.424 |     gaussian |            - |
+|   86 | Accept |     0.73929 |      1.1255 |     0.70643 |     0.70961 |       22.995 |       458.88 |     gaussian |            - |
+|   87 | Accept |     0.74286 |      4.0112 |     0.70643 |     0.70968 |       23.023 |     0.046984 |     gaussian |            - |
+|   88 | Accept |     0.73857 |       1.099 |     0.70643 |     0.70966 |       20.429 |        178.9 |     gaussian |            - |
+|   89 | Accept |     0.71143 |      2.9626 |     0.70643 |     0.70959 |       58.982 |       0.7597 |     gaussian |            - |
+|   90 | Accept |     0.76071 |      1.5793 |     0.70643 |     0.70954 |     0.045402 |     0.003119 |     gaussian |            - |
+|   91 | Accept |     0.73571 |      1.1402 |     0.70643 |     0.70817 |     0.037428 |       24.033 |     gaussian |            - |
+|   92 | Accept |     0.75643 |      17.636 |     0.70643 |     0.70961 |       981.67 |     0.014688 |     gaussian |            - |
+|   93 | Accept |     0.72857 |      1.2099 |     0.70643 |      0.7095 |     0.036607 |      0.77151 |     gaussian |            - |
+|   94 | Accept |     0.77071 |     0.59356 |     0.70643 |     0.70973 |       1.7085 |    0.0010018 |     gaussian |            - |
+|   95 | Accept |     0.73643 |     0.39465 |     0.70643 |     0.70956 |     0.021953 |       3.5473 |     gaussian |            - |
+|   96 | Accept |     0.73929 |     0.38565 |     0.70643 |     0.70955 |      0.13088 |       999.15 |     gaussian |            - |
+|   97 | Accept |     0.73714 |      0.5353 |     0.70643 |     0.70978 |     0.021763 |     0.025294 |     gaussian |            - |
+|   98 | Accept |     0.73357 |      5.8091 |     0.70643 |     0.70978 |       77.339 |            - |   polynomial |            2 |
+|   99 | Accept |     0.74857 |     0.93724 |     0.70643 |     0.70979 |    0.0010011 |            - |   polynomial |            2 |
+|  100 | Accept |     0.71786 |      1.9383 |     0.70643 |     0.70956 |      0.15364 |            - |   polynomial |            4 |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|  101 | Accept |     0.73357 |      122.53 |     0.70643 |     0.70955 |       999.17 |            - |   polynomial |            2 |
+|  102 | Accept |     0.72143 |      64.779 |     0.70643 |     0.70958 |       17.756 |            - |   polynomial |            4 |
+|  103 | Accept |     0.73643 |     0.98492 |     0.70643 |     0.70955 |    0.0098085 |            - |   polynomial |            3 |
+|  104 | Accept |     0.73071 |      197.34 |     0.70643 |     0.70954 |       436.14 |            - |   polynomial |            3 |
+|  105 | Accept |     0.78357 |      2.3035 |     0.70643 |     0.70945 |       32.813 |    0.0022707 |     gaussian |            - |
+|  106 | Accept |     0.73857 |      1.2673 |     0.70643 |     0.70943 |     0.021535 |       322.95 |     gaussian |            - |
+|  107 | Accept |     0.75357 |      2.5924 |     0.70643 |     0.70927 |       34.535 |    0.0075922 |     gaussian |            - |
+|  108 | Accept |       0.735 |      3.6667 |     0.70643 |     0.70935 |       31.396 |      0.11352 |     gaussian |            - |
+|  109 | Accept |     0.71429 |      9.5819 |     0.70643 |     0.70932 |       931.59 |       1.6248 |     gaussian |            - |
+|  110 | Accept |     0.73071 |      1.3651 |     0.70643 |     0.70931 |       64.055 |       14.984 |     gaussian |            - |
+|  111 | Accept |     0.71214 |       1.197 |     0.70643 |     0.70924 |      0.31425 |      0.45173 |     gaussian |            - |
+|  112 | Accept |     0.73429 |      1.2496 |     0.70643 |     0.70924 |     0.016269 |       7.0611 |     gaussian |            - |
+|  113 | Accept |     0.73786 |      1.1792 |     0.70643 |     0.70922 |     0.026661 |       73.199 |     gaussian |            - |
+|  114 | Accept |     0.72571 |      1.2617 |     0.70643 |     0.70946 |     0.070116 |      0.12266 |     gaussian |            - |
+|  115 | Accept |     0.75429 |      1.8131 |     0.70643 |     0.70939 |     0.025675 |     0.014494 |     gaussian |            - |
+|  116 | Accept |     0.73643 |      1.2243 |     0.70643 |     0.70936 |       129.98 |       68.032 |     gaussian |            - |
+|  117 | Accept |     0.72429 |      1.4136 |     0.70643 |     0.70929 |    0.0011267 |     0.069431 |     gaussian |            - |
+|  118 | Accept |     0.76286 |      1.7001 |     0.70643 |     0.70935 |    0.0096872 |     0.005023 |     gaussian |            - |
+|  119 | Accept |     0.76429 |      3.9684 |     0.70643 |     0.70809 |       43.642 |     0.020707 |     gaussian |            - |
+|  120 | Accept |     0.73286 |      1.1142 |     0.70643 |     0.70809 |       943.64 |       340.43 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|  121 | Accept |     0.72786 |      1.1547 |     0.70643 |     0.70836 |    0.0010476 |       1.5717 |     gaussian |            - |
+|  122 | Accept |     0.71929 |      1.2027 |     0.70643 |     0.70892 |       1.0793 |       1.1437 |     gaussian |            - |
+|  123 | Accept |     0.73286 |      1.1756 |     0.70643 |       0.709 |      0.66033 |       2.4986 |     gaussian |            - |
+|  124 | Accept |       0.745 |      1.5748 |     0.70643 |     0.70945 |      0.48083 |     0.044293 |     gaussian |            - |
+|  125 | Accept |     0.73357 |     0.78957 |     0.70643 |     0.70943 |       2.1174 |            - |       linear |            - |
+|  126 | Accept |     0.72143 |        1.16 |     0.70643 |     0.70942 |      0.81298 |      0.16601 |     gaussian |            - |
+|  127 | Accept |     0.73929 |      1.1311 |     0.70643 |     0.70939 |     0.010804 |       13.986 |     gaussian |            - |
+|  128 | Accept |        0.72 |      1.2509 |     0.70643 |     0.70953 |      0.95406 |      0.29246 |     gaussian |            - |
+|  129 | Accept |     0.76929 |      1.6347 |     0.70643 |     0.70951 |    0.0010322 |    0.0010702 |     gaussian |            - |
+|  130 | Accept |     0.72714 |       1.286 |     0.70643 |     0.70948 |       56.885 |       4.7047 |     gaussian |            - |
+|  131 | Accept |     0.73929 |      1.1579 |     0.70643 |     0.70945 |       3.0386 |       730.16 |     gaussian |            - |
+|  132 | Accept |     0.73643 |      1.2213 |     0.70643 |     0.70952 |       66.786 |       26.386 |     gaussian |            - |
+|  133 | Accept |     0.73857 |      1.1385 |     0.70643 |      0.7095 |      0.64356 |       188.58 |     gaussian |            - |
+|  134 | Accept |     0.73786 |      1.0915 |     0.70643 |     0.70948 |        2.388 |       60.321 |     gaussian |            - |
+|  135 | Accept |     0.73357 |      1.2868 |     0.70643 |     0.70945 |       3.3124 |            - |   polynomial |            2 |
+|  136 | Accept |     0.73929 |      1.1441 |     0.70643 |     0.70943 |    0.0056129 |       711.18 |     gaussian |            - |
+|  137 | Accept |     0.73857 |       1.174 |     0.70643 |     0.70942 |       54.743 |       286.19 |     gaussian |            - |
+|  138 | Accept |     0.76214 |      2.5568 |     0.70643 |     0.70935 |       76.383 |    0.0046622 |     gaussian |            - |
+|  139 | Accept |       0.775 |      1.8937 |     0.70643 |     0.70962 |       29.995 |    0.0013429 |     gaussian |            - |
+|  140 | Accept |     0.73286 |      1.0578 |     0.70643 |     0.70962 |     0.011369 |            - |   polynomial |            4 |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|  141 | Accept |     0.72214 |      5.2768 |     0.70643 |     0.70959 |       129.19 |      0.36239 |     gaussian |            - |
+|  142 | Accept |     0.73857 |       1.224 |     0.70643 |     0.70957 |     0.013785 |       205.91 |     gaussian |            - |
+|  143 | Accept |     0.73929 |      1.2049 |     0.70643 |     0.70955 |       116.04 |        742.4 |     gaussian |            - |
+|  144 | Accept |     0.73286 |      1.7004 |     0.70643 |      0.7095 |    0.0010681 |     0.028282 |     gaussian |            - |
+|  145 | Accept |        0.72 |      1.4383 |     0.70643 |      0.7095 |       57.768 |       2.1491 |     gaussian |            - |
+|  146 | Accept |     0.73714 |      1.1247 |     0.70643 |     0.70949 |     0.010985 |       40.835 |     gaussian |            - |
+|  147 | Accept |     0.73214 |      1.1122 |     0.70643 |     0.70943 |     0.012138 |       1.1841 |     gaussian |            - |
+|  148 | Accept |     0.73786 |      1.1292 |     0.70643 |     0.70943 |        4.265 |       12.131 |     gaussian |            - |
+|  149 | Accept |     0.73643 |      1.2521 |     0.70643 |     0.70941 |       975.28 |       15.199 |     gaussian |            - |
+|  150 | Accept |     0.73071 |       1.736 |     0.70643 |     0.70931 |       1.2655 |    0.0072154 |     gaussian |            - |
+|  151 | Accept |     0.73786 |     0.75774 |     0.70643 |     0.70929 |    0.0083528 |            - |       linear |            - |
+|  152 | Accept |     0.76214 |      1.5873 |     0.70643 |     0.70937 |     0.019749 |    0.0017569 |     gaussian |            - |
+|  153 | Accept |     0.72643 |      1.3282 |     0.70643 |     0.70938 |      0.00851 |     0.088729 |     gaussian |            - |
+|  154 | Accept |     0.73714 |      1.2546 |     0.70643 |     0.70939 |       1.6856 |       31.194 |     gaussian |            - |
+|  155 | Accept |     0.73786 |     0.86793 |     0.70643 |     0.70939 |     0.010338 |            - |   polynomial |            2 |
+|  156 | Accept |     0.73214 |      1.1311 |     0.70643 |     0.70941 |       120.45 |       122.81 |     gaussian |            - |
+|  157 | Accept |        0.73 |      1.1548 |     0.70643 |     0.70945 |     0.013019 |       2.2203 |     gaussian |            - |
+|  158 | Accept |     0.75714 |      4.9944 |     0.70643 |     0.70954 |       36.515 |      0.07109 |     gaussian |            - |
+|  159 | Accept |     0.72929 |      1.5664 |     0.70643 |     0.70946 |     0.014221 |     0.038585 |     gaussian |            - |
+|  160 | Accept |       0.735 |       1.159 |     0.70643 |     0.70945 |      0.78341 |       7.6942 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|  161 | Accept |     0.76071 |      1.6948 |     0.70643 |     0.70944 |     0.001084 |    0.0050606 |     gaussian |            - |
+|  162 | Accept |     0.73786 |      4.8874 |     0.70643 |     0.70948 |       127.98 |       0.1773 |     gaussian |            - |
+|  163 | Accept |     0.73857 |       1.145 |     0.70643 |     0.70947 |    0.0049589 |       107.53 |     gaussian |            - |
+|  164 | Accept |     0.72286 |      1.2109 |     0.70643 |     0.70948 |       3.4708 |       1.8115 |     gaussian |            - |
+|  165 | Accept |     0.73857 |      1.1849 |     0.70643 |     0.70947 |      0.33333 |       92.602 |     gaussian |            - |
+|  166 | Accept |     0.78714 |      2.4305 |     0.70643 |     0.70946 |       986.51 |    0.0011288 |     gaussian |            - |
+|  167 | Accept |     0.72214 |      8.6589 |     0.70643 |     0.70945 |        1.742 |            - |   polynomial |            4 |
+|  168 | Accept |     0.73929 |      1.1605 |     0.70643 |     0.70944 |    0.0010162 |        783.2 |     gaussian |            - |
+|  169 | Accept |     0.72714 |      1.1518 |     0.70643 |     0.70937 |    0.0010017 |      0.70432 |     gaussian |            - |
+|  170 | Accept |     0.76857 |      1.6369 |     0.70643 |     0.70936 |     0.097669 |    0.0010048 |     gaussian |            - |
+|  171 | Accept |     0.75286 |      9.1963 |     0.70643 |     0.70936 |       111.06 |     0.033648 |     gaussian |            - |
+|  172 | Accept |     0.77286 |      6.1791 |     0.70643 |      0.7094 |       958.04 |    0.0054806 |     gaussian |            - |
+|  173 | Accept |     0.76071 |      3.7008 |     0.70643 |     0.70936 |       91.222 |     0.011553 |     gaussian |            - |
+|  174 | Accept |     0.74143 |      1.6486 |     0.70643 |     0.70952 |      0.25731 |     0.018351 |     gaussian |            - |
+|  175 | Accept |     0.76071 |      1.6831 |     0.70643 |     0.70968 |      0.18539 |    0.0051415 |     gaussian |            - |
+|  176 | Accept |        0.72 |      218.12 |     0.70643 |     0.70967 |       171.42 |            - |   polynomial |            4 |
+|  177 | Accept |     0.71857 |      4.3153 |     0.70643 |     0.70972 |       202.22 |       1.1948 |     gaussian |            - |
+|  178 | Accept |     0.74071 |     0.85407 |     0.70643 |     0.70973 |    0.0010015 |            - |   polynomial |            3 |
+|  179 | Accept |     0.71929 |      1.2099 |     0.70643 |      0.7098 |     0.023098 |      0.48128 |     gaussian |            - |
+|  180 | Accept |     0.73929 |      1.1604 |     0.70643 |      0.7098 |      0.35063 |       18.906 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|  181 | Accept |     0.72786 |      24.736 |     0.70643 |     0.70978 |       29.328 |            - |   polynomial |            3 |
+|  182 | Accept |     0.73357 |      1.1434 |     0.70643 |     0.70977 |       6.0275 |       4.9866 |     gaussian |            - |
+|  183 | Accept |     0.73643 |      1.1532 |     0.70643 |     0.70976 |       940.84 |       70.818 |     gaussian |            - |
+|  184 | Accept |     0.76714 |      1.6489 |     0.70643 |     0.70974 |      0.88203 |    0.0026939 |     gaussian |            - |
+|  185 | Accept |     0.73929 |      1.1592 |     0.70643 |     0.70973 |      0.82461 |       482.66 |     gaussian |            - |
+|  186 | Accept |     0.71643 |      3.3957 |     0.70643 |     0.70972 |       95.416 |      0.54928 |     gaussian |            - |
+|  187 | Accept |     0.73929 |      1.4379 |     0.70643 |     0.70973 |       2.8107 |      0.12175 |     gaussian |            - |
+|  188 | Accept |     0.73929 |      1.1648 |     0.70643 |     0.70972 |      0.99274 |       999.08 |     gaussian |            - |
+|  189 | Accept |     0.73357 |      1.4329 |     0.70643 |     0.70973 |       229.16 |       7.1752 |     gaussian |            - |
+|  190 | Accept |     0.71929 |        1.39 |     0.70643 |     0.70977 |       8.6481 |      0.98196 |     gaussian |            - |
+|  191 | Accept |     0.73214 |      1.2576 |     0.70643 |     0.70979 |       0.1479 |            - |   polynomial |            3 |
+|  192 | Accept |       0.735 |      1.2127 |     0.70643 |     0.70978 |    0.0010149 |       6.9917 |     gaussian |            - |
+|  193 | Accept |     0.73643 |      1.1548 |     0.70643 |     0.70976 |    0.0034372 |       27.663 |     gaussian |            - |
+|  194 | Accept |     0.72786 |      1.1517 |     0.70643 |     0.71008 |    0.0049989 |      0.14232 |     gaussian |            - |
+|  195 | Accept |     0.75714 |      1.6432 |     0.70643 |     0.71002 |    0.0010002 |     0.012149 |     gaussian |            - |
+|  196 | Accept |     0.73357 |      1.1177 |     0.70643 |     0.71001 |       993.33 |       156.98 |     gaussian |            - |
+|  197 | Accept |     0.73929 |      1.1084 |     0.70643 |        0.71 |     0.018374 |       481.78 |     gaussian |            - |
+|  198 | Accept |     0.72286 |      18.186 |     0.70643 |     0.70999 |       904.49 |      0.69097 |     gaussian |            - |
+|  199 | Accept |     0.72143 |      1.1287 |     0.70643 |     0.70997 |      0.29866 |      0.68861 |     gaussian |            - |
+|  200 | Accept |     0.71286 |       1.156 |     0.70643 |     0.70982 |      0.12986 |      0.20637 |     gaussian |            - |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 200 reached.
+Total function evaluations: 200
+Total elapsed time: 2015.5756 seconds
+Total objective function evaluation time: 1434.095
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+      0.0042931        0.26767         gaussian             NaN      
+
+Observed objective function value = 0.70643
+Estimated objective function value = 0.70982
+Function evaluation time = 0.77686
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+      0.0042931        0.26767         gaussian             NaN      
+
+Estimated objective function value = 0.70982
+Estimated function evaluation time = 0.67769
+
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.svmutils.solve', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m', 14)" style="font-weight:bold">classreg.learning.svmutils.solve</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m',14,0)">line 14</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.impl.SVMImpl.make', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m', 574)" style="font-weight:bold">classreg.learning.impl.SVMImpl.make</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m',574,0)">line 574</a>)
+                    classreg.learning.svmutils.solve(...
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationSVM', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m', 188)" style="font-weight:bold">ClassificationSVM</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m',188,0)">line 188</a>)
+            this.Impl = classreg.learning.impl.SVMImpl.make(...
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC/loopBody', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 346)" style="font-weight:bold">ClassificationECOC>localFitECOC/loopBody</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',346,0)">line 346</a>)
+            full = fit(tmp{l},x,y,'ClassNames',[-1 1],'Prior',lPrior,...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('internal.stats.parallel.smartForSliceout', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m', 174)" style="font-weight:bold">internal.stats.parallel.smartForSliceout</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m',174,0)">line 174</a>)
+            [slice{:}] = loopbody(iter, S);
+                         ^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 260)" style="font-weight:bold">ClassificationECOC>localFitECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',260,0)">line 260</a>)
+    internal.stats.parallel.smartForSliceout(L,@loopBody,useParallel,RNGscheme);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 116)" style="font-weight:bold">ClassificationECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',116,0)">line 116</a>)
+                localFitECOC(learners,M,X,C,this.W,dataSummary.BinEdges,...
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/serialFit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 331)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/serialFit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',331,0)">line 331</a>)
+                        trainableH = fit(learners{l},X,Y,'weights',W,optArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/fitWeakLearners', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 436)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/fitWeakLearners</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',436,0)">line 436</a>)
+                [this,trained,generator,modifier,ntrained] = serialFit(...
+                                                             ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble/fitEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 198)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble/fitEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',198,0)">line 198</a>)
+                fitWeakLearners(this,nlearn,this.ModelParams.NPrint);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 33)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',33,0)">line 33</a>)
+                this = fitEnsemble(this,nlearn);
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedModel', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m', 87)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedModel</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m',87,0)">line 87</a>)
+            this.Ensemble = classreg.learning.classif.ClassificationEnsemble(...
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m', 22)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m',22,0)">line 22</a>)
+            this = this@classreg.learning.partition.ClassificationPartitionedModel(...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC.fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 49)" style="font-weight:bold">ClassificationECOC.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',49,0)">line 49</a>)
+            this = fit(temp,X,Y);
+                   ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 103)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',103,0)">line 103</a>)
+    obj = ClassificationECOC.fit(X,Y,extraArgs{:},'Learners',learners);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m', 71)" style="font-weight:bold">classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m',71,0)">line 71</a>)
+        PartitionedModel = BOInfo.FitFcn(Predictors, Response, ValidationMethod, ValidationVal, NewFitFunctionArgs{:});
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjNormally', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m', 20)" style="font-weight:bold">BayesianOptimization/callObjNormally</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m',20,0)">line 20</a>)
+            [Objective, ConstraintViolations, UserData] = this.ObjectiveFcn(conditionalizeX(this, X));
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m', 11)" style="font-weight:bold">BayesianOptimization/callObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m',11,0)">line 11</a>)
+        = callObjNormally(this, X);
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/runSerial', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m', 24)" style="font-weight:bold">BayesianOptimization/runSerial</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m',24,0)">line 24</a>)
+        ObjectiveFcnObjectiveEvaluationTime, ObjectiveNargout] = callObjFcn(this, this.XNext);
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/run', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m', 9)" style="font-weight:bold">BayesianOptimization/run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m',9,0)">line 9</a>)
+    this = runSerial(this);
+           ^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m', 64)" style="font-weight:bold">BayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m',64,0)">line 64</a>)
+                this = run(this);
+                       ^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.SupervisedLearningBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m', 20)" style="font-weight:bold">classreg.learning.paramoptim.SupervisedLearningBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m',20,0)">line 20</a>)
+            this = this@BayesianOptimization(Options);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 168)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',168,0)">line 168</a>)
+OptimizationResults = classreg.learning.paramoptim.SupervisedLearningBayesianOptimization(Options);
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 52)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',52,0)">line 52</a>)
+            [OptimizationResultsOutput, XBest] = doBayesianOptimization(objFcn, BOInfo, VariableDescriptions, HyperparameterOptimizationOptions,abo);
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 24)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',24,0)">line 24</a>)
+    [obj, varargout{1:nargout-1}] = classreg.learning.paramoptim.fitoptimizing('fitcecoc',X,Y,varargin{:});
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 9)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',9,0)">line 9</a>)
+mdl = fitcecoc(x, y, 'Learners', t, OptimizeHyperparameters={'BoxConstraint', 'KernelScale', 'KernelFunction', 'PolynomialOrder'} ...
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 73)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',73,0)">line 73</a>)
+createSVM_wrapper("HOG_SVM.mat", X_HOG_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+Creating HOG SVM...[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',3,0)">line 3</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 73)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',73,0)">line 73</a>)] 
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.70071 |      6.1428 |     0.70071 |     0.70071 |       1.2721 |            - |       linear |            - |
+|    2 | Accept |     0.70071 |      5.2931 |     0.70071 |     0.70071 |      0.15367 |            - |       linear |            - |
+|    3 | Accept |     0.70071 |      5.3228 |     0.70071 |     0.70071 |       531.98 |            - |       linear |            - |
+|    4 | Best   |     0.69929 |      5.1004 |     0.69929 |     0.70036 |     0.046592 |            - |       linear |            - |
+|    5 | Accept |        0.75 |      5.1001 |     0.69929 |     0.70036 |      0.49721 |      0.16757 |     gaussian |            - |
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.svmutils.solve', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m', 14)" style="font-weight:bold">classreg.learning.svmutils.solve</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m',14,0)">line 14</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.impl.SVMImpl.make', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m', 574)" style="font-weight:bold">classreg.learning.impl.SVMImpl.make</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m',574,0)">line 574</a>)
+                    classreg.learning.svmutils.solve(...
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationSVM', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m', 188)" style="font-weight:bold">ClassificationSVM</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m',188,0)">line 188</a>)
+            this.Impl = classreg.learning.impl.SVMImpl.make(...
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC/loopBody', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 346)" style="font-weight:bold">ClassificationECOC>localFitECOC/loopBody</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',346,0)">line 346</a>)
+            full = fit(tmp{l},x,y,'ClassNames',[-1 1],'Prior',lPrior,...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('internal.stats.parallel.smartForSliceout', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m', 174)" style="font-weight:bold">internal.stats.parallel.smartForSliceout</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m',174,0)">line 174</a>)
+            [slice{:}] = loopbody(iter, S);
+                         ^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 260)" style="font-weight:bold">ClassificationECOC>localFitECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',260,0)">line 260</a>)
+    internal.stats.parallel.smartForSliceout(L,@loopBody,useParallel,RNGscheme);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 116)" style="font-weight:bold">ClassificationECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',116,0)">line 116</a>)
+                localFitECOC(learners,M,X,C,this.W,dataSummary.BinEdges,...
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/serialFit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 331)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/serialFit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',331,0)">line 331</a>)
+                        trainableH = fit(learners{l},X,Y,'weights',W,optArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/fitWeakLearners', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 436)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/fitWeakLearners</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',436,0)">line 436</a>)
+                [this,trained,generator,modifier,ntrained] = serialFit(...
+                                                             ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble/fitEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 198)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble/fitEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',198,0)">line 198</a>)
+                fitWeakLearners(this,nlearn,this.ModelParams.NPrint);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 33)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',33,0)">line 33</a>)
+                this = fitEnsemble(this,nlearn);
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedModel', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m', 87)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedModel</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m',87,0)">line 87</a>)
+            this.Ensemble = classreg.learning.classif.ClassificationEnsemble(...
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m', 22)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m',22,0)">line 22</a>)
+            this = this@classreg.learning.partition.ClassificationPartitionedModel(...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC.fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 49)" style="font-weight:bold">ClassificationECOC.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',49,0)">line 49</a>)
+            this = fit(temp,X,Y);
+                   ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 103)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',103,0)">line 103</a>)
+    obj = ClassificationECOC.fit(X,Y,extraArgs{:},'Learners',learners);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m', 71)" style="font-weight:bold">classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m',71,0)">line 71</a>)
+        PartitionedModel = BOInfo.FitFcn(Predictors, Response, ValidationMethod, ValidationVal, NewFitFunctionArgs{:});
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjNormally', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m', 20)" style="font-weight:bold">BayesianOptimization/callObjNormally</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m',20,0)">line 20</a>)
+            [Objective, ConstraintViolations, UserData] = this.ObjectiveFcn(conditionalizeX(this, X));
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m', 11)" style="font-weight:bold">BayesianOptimization/callObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m',11,0)">line 11</a>)
+        = callObjNormally(this, X);
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/runSerial', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m', 24)" style="font-weight:bold">BayesianOptimization/runSerial</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m',24,0)">line 24</a>)
+        ObjectiveFcnObjectiveEvaluationTime, ObjectiveNargout] = callObjFcn(this, this.XNext);
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/run', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m', 9)" style="font-weight:bold">BayesianOptimization/run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m',9,0)">line 9</a>)
+    this = runSerial(this);
+           ^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m', 64)" style="font-weight:bold">BayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m',64,0)">line 64</a>)
+                this = run(this);
+                       ^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.SupervisedLearningBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m', 20)" style="font-weight:bold">classreg.learning.paramoptim.SupervisedLearningBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m',20,0)">line 20</a>)
+            this = this@BayesianOptimization(Options);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 168)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',168,0)">line 168</a>)
+OptimizationResults = classreg.learning.paramoptim.SupervisedLearningBayesianOptimization(Options);
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 52)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',52,0)">line 52</a>)
+            [OptimizationResultsOutput, XBest] = doBayesianOptimization(objFcn, BOInfo, VariableDescriptions, HyperparameterOptimizationOptions,abo);
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 24)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',24,0)">line 24</a>)
+    [obj, varargout{1:nargout-1}] = classreg.learning.paramoptim.fitoptimizing('fitcecoc',X,Y,varargin{:});
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 9)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',9,0)">line 9</a>)
+mdl = fitcecoc(x, y, 'Learners', t, OptimizeHyperparameters={'BoxConstraint', 'KernelScale', 'KernelFunction', 'PolynomialOrder'} ...
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 73)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',73,0)">line 73</a>)
+createSVM_wrapper("HOG_SVM.mat", X_HOG_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+createSVM
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',3,0)">line 3</a>)
+mkdir("SavedOutputs/SVM/" + type);
+                            ^^^^
+} 
+testSVMPerformance
+Creating HOG SVM...[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',3,0)">line 3</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 73)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',73,0)">line 73</a>)] 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing>verifyNoValidationArgs', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 358)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing>verifyNoValidationArgs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',358,0)">line 358</a>)
+When optimizing parameters, validation arguments may only appear in the 'HyperparameterOptimizationOptions' argument.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 10)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',10,0)">line 10</a>)
+verifyNoValidationArgs(varargin);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 24)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',24,0)">line 24</a>)
+    [obj, varargout{1:nargout-1}] = classreg.learning.paramoptim.fitoptimizing('fitcecoc',X,Y,varargin{:});
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 9)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',9,0)">line 9</a>)
+mdl = fitcecoc(x, y, 'Learners', t, OptimizeHyperparameters={'BoxConstraint', 'KernelScale', 'KernelFunction', 'PolynomialOrder'} ...
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 73)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',73,0)">line 73</a>)
+createSVM_wrapper("HOG_SVM.mat", X_HOG_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+createSVM
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',3,0)">line 3</a>)
+mkdir("SavedOutputs/SVM/" + type);
+                            ^^^^
+} 
+testSVMPerformance
+Creating HOG SVM...[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',3,0)">line 3</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 73)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',73,0)">line 73</a>)] 
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.svmutils.solve', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m', 14)" style="font-weight:bold">classreg.learning.svmutils.solve</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m',14,0)">line 14</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.impl.SVMImpl.make', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m', 574)" style="font-weight:bold">classreg.learning.impl.SVMImpl.make</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m',574,0)">line 574</a>)
+                    classreg.learning.svmutils.solve(...
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationSVM', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m', 188)" style="font-weight:bold">ClassificationSVM</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m',188,0)">line 188</a>)
+            this.Impl = classreg.learning.impl.SVMImpl.make(...
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC/loopBody', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 346)" style="font-weight:bold">ClassificationECOC>localFitECOC/loopBody</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',346,0)">line 346</a>)
+            full = fit(tmp{l},x,y,'ClassNames',[-1 1],'Prior',lPrior,...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('internal.stats.parallel.smartForSliceout', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m', 174)" style="font-weight:bold">internal.stats.parallel.smartForSliceout</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m',174,0)">line 174</a>)
+            [slice{:}] = loopbody(iter, S);
+                         ^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 260)" style="font-weight:bold">ClassificationECOC>localFitECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',260,0)">line 260</a>)
+    internal.stats.parallel.smartForSliceout(L,@loopBody,useParallel,RNGscheme);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 116)" style="font-weight:bold">ClassificationECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',116,0)">line 116</a>)
+                localFitECOC(learners,M,X,C,this.W,dataSummary.BinEdges,...
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/serialFit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 331)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/serialFit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',331,0)">line 331</a>)
+                        trainableH = fit(learners{l},X,Y,'weights',W,optArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/fitWeakLearners', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 436)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/fitWeakLearners</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',436,0)">line 436</a>)
+                [this,trained,generator,modifier,ntrained] = serialFit(...
+                                                             ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble/fitEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 198)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble/fitEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',198,0)">line 198</a>)
+                fitWeakLearners(this,nlearn,this.ModelParams.NPrint);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 33)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',33,0)">line 33</a>)
+                this = fitEnsemble(this,nlearn);
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedModel', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m', 87)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedModel</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m',87,0)">line 87</a>)
+            this.Ensemble = classreg.learning.classif.ClassificationEnsemble(...
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m', 22)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m',22,0)">line 22</a>)
+            this = this@classreg.learning.partition.ClassificationPartitionedModel(...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC.fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 49)" style="font-weight:bold">ClassificationECOC.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',49,0)">line 49</a>)
+            this = fit(temp,X,Y);
+                   ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 103)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',103,0)">line 103</a>)
+    obj = ClassificationECOC.fit(X,Y,extraArgs{:},'Learners',learners);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m', 71)" style="font-weight:bold">classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m',71,0)">line 71</a>)
+        PartitionedModel = BOInfo.FitFcn(Predictors, Response, ValidationMethod, ValidationVal, NewFitFunctionArgs{:});
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjNormally', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m', 20)" style="font-weight:bold">BayesianOptimization/callObjNormally</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m',20,0)">line 20</a>)
+            [Objective, ConstraintViolations, UserData] = this.ObjectiveFcn(conditionalizeX(this, X));
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m', 11)" style="font-weight:bold">BayesianOptimization/callObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m',11,0)">line 11</a>)
+        = callObjNormally(this, X);
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/runSerial', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m', 24)" style="font-weight:bold">BayesianOptimization/runSerial</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m',24,0)">line 24</a>)
+        ObjectiveFcnObjectiveEvaluationTime, ObjectiveNargout] = callObjFcn(this, this.XNext);
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/run', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m', 9)" style="font-weight:bold">BayesianOptimization/run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m',9,0)">line 9</a>)
+    this = runSerial(this);
+           ^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m', 64)" style="font-weight:bold">BayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m',64,0)">line 64</a>)
+                this = run(this);
+                       ^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.SupervisedLearningBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m', 20)" style="font-weight:bold">classreg.learning.paramoptim.SupervisedLearningBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m',20,0)">line 20</a>)
+            this = this@BayesianOptimization(Options);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 168)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',168,0)">line 168</a>)
+OptimizationResults = classreg.learning.paramoptim.SupervisedLearningBayesianOptimization(Options);
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 52)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',52,0)">line 52</a>)
+            [OptimizationResultsOutput, XBest] = doBayesianOptimization(objFcn, BOInfo, VariableDescriptions, HyperparameterOptimizationOptions,abo);
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 24)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',24,0)">line 24</a>)
+    [obj, varargout{1:nargout-1}] = classreg.learning.paramoptim.fitoptimizing('fitcecoc',X,Y,varargin{:});
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 9)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',9,0)">line 9</a>)
+mdl = fitcecoc(x, y, 'Learners', t, OptimizeHyperparameters={'BoxConstraint', 'KernelScale', 'KernelFunction', 'PolynomialOrder'} ...
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 73)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',73,0)">line 73</a>)
+createSVM_wrapper("HOG_SVM.mat", X_HOG_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+Creating HOG SVM...[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',3,0)">line 3</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 22)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',22,0)">line 22</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 75)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',75,0)">line 75</a>)] 
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |        0.75 |       5.357 |        0.75 |        0.75 |       9.2061 |    0.0063868 |     gaussian |            - |
+|    2 | Best   |       0.705 |      4.3841 |       0.705 |      0.7073 |       32.137 |       830.14 |     gaussian |            - |
+|    3 | Accept |     0.74786 |      322.24 |       0.705 |     0.70717 |       440.66 |            - |   polynomial |            3 |
+|    4 | Accept |     0.73429 |      448.99 |       0.705 |     0.70627 |      0.27842 |            - |   polynomial |            4 |
+|    5 | Accept |     0.72571 |      34.368 |       0.705 |     0.70691 |     0.037431 |       593.88 |     gaussian |            - |
+|    6 | Best   |     0.68071 |      32.872 |     0.68071 |     0.69019 |        154.6 |       982.63 |     gaussian |            - |
+|    7 | Accept |     0.68643 |      19.921 |     0.68071 |     0.68072 |       94.942 |       986.34 |     gaussian |            - |
+|    8 | Accept |     0.68357 |      4.6812 |     0.68071 |     0.68074 |       778.57 |       953.13 |     gaussian |            - |
+|    9 | Accept |     0.69429 |       4.683 |     0.68071 |     0.68074 |       349.35 |       344.82 |     gaussian |            - |
+|   10 | Best   |     0.67714 |      4.4305 |     0.67714 |      0.6772 |       361.19 |       958.27 |     gaussian |            - |
+|   11 | Accept |     0.73071 |       14.68 |     0.67714 |      0.6772 |    0.0010196 |       10.767 |     gaussian |            - |
+|   12 | Accept |     0.67786 |      32.167 |     0.67714 |     0.67718 |       282.33 |          742 |     gaussian |            - |
+|   13 | Accept |     0.67714 |      32.399 |     0.67714 |     0.67714 |       359.53 |       891.65 |     gaussian |            - |
+|   14 | Accept |     0.67786 |      32.577 |     0.67714 |     0.67724 |       304.07 |       973.99 |     gaussian |            - |
+|   15 | Accept |     0.67714 |      32.011 |     0.67714 |     0.67716 |       339.07 |       906.31 |     gaussian |            - |
+|   16 | Accept |     0.67786 |      31.897 |     0.67714 |      0.6773 |       364.34 |       879.36 |     gaussian |            - |
+|   17 | Accept |     0.67714 |      31.958 |     0.67714 |     0.67728 |       310.33 |       839.99 |     gaussian |            - |
+|   18 | Accept |     0.67857 |      27.768 |     0.67714 |     0.67729 |    0.0010012 |            - |       linear |            - |
+|   19 | Accept |     0.69571 |      28.664 |     0.67714 |     0.67728 |    0.0059093 |            - |       linear |            - |
+|   20 | Accept |     0.69857 |      30.715 |     0.67714 |     0.67728 |       238.89 |            - |       linear |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|   21 | Accept |     0.69857 |      30.605 |     0.67714 |     0.67728 |       5.5955 |            - |       linear |            - |
+|   22 | Accept |        0.75 |      35.004 |     0.67714 |     0.67729 |       847.34 |       1.5454 |     gaussian |            - |
+|   23 | Accept |        0.75 |      34.551 |     0.67714 |     0.67729 |    0.0011872 |    0.0010858 |     gaussian |            - |
+|   24 | Accept |        0.75 |      34.333 |     0.67714 |     0.67729 |    0.0010545 |      0.21424 |     gaussian |            - |
+|   25 | Accept |     0.68143 |      489.52 |     0.67714 |     0.67729 |    0.0010023 |            - |   polynomial |            2 |
+|   26 | Accept |     0.68143 |      470.49 |     0.67714 |     0.67729 |    0.0096055 |            - |   polynomial |            2 |
+|   27 | Accept |     0.68143 |      497.36 |     0.67714 |     0.67729 |      0.28026 |            - |   polynomial |            2 |
+|   28 | Accept |     0.68143 |       467.9 |     0.67714 |     0.67729 |       6.6168 |            - |   polynomial |            2 |
+|   29 | Accept |     0.68143 |      496.11 |     0.67714 |     0.67729 |       220.12 |            - |   polynomial |            2 |
+|   30 | Accept |     0.68143 |      468.63 |     0.67714 |      0.6773 |       44.925 |            - |   polynomial |            2 |
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.svmutils.solve', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m', 14)" style="font-weight:bold">classreg.learning.svmutils.solve</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m',14,0)">line 14</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.impl.SVMImpl.make', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m', 574)" style="font-weight:bold">classreg.learning.impl.SVMImpl.make</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m',574,0)">line 574</a>)
+                    classreg.learning.svmutils.solve(...
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationSVM', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m', 188)" style="font-weight:bold">ClassificationSVM</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m',188,0)">line 188</a>)
+            this.Impl = classreg.learning.impl.SVMImpl.make(...
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC/loopBody', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 346)" style="font-weight:bold">ClassificationECOC>localFitECOC/loopBody</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',346,0)">line 346</a>)
+            full = fit(tmp{l},x,y,'ClassNames',[-1 1],'Prior',lPrior,...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('internal.stats.parallel.smartForSliceout', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m', 174)" style="font-weight:bold">internal.stats.parallel.smartForSliceout</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m',174,0)">line 174</a>)
+            [slice{:}] = loopbody(iter, S);
+                         ^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 260)" style="font-weight:bold">ClassificationECOC>localFitECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',260,0)">line 260</a>)
+    internal.stats.parallel.smartForSliceout(L,@loopBody,useParallel,RNGscheme);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 116)" style="font-weight:bold">ClassificationECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',116,0)">line 116</a>)
+                localFitECOC(learners,M,X,C,this.W,dataSummary.BinEdges,...
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/serialFit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 331)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/serialFit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',331,0)">line 331</a>)
+                        trainableH = fit(learners{l},X,Y,'weights',W,optArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/fitWeakLearners', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 436)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/fitWeakLearners</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',436,0)">line 436</a>)
+                [this,trained,generator,modifier,ntrained] = serialFit(...
+                                                             ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble/fitEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 198)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble/fitEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',198,0)">line 198</a>)
+                fitWeakLearners(this,nlearn,this.ModelParams.NPrint);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 33)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',33,0)">line 33</a>)
+                this = fitEnsemble(this,nlearn);
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedModel', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m', 87)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedModel</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m',87,0)">line 87</a>)
+            this.Ensemble = classreg.learning.classif.ClassificationEnsemble(...
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m', 22)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m',22,0)">line 22</a>)
+            this = this@classreg.learning.partition.ClassificationPartitionedModel(...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC.fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 49)" style="font-weight:bold">ClassificationECOC.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',49,0)">line 49</a>)
+            this = fit(temp,X,Y);
+                   ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 103)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',103,0)">line 103</a>)
+    obj = ClassificationECOC.fit(X,Y,extraArgs{:},'Learners',learners);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m', 71)" style="font-weight:bold">classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m',71,0)">line 71</a>)
+        PartitionedModel = BOInfo.FitFcn(Predictors, Response, ValidationMethod, ValidationVal, NewFitFunctionArgs{:});
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjNormally', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m', 20)" style="font-weight:bold">BayesianOptimization/callObjNormally</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m',20,0)">line 20</a>)
+            [Objective, ConstraintViolations, UserData] = this.ObjectiveFcn(conditionalizeX(this, X));
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m', 11)" style="font-weight:bold">BayesianOptimization/callObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m',11,0)">line 11</a>)
+        = callObjNormally(this, X);
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/runSerial', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m', 24)" style="font-weight:bold">BayesianOptimization/runSerial</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m',24,0)">line 24</a>)
+        ObjectiveFcnObjectiveEvaluationTime, ObjectiveNargout] = callObjFcn(this, this.XNext);
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/run', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m', 9)" style="font-weight:bold">BayesianOptimization/run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m',9,0)">line 9</a>)
+    this = runSerial(this);
+           ^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m', 64)" style="font-weight:bold">BayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m',64,0)">line 64</a>)
+                this = run(this);
+                       ^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.SupervisedLearningBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m', 20)" style="font-weight:bold">classreg.learning.paramoptim.SupervisedLearningBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m',20,0)">line 20</a>)
+            this = this@BayesianOptimization(Options);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 168)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',168,0)">line 168</a>)
+OptimizationResults = classreg.learning.paramoptim.SupervisedLearningBayesianOptimization(Options);
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 52)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',52,0)">line 52</a>)
+            [OptimizationResultsOutput, XBest] = doBayesianOptimization(objFcn, BOInfo, VariableDescriptions, HyperparameterOptimizationOptions,abo);
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 24)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',24,0)">line 24</a>)
+    [obj, varargout{1:nargout-1}] = classreg.learning.paramoptim.fitoptimizing('fitcecoc',X,Y,varargin{:});
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 9)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',9,0)">line 9</a>)
+mdl = fitcecoc(x, y, 'Learners', t, OptimizeHyperparameters={'BoxConstraint', 'KernelScale', 'KernelFunction', 'PolynomialOrder'} ...
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 22)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',22,0)">line 22</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 75)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',75,0)">line 75</a>)
+createSVM_wrapper("HOG_SVM.mat", X_HOG_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+Creating HOG SVM...[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',3,0)">line 3</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 22)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',22,0)">line 22</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 75)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',75,0)">line 75</a>)] 

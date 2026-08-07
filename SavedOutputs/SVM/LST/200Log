@@ -1,0 +1,378 @@
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.73857 |     0.71208 |     0.73857 |     0.73857 |       81.295 |       132.92 |     gaussian |            - |
+|    2 | Accept |     0.74571 |     0.64891 |     0.73857 |       0.739 |    0.0043045 |       76.448 |     gaussian |            - |
+|    3 | Best   |     0.73214 |     0.25373 |     0.73214 |      0.7328 |     0.031766 |            - |       linear |            - |
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.svmutils.solve', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m', 14)" style="font-weight:bold">classreg.learning.svmutils.solve</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.m',14,0)">line 14</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.impl.SVMImpl.make', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m', 574)" style="font-weight:bold">classreg.learning.impl.SVMImpl.make</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\SVMImpl.m',574,0)">line 574</a>)
+                    classreg.learning.svmutils.solve(...
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationSVM', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m', 188)" style="font-weight:bold">ClassificationSVM</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationSVM.m',188,0)">line 188</a>)
+            this.Impl = classreg.learning.impl.SVMImpl.make(...
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC/loopBody', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 346)" style="font-weight:bold">ClassificationECOC>localFitECOC/loopBody</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',346,0)">line 346</a>)
+            full = fit(tmp{l},x,y,'ClassNames',[-1 1],'Prior',lPrior,...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('internal.stats.parallel.smartForSliceout', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m', 174)" style="font-weight:bold">internal.stats.parallel.smartForSliceout</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\stats\+internal\+stats\+parallel\smartForSliceout.m',174,0)">line 174</a>)
+            [slice{:}] = loopbody(iter, S);
+                         ^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC>localFitECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 260)" style="font-weight:bold">ClassificationECOC>localFitECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',260,0)">line 260</a>)
+    internal.stats.parallel.smartForSliceout(L,@loopBody,useParallel,RNGscheme);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 116)" style="font-weight:bold">ClassificationECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',116,0)">line 116</a>)
+                localFitECOC(learners,M,X,C,this.W,dataSummary.BinEdges,...
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/serialFit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 331)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/serialFit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',331,0)">line 331</a>)
+                        trainableH = fit(learners{l},X,Y,'weights',W,optArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.ensemble.Ensemble/fitWeakLearners', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m', 436)" style="font-weight:bold">classreg.learning.ensemble.Ensemble/fitWeakLearners</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+ensemble\Ensemble.m',436,0)">line 436</a>)
+                [this,trained,generator,modifier,ntrained] = serialFit(...
+                                                             ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble/fitEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 198)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble/fitEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',198,0)">line 198</a>)
+                fitWeakLearners(this,nlearn,this.ModelParams.NPrint);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.ClassificationEnsemble', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m', 33)" style="font-weight:bold">classreg.learning.classif.ClassificationEnsemble</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\ClassificationEnsemble.m',33,0)">line 33</a>)
+                this = fitEnsemble(this,nlearn);
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedModel', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m', 87)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedModel</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedModel.m',87,0)">line 87</a>)
+            this.Ensemble = classreg.learning.classif.ClassificationEnsemble(...
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.partition.ClassificationPartitionedECOC', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m', 22)" style="font-weight:bold">classreg.learning.partition.ClassificationPartitionedECOC</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+partition\ClassificationPartitionedECOC.m',22,0)">line 22</a>)
+            this = this@classreg.learning.partition.ClassificationPartitionedModel(...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning.FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+            [varargout{1:nargout}] = this.MakeFitObject(X,Y,W,this.ModelParams,fitArgs{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationECOC.fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m', 49)" style="font-weight:bold">ClassificationECOC.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationECOC.m',49,0)">line 49</a>)
+            this = fit(temp,X,Y);
+                   ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 103)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',103,0)">line 103</a>)
+    obj = ClassificationECOC.fit(X,Y,extraArgs{:},'Learners',learners);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m', 71)" style="font-weight:bold">classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m',71,0)">line 71</a>)
+        PartitionedModel = BOInfo.FitFcn(Predictors, Response, ValidationMethod, ValidationVal, NewFitFunctionArgs{:});
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjNormally', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m', 20)" style="font-weight:bold">BayesianOptimization/callObjNormally</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m',20,0)">line 20</a>)
+            [Objective, ConstraintViolations, UserData] = this.ObjectiveFcn(conditionalizeX(this, X));
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m', 11)" style="font-weight:bold">BayesianOptimization/callObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m',11,0)">line 11</a>)
+        = callObjNormally(this, X);
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/runSerial', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m', 24)" style="font-weight:bold">BayesianOptimization/runSerial</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m',24,0)">line 24</a>)
+        ObjectiveFcnObjectiveEvaluationTime, ObjectiveNargout] = callObjFcn(this, this.XNext);
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/run', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m', 9)" style="font-weight:bold">BayesianOptimization/run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m',9,0)">line 9</a>)
+    this = runSerial(this);
+           ^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m', 64)" style="font-weight:bold">BayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m',64,0)">line 64</a>)
+                this = run(this);
+                       ^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.SupervisedLearningBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m', 20)" style="font-weight:bold">classreg.learning.paramoptim.SupervisedLearningBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m',20,0)">line 20</a>)
+            this = this@BayesianOptimization(Options);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 168)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',168,0)">line 168</a>)
+OptimizationResults = classreg.learning.paramoptim.SupervisedLearningBayesianOptimization(Options);
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 52)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',52,0)">line 52</a>)
+            [OptimizationResultsOutput, XBest] = doBayesianOptimization(objFcn, BOInfo, VariableDescriptions, HyperparameterOptimizationOptions,abo);
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcecoc', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m', 24)" style="font-weight:bold">fitcecoc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcecoc.m',24,0)">line 24</a>)
+    [obj, varargout{1:nargout-1}] = classreg.learning.paramoptim.fitoptimizing('fitcecoc',X,Y,varargin{:});
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 9)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',9,0)">line 9</a>)
+mdl = fitcecoc(x, y, 'Learners', t, OptimizeHyperparameters={'BoxConstraint', 'KernelScale', 'KernelFunction', 'PolynomialOrder'} ...
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 75)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',75,0)">line 75</a>)
+createSVM_wrapper("LST_SVM.mat", X_LST_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+
+ HOG SVM Results...
+Overall Accuracy: 0.2600 
+ HOG Class AUCs:     0.5172    0.4958    0.4749    0.5999
+
+Creating LST SVM...[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\createSVM.m',3,0)">line 3</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 20)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',20,0)">line 20</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m', 75)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\testSVMPerformance.m',75,0)">line 75</a>)] 
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.76714 |     0.25683 |     0.76714 |     0.76714 |    0.0018663 |            - |   polynomial |            2 |
+|    2 | Best   |     0.74643 |      1.3918 |     0.74643 |     0.74803 |       223.76 |            - |       linear |            - |
+|    3 | Best   |     0.74571 |     0.34199 |     0.74571 |     0.74573 |       7.3131 |       16.703 |     gaussian |            - |
+|    4 | Accept |     0.75143 |      0.2463 |     0.74571 |     0.74572 |      0.02019 |            - |       linear |            - |
+|    5 | Accept |        0.75 |     0.36317 |     0.74571 |     0.74572 |    0.0010021 |       694.84 |     gaussian |            - |
+|    6 | Accept |     0.74714 |     0.37543 |     0.74571 |     0.74572 |       995.92 |       71.772 |     gaussian |            - |
+|    7 | Accept |     0.77929 |     0.58129 |     0.74571 |     0.74572 |       15.821 |    0.0024176 |     gaussian |            - |
+|    8 | Accept |        0.75 |     0.33622 |     0.74571 |     0.74774 |    0.0010446 |       37.289 |     gaussian |            - |
+|    9 | Accept |     0.74929 |     0.31447 |     0.74571 |     0.74572 |     0.019954 |       7.2446 |     gaussian |            - |
+|   10 | Best   |     0.74143 |     0.60294 |     0.74143 |     0.74144 |       912.79 |       9.2289 |     gaussian |            - |
+|   11 | Best   |     0.72571 |      1.0997 |     0.72571 |       0.729 |       855.13 |       3.4214 |     gaussian |            - |
+|   12 | Best   |     0.71857 |      9.2372 |     0.71857 |     0.71857 |       893.91 |       1.4376 |     gaussian |            - |
+|   13 | Accept |     0.72429 |      21.768 |     0.71857 |     0.71857 |       731.68 |      0.54172 |     gaussian |            - |
+|   14 | Accept |     0.72071 |      1.5638 |     0.71857 |     0.71857 |         20.3 |       1.1291 |     gaussian |            - |
+|   15 | Best   |     0.71786 |      13.302 |     0.71786 |     0.71814 |       928.27 |       1.2686 |     gaussian |            - |
+|   16 | Accept |       0.725 |      16.153 |     0.71786 |      0.7202 |       899.46 |       1.0741 |     gaussian |            - |
+|   17 | Best   |     0.71571 |      6.4829 |     0.71571 |     0.71925 |       993.78 |       1.3014 |     gaussian |            - |
+|   18 | Accept |     0.71786 |      228.43 |     0.71571 |      0.7192 |       999.49 |            - |   polynomial |            4 |
+|   19 | Accept |        0.75 |     0.94232 |     0.71571 |     0.71934 |    0.0010004 |            - |   polynomial |            4 |
+|   20 | Accept |     0.71929 |      301.89 |     0.71571 |     0.71928 |       999.88 |            - |   polynomial |            4 |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|   21 | Accept |     0.73357 |      294.57 |     0.71571 |     0.71991 |       995.04 |            - |   polynomial |            4 |
+|   22 | Accept |     0.73571 |      209.53 |     0.71571 |     0.71986 |       997.05 |            - |   polynomial |            3 |
+|   23 | Accept |     0.71929 |      1.5829 |     0.71571 |     0.71983 |    0.0011183 |     0.048557 |     gaussian |            - |
+|   24 | Accept |     0.72714 |      1.1657 |     0.71571 |     0.71974 |    0.0012804 |      0.14874 |     gaussian |            - |
+|   25 | Accept |     0.74571 |      2.5156 |     0.71571 |      0.7199 |       8.0504 |     0.078326 |     gaussian |            - |
+|   26 | Accept |     0.72143 |      4.1102 |     0.71571 |        0.72 |       199.05 |       1.2455 |     gaussian |            - |
+|   27 | Accept |        0.75 |      1.1783 |     0.71571 |     0.72005 |        541.7 |        987.3 |     gaussian |            - |
+|   28 | Accept |     0.76929 |      1.5939 |     0.71571 |     0.71991 |    0.0010213 |    0.0010353 |     gaussian |            - |
+|   29 | Accept |     0.76643 |      1.7042 |     0.71571 |      0.7198 |    0.0010061 |    0.0078922 |     gaussian |            - |
+|   30 | Accept |     0.76214 |      18.134 |     0.71571 |     0.71984 |       998.41 |      0.01494 |     gaussian |            - |
+|   31 | Accept |     0.74214 |      1.1707 |     0.71571 |     0.71977 |    0.0010088 |       1.1567 |     gaussian |            - |
+|   32 | Accept |        0.75 |       1.157 |     0.71571 |      0.7198 |        0.225 |       199.16 |     gaussian |            - |
+|   33 | Accept |       0.745 |      109.24 |     0.71571 |     0.71976 |        981.1 |            - |   polynomial |            2 |
+|   34 | Accept |     0.76857 |      2.3709 |     0.71571 |     0.71977 |       816.19 |    0.0010137 |     gaussian |            - |
+|   35 | Accept |     0.75214 |      1.1166 |     0.71571 |     0.71978 |          997 |       299.13 |     gaussian |            - |
+|   36 | Accept |     0.74286 |      35.537 |     0.71571 |     0.71973 |       988.56 |      0.15529 |     gaussian |            - |
+|   37 | Accept |     0.71714 |      1.0754 |     0.71571 |     0.72012 |      0.28799 |       0.3446 |     gaussian |            - |
+|   38 | Accept |     0.71857 |      1.6478 |     0.71571 |     0.71986 |       17.915 |       0.7553 |     gaussian |            - |
+|   39 | Accept |     0.71857 |      1.6023 |     0.71571 |     0.71971 |       15.144 |      0.74831 |     gaussian |            - |
+|   40 | Accept |     0.72214 |      1.4569 |     0.71571 |      0.7198 |       8.9093 |      0.65766 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|   41 | Accept |        0.75 |      1.0819 |     0.71571 |     0.71982 |      0.39771 |       997.93 |     gaussian |            - |
+|   42 | Accept |     0.73786 |      1.7639 |     0.71571 |     0.71982 |      0.65501 |            - |   polynomial |            3 |
+|   43 | Accept |     0.73786 |      1.5584 |     0.71571 |     0.71984 |      0.39619 |     0.018337 |     gaussian |            - |
+|   44 | Accept |        0.75 |      1.0437 |     0.71571 |     0.71984 |    0.0010037 |       123.49 |     gaussian |            - |
+|   45 | Accept |     0.73286 |      1.1071 |     0.71571 |     0.71976 |    0.0011172 |      0.41133 |     gaussian |            - |
+|   46 | Accept |     0.78786 |      5.3044 |     0.71571 |     0.71984 |       986.31 |    0.0043764 |     gaussian |            - |
+|   47 | Accept |     0.74857 |      53.782 |     0.71571 |     0.71986 |       997.83 |     0.042514 |     gaussian |            - |
+|   48 | Accept |     0.74929 |     0.34221 |     0.71571 |     0.71986 |    0.0010474 |       3.1734 |     gaussian |            - |
+|   49 | Accept |     0.76571 |     0.52404 |     0.71571 |     0.71984 |    0.0010037 |    0.0028442 |     gaussian |            - |
+|   50 | Accept |     0.75071 |     0.37524 |     0.71571 |     0.71986 |      0.81736 |       62.808 |     gaussian |            - |
+|   51 | Accept |     0.74357 |     0.37703 |     0.71571 |     0.71986 |       992.81 |       28.832 |     gaussian |            - |
+|   52 | Accept |       0.755 |     0.34827 |     0.71571 |     0.71984 |    0.0010035 |       14.428 |     gaussian |            - |
+|   53 | Accept |     0.72643 |      2.8621 |     0.71571 |     0.71979 |       1.2004 |            - |   polynomial |            4 |
+|   54 | Accept |     0.73714 |     0.49293 |     0.71571 |     0.71978 |    0.0010105 |      0.02054 |     gaussian |            - |
+|   55 | Accept |     0.78071 |     0.42417 |     0.71571 |     0.71975 |      0.41927 |    0.0010175 |     gaussian |            - |
+|   56 | Accept |        0.75 |     0.20196 |     0.71571 |     0.71975 |    0.0010001 |            - |       linear |            - |
+|   57 | Accept |     0.74571 |     0.34924 |     0.71571 |     0.71972 |       1.8735 |            - |   polynomial |            2 |
+|   58 | Accept |       0.765 |     0.44825 |     0.71571 |     0.71969 |      0.69046 |    0.0064413 |     gaussian |            - |
+|   59 | Accept |     0.74214 |     0.31646 |     0.71571 |     0.71977 |       1.4228 |       3.4425 |     gaussian |            - |
+|   60 | Accept |        0.75 |      0.3608 |     0.71571 |     0.71976 |        4.738 |       488.23 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|   61 | Accept |        0.75 |     0.32564 |     0.71571 |     0.71975 |    0.0010181 |       302.06 |     gaussian |            - |
+|   62 | Accept |     0.71929 |     0.42261 |     0.71571 |     0.71974 |      0.07462 |     0.048613 |     gaussian |            - |
+|   63 | Accept |       0.725 |     0.38347 |     0.71571 |     0.71976 |     0.002251 |     0.066723 |     gaussian |            - |
+|   64 | Accept |       0.735 |     0.49947 |     0.71571 |     0.71968 |        10.52 |      0.21846 |     gaussian |            - |
+|   65 | Accept |        0.75 |     0.33206 |     0.71571 |     0.71967 |       34.099 |        145.2 |     gaussian |            - |
+|   66 | Accept |     0.74143 |      0.3323 |     0.71571 |      0.7196 |     0.050494 |        1.689 |     gaussian |            - |
+|   67 | Accept |     0.75071 |     0.30922 |     0.71571 |     0.71959 |     0.065735 |       24.698 |     gaussian |            - |
+|   68 | Accept |     0.74643 |     0.24192 |     0.71571 |     0.71958 |        3.799 |            - |       linear |            - |
+|   69 | Accept |     0.73643 |     0.86517 |     0.71571 |     0.71954 |       14.805 |     0.030022 |     gaussian |            - |
+|   70 | Accept |     0.72429 |     0.32644 |     0.71571 |     0.71956 |     0.098829 |      0.14658 |     gaussian |            - |
+|   71 | Accept |     0.74571 |     0.24961 |     0.71571 |     0.71962 |    0.0010021 |            - |   polynomial |            3 |
+|   72 | Accept |     0.74357 |     0.35418 |     0.71571 |      0.7196 |       9.5623 |       7.1346 |     gaussian |            - |
+|   73 | Accept |       0.735 |     0.31975 |     0.71571 |     0.71954 |     0.034398 |      0.71904 |     gaussian |            - |
+|   74 | Accept |        0.75 |     0.35084 |     0.71571 |     0.71953 |       0.0422 |       521.07 |     gaussian |            - |
+|   75 | Accept |     0.75786 |     0.45938 |     0.71571 |     0.71957 |      0.07043 |     0.002437 |     gaussian |            - |
+|   76 | Accept |        0.75 |     0.34166 |     0.71571 |     0.71957 |       23.517 |       39.008 |     gaussian |            - |
+|   77 | Accept |       0.725 |     0.42116 |     0.71571 |     0.71962 |     0.035997 |            - |   polynomial |            4 |
+|   78 | Accept |     0.73643 |      10.776 |     0.71571 |     0.71964 |       977.04 |      0.29781 |     gaussian |            - |
+|   79 | Accept |     0.75929 |     0.71115 |     0.71571 |     0.71964 |       26.798 |     0.010443 |     gaussian |            - |
+|   80 | Accept |        0.75 |     0.32745 |     0.71571 |     0.71963 |       929.58 |       558.38 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|   81 | Accept |     0.78714 |      0.8605 |     0.71571 |     0.71961 |       987.16 |    0.0019497 |     gaussian |            - |
+|   82 | Accept |     0.73643 |      19.037 |     0.71571 |      0.7196 |       32.057 |            - |   polynomial |            3 |
+|   83 | Accept |        0.75 |     0.34056 |     0.71571 |     0.71959 |     0.001504 |       999.45 |     gaussian |            - |
+|   84 | Accept |       0.725 |     0.32968 |     0.71571 |     0.71957 |     0.011239 |      0.25322 |     gaussian |            - |
+|   85 | Accept |        0.75 |     0.33569 |     0.71571 |     0.71956 |    0.0010213 |       6.7631 |     gaussian |            - |
+|   86 | Accept |     0.75071 |     0.34956 |     0.71571 |     0.71955 |    0.0091201 |       68.673 |     gaussian |            - |
+|   87 | Accept |        0.75 |     0.38074 |     0.71571 |     0.71954 |       995.21 |       142.66 |     gaussian |            - |
+|   88 | Accept |     0.73714 |     0.47468 |     0.71571 |     0.71965 |     0.017973 |     0.028545 |     gaussian |            - |
+|   89 | Accept |     0.74857 |      15.062 |     0.71571 |     0.71964 |       965.66 |        0.082 |     gaussian |            - |
+|   90 | Accept |     0.74571 |     0.25269 |     0.71571 |     0.71967 |     0.054534 |            - |   polynomial |            2 |
+|   91 | Accept |     0.75357 |     0.45095 |     0.71571 |     0.71965 |     0.024844 |     0.011452 |     gaussian |            - |
+|   92 | Accept |     0.72357 |     0.38972 |     0.71571 |     0.71962 |       26.695 |       2.3881 |     gaussian |            - |
+|   93 | Accept |        0.75 |     0.33428 |     0.71571 |     0.71961 |       31.714 |       945.35 |     gaussian |            - |
+|   94 | Accept |     0.75357 |     0.33507 |     0.71571 |     0.71959 |      0.17006 |       12.654 |     gaussian |            - |
+|   95 | Accept |     0.77857 |     0.53772 |     0.71571 |     0.71957 |       23.972 |    0.0010181 |     gaussian |            - |
+|   96 | Accept |     0.72571 |      53.096 |     0.71571 |     0.71956 |       49.715 |            - |   polynomial |            4 |
+|   97 | Accept |     0.74643 |     0.37396 |     0.71571 |     0.71955 |        979.6 |       16.469 |     gaussian |            - |
+|   98 | Accept |     0.76929 |      0.4398 |     0.71571 |     0.71958 |     0.012321 |    0.0047211 |     gaussian |            - |
+|   99 | Accept |        0.75 |     0.31301 |     0.71571 |     0.71957 |      0.10973 |       116.29 |     gaussian |            - |
+|  100 | Accept |        0.74 |     0.38703 |     0.71571 |     0.71965 |       81.654 |       4.4822 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|  101 | Accept |     0.72214 |     0.34774 |     0.71571 |     0.71961 |     0.073417 |     0.085277 |     gaussian |            - |
+|  102 | Accept |     0.74643 |       4.882 |     0.71571 |      0.7196 |       999.15 |            - |       linear |            - |
+|  103 | Accept |     0.74357 |     0.26155 |     0.71571 |      0.7196 |     0.018684 |            - |   polynomial |            3 |
+|  104 | Accept |     0.72143 |     0.98353 |     0.71571 |     0.71962 |       43.286 |      0.38699 |     gaussian |            - |
+|  105 | Accept |        0.76 |     0.47126 |     0.71571 |     0.71957 |    0.0071931 |    0.0015008 |     gaussian |            - |
+|  106 | Accept |        0.75 |     0.31926 |     0.71571 |     0.71957 |       18.966 |       265.25 |     gaussian |            - |
+|  107 | Accept |     0.77429 |       3.241 |     0.71571 |     0.71955 |       970.64 |    0.0082213 |     gaussian |            - |
+|  108 | Accept |     0.75143 |      0.3266 |     0.71571 |      0.7195 |     0.024236 |       3.6603 |     gaussian |            - |
+|  109 | Accept |     0.75071 |     0.51031 |     0.71571 |     0.71972 |       1.4371 |     0.042384 |     gaussian |            - |
+|  110 | Accept |     0.73786 |     0.31376 |     0.71571 |     0.71995 |       1.1605 |       1.7888 |     gaussian |            - |
+|  111 | Accept |       0.745 |      3.4532 |     0.71571 |     0.71994 |       64.663 |            - |   polynomial |            2 |
+|  112 | Accept |     0.72286 |     0.34438 |     0.71571 |     0.71999 |    0.0010143 |        0.244 |     gaussian |            - |
+|  113 | Accept |     0.74429 |     0.31366 |     0.71571 |     0.71999 |       28.965 |       74.699 |     gaussian |            - |
+|  114 | Accept |        0.75 |     0.34982 |     0.71571 |     0.71997 |    0.0084034 |       198.11 |     gaussian |            - |
+|  115 | Accept |       0.745 |      1.4345 |     0.71571 |     0.71988 |       57.265 |      0.12509 |     gaussian |            - |
+|  116 | Accept |     0.77286 |     0.66271 |     0.71571 |     0.71987 |       25.973 |    0.0050051 |     gaussian |            - |
+|  117 | Accept |     0.72429 |     0.33662 |     0.71571 |     0.71977 |      0.72898 |       1.0504 |     gaussian |            - |
+|  118 | Accept |     0.75643 |     0.86572 |     0.71571 |     0.71983 |       30.685 |     0.018284 |     gaussian |            - |
+|  119 | Accept |        0.74 |      0.3639 |     0.71571 |      0.7198 |       1.4216 |        0.129 |     gaussian |            - |
+|  120 | Accept |     0.73357 |      1.1246 |     0.71571 |      0.7198 |       995.96 |       5.7843 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|  121 | Accept |     0.74786 |      2.3112 |     0.71571 |     0.71978 |       80.785 |     0.052136 |     gaussian |            - |
+|  122 | Accept |     0.74071 |     0.33046 |     0.71571 |     0.71979 |       70.359 |       11.758 |     gaussian |            - |
+|  123 | Accept |     0.73929 |     0.31834 |     0.71571 |     0.71975 |    0.0010002 |      0.68356 |     gaussian |            - |
+|  124 | Accept |        0.75 |     0.32132 |     0.71571 |     0.71974 |     0.017059 |       953.63 |     gaussian |            - |
+|  125 | Accept |     0.75071 |     0.30476 |     0.71571 |     0.71973 |    0.0010027 |        66.19 |     gaussian |            - |
+|  126 | Accept |     0.71643 |     0.32119 |     0.71571 |     0.71976 |      0.42047 |        0.233 |     gaussian |            - |
+|  127 | Accept |     0.75071 |     0.33739 |     0.71571 |     0.71975 |      0.84635 |       33.776 |     gaussian |            - |
+|  128 | Accept |     0.77143 |     0.42435 |     0.71571 |     0.71974 |      0.72541 |    0.0016097 |     gaussian |            - |
+|  129 | Accept |     0.75071 |     0.33593 |     0.71571 |      0.7197 |      0.38754 |       6.3274 |     gaussian |            - |
+|  130 | Accept |        0.75 |     0.34054 |     0.71571 |     0.71969 |       101.84 |       444.15 |     gaussian |            - |
+|  131 | Accept |     0.76643 |      7.1242 |     0.71571 |      0.7198 |       847.92 |      0.02452 |     gaussian |            - |
+|  132 | Accept |     0.71857 |     0.41581 |     0.71571 |     0.71974 |     0.007674 |     0.044992 |     gaussian |            - |
+|  133 | Accept |     0.74786 |     0.31674 |     0.71571 |     0.71973 |       115.54 |       23.389 |     gaussian |            - |
+|  134 | Accept |        0.75 |     0.30856 |     0.71571 |     0.71973 |       2.4198 |        109.2 |     gaussian |            - |
+|  135 | Accept |     0.76857 |     0.45356 |     0.71571 |     0.71971 |       0.8988 |    0.0035489 |     gaussian |            - |
+|  136 | Accept |     0.76786 |     0.43456 |     0.71571 |      0.7197 |     0.016924 |     0.001006 |     gaussian |            - |
+|  137 | Accept |     0.71571 |     0.40155 |     0.71571 |     0.71973 |       3.2365 |      0.34496 |     gaussian |            - |
+|  138 | Accept |     0.74071 |     0.30216 |     0.71571 |     0.71974 |    0.0011898 |       1.9625 |     gaussian |            - |
+|  139 | Accept |        0.75 |     0.31754 |     0.71571 |     0.71973 |     0.028628 |        41.86 |     gaussian |            - |
+|  140 | Accept |        0.75 |     0.31527 |     0.71571 |     0.71973 |      0.28981 |       344.42 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|  141 | Accept |     0.74929 |     0.21691 |     0.71571 |     0.71972 |      0.28416 |            - |       linear |            - |
+|  142 | Accept |       0.755 |     0.46438 |     0.71571 |     0.71972 |      0.97462 |      0.01129 |     gaussian |            - |
+|  143 | Accept |     0.72143 |     0.34578 |     0.71571 |     0.71939 |      0.38941 |      0.63162 |     gaussian |            - |
+|  144 | Accept |     0.73286 |     0.46736 |     0.71571 |     0.71939 |    0.0010316 |     0.030216 |     gaussian |            - |
+|  145 | Accept |       0.755 |     0.32297 |     0.71571 |     0.71938 |    0.0098329 |       14.856 |     gaussian |            - |
+|  146 | Accept |     0.73143 |     0.30619 |     0.71571 |     0.71941 |     0.018206 |      0.42733 |     gaussian |            - |
+|  147 | Accept |     0.72429 |     0.32798 |     0.71571 |     0.71942 |    0.0093275 |      0.11604 |     gaussian |            - |
+|  148 | Accept |        0.75 |     0.33704 |     0.71571 |     0.71941 |    0.0079053 |       367.61 |     gaussian |            - |
+|  149 | Accept |       0.745 |     0.34186 |     0.71571 |      0.7194 |       335.75 |       47.813 |     gaussian |            - |
+|  150 | Accept |     0.75286 |     0.31219 |     0.71571 |     0.71939 |    0.0010054 |       22.233 |     gaussian |            - |
+|  151 | Accept |     0.73571 |      2.0571 |     0.71571 |     0.71938 |       166.47 |      0.23576 |     gaussian |            - |
+|  152 | Accept |     0.72286 |     0.35483 |     0.71571 |     0.71937 |    0.0010456 |     0.091948 |     gaussian |            - |
+|  153 | Accept |     0.74429 |     0.32859 |     0.71571 |     0.71931 |    0.0072839 |         1.24 |     gaussian |            - |
+|  154 | Accept |     0.72571 |      14.224 |     0.71571 |      0.7193 |       8.1198 |            - |   polynomial |            4 |
+|  155 | Accept |     0.75214 |     0.51277 |     0.71571 |     0.71929 |      0.00109 |     0.012835 |     gaussian |            - |
+|  156 | Accept |     0.78429 |     0.60335 |     0.71571 |     0.71921 |       124.96 |    0.0014408 |     gaussian |            - |
+|  157 | Accept |     0.74286 |     0.55562 |     0.71571 |      0.7192 |       1.9239 |     0.024111 |     gaussian |            - |
+|  158 | Accept |        0.75 |     0.33176 |     0.71571 |     0.71919 |      0.63467 |       694.74 |     gaussian |            - |
+|  159 | Accept |     0.74286 |     0.34025 |     0.71571 |     0.71927 |       238.83 |       208.32 |     gaussian |            - |
+|  160 | Accept |     0.73643 |     0.41829 |     0.71571 |     0.71917 |       0.4311 |     0.072262 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|  161 | Accept |     0.74429 |     0.33131 |     0.71571 |     0.71915 |       3.7388 |       10.625 |     gaussian |            - |
+|  162 | Accept |        0.76 |     0.45856 |     0.71571 |     0.71915 |    0.0010318 |    0.0017973 |     gaussian |            - |
+|  163 | Accept |     0.74143 |     0.44413 |     0.71571 |     0.71914 |    0.0092365 |     0.017745 |     gaussian |            - |
+|  164 | Accept |     0.72214 |     0.84663 |     0.71571 |     0.71913 |        255.9 |        2.394 |     gaussian |            - |
+|  165 | Accept |     0.74857 |     0.34013 |     0.71571 |     0.71912 |       227.28 |       105.78 |     gaussian |            - |
+|  166 | Accept |     0.75143 |     0.27005 |     0.71571 |     0.71942 |    0.0056576 |            - |   polynomial |            4 |
+|  167 | Accept |        0.75 |     0.32793 |     0.71571 |     0.71941 |        146.4 |       714.09 |     gaussian |            - |
+|  168 | Accept |     0.74643 |     0.33177 |     0.71571 |     0.71915 |      0.16263 |       2.6657 |     gaussian |            - |
+|  169 | Accept |     0.74214 |     0.32307 |     0.71571 |     0.71941 |    0.0091674 |       2.4491 |     gaussian |            - |
+|  170 | Accept |     0.72429 |      1.5529 |     0.71571 |     0.71952 |       130.47 |      0.56963 |     gaussian |            - |
+|  171 | Accept |     0.73429 |      2.9736 |     0.71571 |     0.71953 |       4.7788 |            - |   polynomial |            3 |
+|  172 | Accept |     0.74429 |     0.38865 |     0.71571 |      0.7195 |       131.11 |       7.1584 |     gaussian |            - |
+|  173 | Accept |     0.78214 |     0.69909 |     0.71571 |     0.71951 |       164.56 |    0.0031026 |     gaussian |            - |
+|  174 | Accept |        0.75 |     0.32611 |     0.71571 |      0.7195 |    0.0078744 |       116.81 |     gaussian |            - |
+|  175 | Accept |        0.75 |     0.31133 |     0.71571 |      0.7195 |       2.2237 |       187.26 |     gaussian |            - |
+|  176 | Accept |     0.76714 |     0.46244 |     0.71571 |     0.71949 |    0.0011085 |    0.0046641 |     gaussian |            - |
+|  177 | Accept |     0.72214 |     0.49659 |     0.71571 |     0.71938 |       39.148 |       1.6724 |     gaussian |            - |
+|  178 | Accept |     0.73714 |     0.45479 |     0.71571 |     0.71938 |      0.20117 |     0.029528 |     gaussian |            - |
+|  179 | Accept |     0.75071 |     0.34232 |     0.71571 |     0.71938 |    0.0061646 |       28.057 |     gaussian |            - |
+|  180 | Accept |     0.75429 |     0.35238 |     0.71571 |     0.71938 |      0.73574 |       20.506 |     gaussian |            - |
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|  181 | Accept |     0.76214 |      3.0311 |     0.71571 |      0.7194 |       156.02 |     0.032897 |     gaussian |            - |
+|  182 | Accept |        0.72 |     0.33701 |     0.71571 |      0.7194 |     0.073948 |      0.25076 |     gaussian |            - |
+|  183 | Accept |       0.725 |     0.40086 |     0.71571 |      0.7194 |      0.02323 |     0.064024 |     gaussian |            - |
+|  184 | Accept |     0.75071 |     0.31444 |     0.71571 |      0.7194 |    0.0031262 |       4.8593 |     gaussian |            - |
+|  185 | Accept |     0.73714 |     0.31654 |     0.71571 |     0.71937 |      0.10094 |       1.0908 |     gaussian |            - |
+|  186 | Accept |     0.72357 |      2.2129 |     0.71571 |      0.7194 |       981.91 |       2.3968 |     gaussian |            - |
+|  187 | Accept |        0.75 |     0.32297 |     0.71571 |      0.7194 |        4.109 |       991.84 |     gaussian |            - |
+|  188 | Accept |        0.75 |     0.35003 |     0.71571 |      0.7194 |     0.001075 |       191.32 |     gaussian |            - |
+|  189 | Accept |     0.77429 |     0.45896 |     0.71571 |     0.71941 |     0.056097 |    0.0072498 |     gaussian |            - |
+|  190 | Accept |       0.725 |     0.44093 |     0.71571 |     0.71941 |     0.011395 |      0.17666 |     gaussian |            - |
+|  191 | Accept |        0.75 |     0.32495 |     0.71571 |     0.71941 |    0.0010012 |       464.11 |     gaussian |            - |
+|  192 | Accept |     0.74571 |      2.9871 |     0.71571 |     0.71941 |       99.991 |     0.087011 |     gaussian |            - |
+|  193 | Accept |     0.74857 |     0.30982 |     0.71571 |     0.71941 |    0.0031654 |         9.81 |     gaussian |            - |
+|  194 | Accept |       0.775 |      1.0892 |     0.71571 |     0.71941 |       145.68 |    0.0070371 |     gaussian |            - |
+|  195 | Accept |     0.76429 |     0.43448 |     0.71571 |      0.7194 |     0.007428 |    0.0026107 |     gaussian |            - |
+|  196 | Accept |     0.75071 |     0.31869 |     0.71571 |      0.7194 |       8.9183 |       25.529 |     gaussian |            - |
+|  197 | Accept |     0.73071 |       3.785 |     0.71571 |     0.71939 |        314.1 |      0.39014 |     gaussian |            - |
+|  198 | Accept |     0.74357 |     0.36848 |     0.71571 |     0.71938 |       8.5973 |       4.3937 |     gaussian |            - |
+|  199 | Accept |        0.75 |     0.31043 |     0.71571 |     0.71938 |     0.099132 |       72.322 |     gaussian |            - |
+|  200 | Accept |     0.72286 |      0.3445 |     0.71571 |     0.71935 |       1.1568 |      0.45932 |     gaussian |            - |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 200 reached.
+Total function evaluations: 200
+Total elapsed time: 1753.7564 seconds
+Total objective function evaluation time: 1573.9438
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       993.78          1.3014          gaussian             NaN      
+
+Observed objective function value = 0.71571
+Estimated objective function value = 0.71949
+Function evaluation time = 6.4829
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       199.05          1.2455          gaussian             NaN      
+
+Estimated objective function value = 0.71935
+Estimated function evaluation time = 2.1278
+
