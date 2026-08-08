@@ -1,0 +1,51 @@
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |       0.415 |       200.4 |       0.415 |       0.415 |       125.87 |            - |   polynomial |            2 |
+|    2 | Accept |     0.74857 |      115.89 |       0.415 |     0.43764 |       1.8372 |            - |   polynomial |            3 |
+|    3 | Accept |        0.71 |      2.4557 |       0.415 |     0.43944 |     0.029257 |       8.5057 |     gaussian |            - |
+|    4 | Accept |        0.75 |      114.53 |       0.415 |     0.42186 |       3.5311 |     0.001103 |     gaussian |            - |
+|    5 | Accept |       0.415 |      210.83 |       0.415 |     0.41501 |    0.0010068 |            - |   polynomial |            2 |
+|    6 | Best   |       0.365 |      1.3366 |       0.365 |     0.36502 |    0.0010278 |            - |       linear |            - |
+|    7 | Accept |     0.63143 |      236.69 |       0.365 |     0.36502 |      0.79586 |            - |   polynomial |            4 |
+|    8 | Accept |     0.44357 |      1.9893 |       0.365 |     0.36508 |        998.6 |            - |       linear |            - |
+|    9 | Best   |       0.365 |      1.3562 |       0.365 |     0.36499 |    0.0010034 |            - |       linear |            - |
+|   10 | Accept |       0.365 |      1.4513 |       0.365 |     0.36499 |    0.0010077 |            - |       linear |            - |
+|   11 | Accept |       0.365 |      1.5667 |       0.365 |     0.36498 |    0.0010005 |            - |       linear |            - |
+|   12 | Accept |       0.365 |      1.2381 |       0.365 |     0.36498 |    0.0010003 |            - |       linear |            - |
+|   13 | Accept |     0.63714 |      166.05 |       0.365 |     0.36498 |       998.47 |       963.12 |     gaussian |            - |
+|   14 | Accept |     0.63143 |      223.18 |       0.365 |     0.36499 |       998.09 |            - |   polynomial |            4 |
+|   15 | Accept |     0.47571 |      1.9473 |       0.365 |     0.36499 |    0.0010924 |       995.97 |     gaussian |            - |
+|   16 | Accept |     0.39714 |       1.492 |       0.365 |     0.36495 |     0.014398 |            - |       linear |            - |
+|   17 | Accept |        0.75 |      2.3515 |       0.365 |     0.36496 |       999.38 |      0.15733 |     gaussian |            - |
+|   18 | Accept |        0.75 |      2.0666 |       0.365 |     0.36497 |    0.0010094 |     0.033814 |     gaussian |            - |
+|   19 | Accept |     0.74857 |      111.39 |       0.365 |     0.36498 |        0.001 |            - |   polynomial |            3 |
+|   20 | Accept |        0.75 |      99.072 |       0.365 |     0.36499 |    0.0010368 |    0.0010068 |     gaussian |            - |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 20 reached.
+Total function evaluations: 20
+Total elapsed time: 1509.6842 seconds
+Total objective function evaluation time: 1497.2866
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+      0.0010034          NaN            linear              NaN      
+
+Observed objective function value = 0.365
+Estimated objective function value = 0.36503
+Function evaluation time = 1.3562
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+      0.0010003          NaN            linear              NaN      
+
+Estimated objective function value = 0.36499
+Estimated function evaluation time = 1.3895
+

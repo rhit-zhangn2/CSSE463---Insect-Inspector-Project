@@ -1,9 +1,10 @@
 clear; 
 clc; 
+
 %Number of iterations to run the hyperparameter tuning
 iterations = 20;
 %Whether or not to recreate SVMs from scratch
-fresh = true;
+fresh = false;
 
 %Create masks
 load("initial_LST_features.mat", "Y", "dataSplit");
@@ -35,11 +36,13 @@ end
 load("initial_HOG_features.mat", "X_HOG");
 load("initial_LST_features.mat", "X_LST");
 load("initial_shape_features.mat", "X_shape");
+load("CNN_features_resnet18_pool5.mat", "X_CNN");
 
 % Define Individual Train Sets
 X_HOG_Train = X_HOG(trainMask, :); 
 X_LST_Train = X_LST(trainMask, :); 
 X_shape_Train = X_shape(trainMask, :); 
+X_CNN_Train = X_CNN(trainMask, :);
 
 % Define Pairs of 2 Train Sets
 X_COMB_LST_HOG_Train = [X_HOG, X_LST];
@@ -57,6 +60,7 @@ X_COMB_LST_HOG_SHAPE_Train = X_COMB_LST_HOG_SHAPE_Train(trainMask, :);
 X_HOG_Valid = X_HOG(validMask, :);
 X_LST_Valid = X_LST(validMask, :);
 X_shape_Valid = X_shape(validMask, :); 
+X_CNN_Valid = X_CNN(validMask, :);
 
 % Define Pairs of 2 Train Sets
 X_COMB_LST_HOG_Valid = [X_HOG, X_LST];
@@ -71,6 +75,7 @@ X_COMB_HOG_SHAPE_Valid = X_COMB_HOG_SHAPE_Valid(validMask, :);
 X_COMB_LST_HOG_SHAPE_Valid = [X_LST, X_shape, X_HOG];
 X_COMB_LST_HOG_SHAPE_Valid = X_COMB_LST_HOG_SHAPE_Valid(validMask, :);
 
+
 % Individual SVM
 createSVM_wrapper("HOG_SVM.mat", X_HOG_Train, Y_Train, ...
                                     X_HOG_Valid, Y_Valid, "HOG", fresh, iterations); 
@@ -78,6 +83,8 @@ createSVM_wrapper("LST_SVM.mat", X_LST_Train, Y_Train, ...
                                     X_LST_Valid, Y_Valid, "LST", fresh, iterations); 
 createSVM_wrapper("Shape_SVM.mat", X_shape_Train, Y_Train, ...
                                     X_shape_Valid, Y_Valid, "Shape", fresh, iterations); 
+createSVM_wrapper("CNN_SVM_resnet18_pool5.mat", X_CNN_Train, Y_Train, ...
+                                    X_CNN_Valid, Y_Valid, "CNN_resnet18_pool5", fresh, iterations);
 
 % Pair SVM
 createSVM_wrapper("LST_HOG_SVM.mat", X_COMB_LST_HOG_Train, Y_Train, ...
@@ -92,6 +99,7 @@ createSVM_wrapper("LST_HOG_Shape_SVM.mat", X_COMB_LST_HOG_SHAPE_Train, Y_Train, 
                                     X_COMB_LST_HOG_SHAPE_Valid, Y_Valid, "Combined LST HOG Shape", fresh, iterations); 
 
 
+%% ------------------------------------------------------------------------------------------
 % %Create LST svm if not already present
 % 
 % 
