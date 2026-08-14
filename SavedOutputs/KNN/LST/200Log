@@ -1,0 +1,652 @@
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fillIfNeeded', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 727)" style="font-weight:bold">classreg.learning.FitTemplate/fillIfNeeded</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',727,0)">line 727</a>)
+Learners is not a valid parameter name.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate.make', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 140)" style="font-weight:bold">classreg.learning.FitTemplate.make</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',140,0)">line 140</a>)
+            temp = fillIfNeeded(temp,type);
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fillIfNeeded', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 511)" style="font-weight:bold">classreg.learning.FitTemplate/fillIfNeeded</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',511,0)">line 511</a>)
+                            classreg.learning.FitTemplate.make(this.Method,'type',this.Type,...
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate.make', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 140)" style="font-weight:bold">classreg.learning.FitTemplate.make</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',140,0)">line 140</a>)
+            temp = fillIfNeeded(temp,type);
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationKNN.fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationKNN.m', 753)" style="font-weight:bold">ClassificationKNN.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationKNN.m',753,0)">line 753</a>)
+            temp = classreg.learning.FitTemplate.make(...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcknn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcknn.m', 23)" style="font-weight:bold">fitcknn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcknn.m',23,0)">line 23</a>)
+    this = ClassificationKNN.fit(X,Y,RemainingArgs{:});
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m', 71)" style="font-weight:bold">classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m',71,0)">line 71</a>)
+        PartitionedModel = BOInfo.FitFcn(Predictors, Response, ValidationMethod, ValidationVal, NewFitFunctionArgs{:});
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjNormally', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m', 20)" style="font-weight:bold">BayesianOptimization/callObjNormally</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m',20,0)">line 20</a>)
+            [Objective, ConstraintViolations, UserData] = this.ObjectiveFcn(conditionalizeX(this, X));
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m', 11)" style="font-weight:bold">BayesianOptimization/callObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m',11,0)">line 11</a>)
+        = callObjNormally(this, X);
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/runSerial', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m', 24)" style="font-weight:bold">BayesianOptimization/runSerial</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m',24,0)">line 24</a>)
+        ObjectiveFcnObjectiveEvaluationTime, ObjectiveNargout] = callObjFcn(this, this.XNext);
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/run', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m', 9)" style="font-weight:bold">BayesianOptimization/run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m',9,0)">line 9</a>)
+    this = runSerial(this);
+           ^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m', 64)" style="font-weight:bold">BayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m',64,0)">line 64</a>)
+                this = run(this);
+                       ^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.SupervisedLearningBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m', 20)" style="font-weight:bold">classreg.learning.paramoptim.SupervisedLearningBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m',20,0)">line 20</a>)
+            this = this@BayesianOptimization(Options);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 168)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',168,0)">line 168</a>)
+OptimizationResults = classreg.learning.paramoptim.SupervisedLearningBayesianOptimization(Options);
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 52)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',52,0)">line 52</a>)
+            [OptimizationResultsOutput, XBest] = doBayesianOptimization(objFcn, BOInfo, VariableDescriptions, HyperparameterOptimizationOptions,abo);
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcknn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcknn.m', 20)" style="font-weight:bold">fitcknn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcknn.m',20,0)">line 20</a>)
+    [this, varargout{1:nargout-1}] = classreg.learning.paramoptim.fitoptimizing('fitcknn',X,Y,varargin{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KNN>createKNN', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m', 36)" style="font-weight:bold">KNN>createKNN</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m',36,0)">line 36</a>)
+    mdl = fitcknn(x, y, 'Learners', t, OptimizeHyperparameters={'NumNeighbors', 'Distance', 'DistanceWeight'},HyperparameterOptimizationOptions=hpoOptions);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KNN', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m', 28)" style="font-weight:bold">KNN</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m',28,0)">line 28</a>)
+knn_lst = createKNN(X_train_lst, y_train, iter, "LST");
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+KNN
+[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KNN>createKNN', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m', 32)" style="font-weight:bold">KNN>createKNN</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m',32,0)">line 32</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KNN', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m', 28)" style="font-weight:bold">KNN</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m',28,0)">line 28</a>)] 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fillIfNeeded', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 727)" style="font-weight:bold">classreg.learning.FitTemplate/fillIfNeeded</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',727,0)">line 727</a>)
+Standarize is not a valid parameter name.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate.make', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 140)" style="font-weight:bold">classreg.learning.FitTemplate.make</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',140,0)">line 140</a>)
+            temp = fillIfNeeded(temp,type);
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate/fillIfNeeded', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 511)" style="font-weight:bold">classreg.learning.FitTemplate/fillIfNeeded</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',511,0)">line 511</a>)
+                            classreg.learning.FitTemplate.make(this.Method,'type',this.Type,...
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.FitTemplate.make', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 140)" style="font-weight:bold">classreg.learning.FitTemplate.make</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',140,0)">line 140</a>)
+            temp = fillIfNeeded(temp,type);
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationKNN.fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationKNN.m', 753)" style="font-weight:bold">ClassificationKNN.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationKNN.m',753,0)">line 753</a>)
+            temp = classreg.learning.FitTemplate.make(...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcknn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcknn.m', 23)" style="font-weight:bold">fitcknn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcknn.m',23,0)">line 23</a>)
+    this = ClassificationKNN.fit(X,Y,RemainingArgs{:});
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m', 71)" style="font-weight:bold">classreg.learning.paramoptim.createObjFcn/inMemoryObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\createObjFcn.m',71,0)">line 71</a>)
+        PartitionedModel = BOInfo.FitFcn(Predictors, Response, ValidationMethod, ValidationVal, NewFitFunctionArgs{:});
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjNormally', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m', 20)" style="font-weight:bold">BayesianOptimization/callObjNormally</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m',20,0)">line 20</a>)
+            [Objective, ConstraintViolations, UserData] = this.ObjectiveFcn(conditionalizeX(this, X));
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m', 11)" style="font-weight:bold">BayesianOptimization/callObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m',11,0)">line 11</a>)
+        = callObjNormally(this, X);
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/runSerial', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m', 24)" style="font-weight:bold">BayesianOptimization/runSerial</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m',24,0)">line 24</a>)
+        ObjectiveFcnObjectiveEvaluationTime, ObjectiveNargout] = callObjFcn(this, this.XNext);
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/run', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m', 9)" style="font-weight:bold">BayesianOptimization/run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m',9,0)">line 9</a>)
+    this = runSerial(this);
+           ^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m', 64)" style="font-weight:bold">BayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m',64,0)">line 64</a>)
+                this = run(this);
+                       ^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.SupervisedLearningBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m', 20)" style="font-weight:bold">classreg.learning.paramoptim.SupervisedLearningBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\SupervisedLearningBayesianOptimization.m',20,0)">line 20</a>)
+            this = this@BayesianOptimization(Options);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 168)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing>doBayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',168,0)">line 168</a>)
+OptimizationResults = classreg.learning.paramoptim.SupervisedLearningBayesianOptimization(Options);
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 52)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',52,0)">line 52</a>)
+            [OptimizationResultsOutput, XBest] = doBayesianOptimization(objFcn, BOInfo, VariableDescriptions, HyperparameterOptimizationOptions,abo);
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcknn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcknn.m', 20)" style="font-weight:bold">fitcknn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcknn.m',20,0)">line 20</a>)
+    [this, varargout{1:nargout-1}] = classreg.learning.paramoptim.fitoptimizing('fitcknn',X,Y,varargin{:});
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KNN>createKNN', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m', 35)" style="font-weight:bold">KNN>createKNN</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m',35,0)">line 35</a>)
+    mdl = fitcknn(x, y, "Standarize", true, OptimizeHyperparameters={'NumNeighbors', 'Distance', 'DistanceWeight'},HyperparameterOptimizationOptions=hpoOptions);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KNN', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m', 28)" style="font-weight:bold">KNN</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m',28,0)">line 28</a>)
+knn_lst = createKNN(X_train_lst, y_train, iter, "LST");
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+KNN
+[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KNN>createKNN', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m', 32)" style="font-weight:bold">KNN>createKNN</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m',32,0)">line 32</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KNN', 'C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m', 28)" style="font-weight:bold">KNN</a> (<a href="matlab: opentoline('C:\Users\franklkj\Documents\CSSE463\CSSE463---Insect-Inspector-Project\KNN.m',28,0)">line 28</a>)] 
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|    1 | Best   |       0.665 |     0.80309 |       0.665 |       0.665 |            8 |   seuclidean |        equal |
+|    2 | Best   |        0.66 |     0.42607 |        0.66 |     0.66042 |          186 |    chebychev |        equal |
+|    3 | Accept |     0.68786 |     0.21541 |        0.66 |     0.66149 |            2 |  correlation |      inverse |
+|    4 | Accept |     0.67357 |     0.39573 |        0.66 |     0.66127 |          472 |     spearman |        equal |
+|    5 | Best   |     0.64929 |     0.12853 |     0.64929 |     0.65284 |          132 |    chebychev |        equal |
+|    6 | Best   |     0.64429 |    0.091872 |     0.64429 |     0.64429 |          104 |    chebychev |        equal |
+|    7 | Accept |     0.66786 |     0.10076 |     0.64429 |     0.64429 |           58 |    chebychev |        equal |
+|    8 | Best   |     0.64214 |    0.098612 |     0.64214 |     0.64307 |           95 |    chebychev |        equal |
+|    9 | Accept |     0.65071 |       0.124 |     0.64214 |      0.6456 |           93 |    chebychev |        equal |
+|   10 | Accept |     0.64286 |     0.10587 |     0.64214 |     0.64465 |          114 |    chebychev |        equal |
+|   11 | Accept |       0.645 |    0.092828 |     0.64214 |     0.64454 |          110 |    chebychev |        equal |
+|   12 | Accept |     0.66643 |    0.089535 |     0.64214 |     0.64452 |           16 |    chebychev |        equal |
+|   13 | Accept |     0.68929 |     0.14751 |     0.64214 |     0.64457 |          677 |    chebychev |        equal |
+|   14 | Best   |        0.63 |     0.10604 |        0.63 |     0.63099 |           37 |   seuclidean |        equal |
+|   15 | Best   |     0.62714 |     0.09006 |     0.62714 |     0.62788 |           50 |   seuclidean |        equal |
+|   16 | Best   |     0.61643 |    0.088702 |     0.61643 |     0.61848 |           67 |   seuclidean |        equal |
+|   17 | Accept |     0.61643 |    0.076976 |     0.61643 |     0.61668 |           95 |   seuclidean |        equal |
+|   18 | Accept |        0.62 |    0.083727 |     0.61643 |     0.61766 |           84 |   seuclidean |        equal |
+|   19 | Accept |       0.625 |    0.090973 |     0.61643 |     0.61767 |          145 |   seuclidean |        equal |
+|   20 | Best   |     0.61357 |    0.086546 |     0.61357 |     0.61651 |           86 |   seuclidean |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   21 | Accept |       0.615 |    0.095278 |     0.61357 |     0.61611 |           91 |   seuclidean |        equal |
+|   22 | Best   |     0.61286 |     0.12703 |     0.61286 |      0.6161 |           85 |    minkowski |        equal |
+|   23 | Accept |     0.62786 |    0.087796 |     0.61286 |      0.6161 |           51 |    minkowski |        equal |
+|   24 | Accept |     0.62143 |    0.086745 |     0.61286 |     0.61611 |          139 |    minkowski |        equal |
+|   25 | Best   |     0.61214 |     0.09173 |     0.61214 |     0.61301 |           94 |    minkowski |        equal |
+|   26 | Accept |       0.615 |    0.095722 |     0.61214 |     0.61362 |           91 |    minkowski |        equal |
+|   27 | Accept |     0.61571 |     0.07767 |     0.61214 |     0.61412 |           92 |    minkowski |        equal |
+|   28 | Accept |        0.62 |    0.095467 |     0.61214 |     0.61413 |          111 |   seuclidean |      inverse |
+|   29 | Accept |     0.62643 |    0.085809 |     0.61214 |     0.61415 |           50 |   seuclidean |      inverse |
+|   30 | Accept |     0.63143 |     0.12871 |     0.61214 |     0.61417 |          282 |   seuclidean |      inverse |
+|   31 | Accept |     0.64929 |    0.080112 |     0.61214 |     0.61418 |           11 |   seuclidean |      inverse |
+|   32 | Accept |       0.615 |    0.084937 |     0.61214 |     0.61417 |           96 |    minkowski |      inverse |
+|   33 | Accept |     0.62786 |    0.089521 |     0.61214 |     0.61419 |          186 |    minkowski |      inverse |
+|   34 | Accept |     0.62286 |     0.08526 |     0.61214 |      0.6142 |           49 |    minkowski |      inverse |
+|   35 | Accept |     0.64357 |    0.072752 |     0.61214 |     0.61421 |           10 |    minkowski |      inverse |
+|   36 | Accept |        0.62 |     0.08153 |     0.61214 |     0.61423 |           80 |    minkowski |      inverse |
+|   37 | Accept |        0.62 |     0.10973 |     0.61214 |     0.61423 |           60 |    minkowski | squaredinver |
+|   38 | Accept |       0.625 |     0.11351 |     0.61214 |     0.61425 |          144 |    minkowski | squaredinver |
+|   39 | Accept |     0.63429 |      0.0773 |     0.61214 |     0.61427 |           21 |    minkowski | squaredinver |
+|   40 | Accept |     0.63714 |     0.16787 |     0.61214 |     0.61428 |          681 |    minkowski | squaredinver |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   41 | Accept |     0.67786 |    0.063111 |     0.61214 |     0.61428 |            2 |    minkowski | squaredinver |
+|   42 | Accept |     0.61571 |    0.090908 |     0.61214 |     0.61427 |          120 |   seuclidean | squaredinver |
+|   43 | Accept |     0.62429 |     0.10177 |     0.61214 |     0.61429 |          247 |   seuclidean | squaredinver |
+|   44 | Accept |        0.62 |    0.089352 |     0.61214 |     0.61432 |           53 |   seuclidean | squaredinver |
+|   45 | Accept |     0.63429 |     0.10679 |     0.61214 |     0.61434 |           14 |   seuclidean | squaredinver |
+|   46 | Accept |     0.62071 |     0.09004 |     0.61214 |     0.61435 |           89 |   seuclidean | squaredinver |
+|   47 | Accept |     0.67786 |    0.097456 |     0.61214 |     0.61434 |            1 |   seuclidean | squaredinver |
+|   48 | Accept |     0.65429 |     0.22609 |     0.61214 |     0.61435 |           98 |     spearman | squaredinver |
+|   49 | Accept |     0.74286 |     0.49957 |     0.61214 |     0.61435 |          129 |  mahalanobis | squaredinver |
+|   50 | Accept |     0.69214 |     0.09371 |     0.61214 |     0.61435 |            1 |    chebychev |        equal |
+|   51 | Accept |     0.68286 |     0.23517 |     0.61214 |     0.61435 |            3 |     spearman | squaredinver |
+|   52 | Accept |     0.67786 |    0.079942 |     0.61214 |     0.61435 |            1 |    minkowski |      inverse |
+|   53 | Accept |     0.73571 |      0.3039 |     0.61214 |     0.61436 |          106 |  mahalanobis |        equal |
+|   54 | Accept |     0.66714 |     0.22574 |     0.61214 |     0.61436 |          124 |     spearman |      inverse |
+|   55 | Accept |        0.64 |      0.1928 |     0.61214 |     0.61436 |          669 |    euclidean | squaredinver |
+|   56 | Accept |     0.61643 |    0.079644 |     0.61214 |     0.61437 |           97 |    euclidean | squaredinver |
+|   57 | Accept |     0.63286 |     0.08062 |     0.61214 |     0.61439 |           36 |    euclidean | squaredinver |
+|   58 | Accept |       0.625 |    0.097432 |     0.61214 |     0.61441 |          184 |    euclidean | squaredinver |
+|   59 | Accept |     0.67786 |      0.0777 |     0.61214 |     0.61441 |            1 |    euclidean | squaredinver |
+|   60 | Accept |     0.62786 |    0.096998 |     0.61214 |     0.61441 |          165 |    euclidean |      inverse |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   61 | Accept |     0.65143 |     0.14172 |     0.61214 |     0.61441 |          689 |    euclidean |      inverse |
+|   62 | Accept |        0.63 |    0.068032 |     0.61214 |     0.61444 |           40 |    euclidean |      inverse |
+|   63 | Accept |     0.64714 |    0.066077 |     0.61214 |     0.61446 |            6 |    euclidean |      inverse |
+|   64 | Accept |        0.75 |     0.10734 |     0.61214 |     0.61449 |          167 |      hamming | squaredinver |
+|   65 | Accept |     0.63571 |    0.095236 |     0.61214 |     0.61448 |          173 |       cosine | squaredinver |
+|   66 | Accept |     0.64071 |    0.092026 |     0.61214 |      0.6145 |           26 |       cosine | squaredinver |
+|   67 | Accept |     0.68643 |    0.071423 |     0.61214 |      0.6145 |            2 |       cosine | squaredinver |
+|   68 | Accept |     0.62214 |     0.20308 |     0.61214 |     0.61451 |          675 |       cosine | squaredinver |
+|   69 | Accept |        0.63 |     0.13359 |     0.61214 |      0.6145 |          247 |       cosine |      inverse |
+|   70 | Accept |     0.63357 |     0.09039 |     0.61214 |     0.61453 |           48 |       cosine |      inverse |
+|   71 | Accept |     0.67357 |    0.072366 |     0.61214 |     0.61453 |            5 |       cosine |      inverse |
+|   72 | Accept |     0.64357 |     0.16348 |     0.61214 |     0.61452 |          692 |  correlation | squaredinver |
+|   73 | Accept |     0.65071 |    0.090892 |     0.61214 |     0.61453 |           64 |  correlation | squaredinver |
+|   74 | Accept |     0.68786 |    0.080968 |     0.61214 |     0.61453 |            2 |  correlation | squaredinver |
+|   75 | Accept |     0.62071 |    0.073949 |     0.61214 |     0.61452 |           60 |    euclidean |        equal |
+|   76 | Accept |     0.63429 |    0.097373 |     0.61214 |     0.61455 |          202 |    euclidean |        equal |
+|   77 | Accept |     0.62929 |    0.076676 |     0.61214 |     0.61459 |           16 |    euclidean |        equal |
+|   78 | Accept |     0.68786 |    0.070741 |     0.61214 |     0.61457 |            2 |    euclidean |        equal |
+|   79 | Accept |     0.64643 |    0.095287 |     0.61214 |     0.61456 |          141 |       cosine |        equal |
+|   80 | Accept |     0.68429 |    0.077386 |     0.61214 |     0.61455 |           11 |       cosine |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   81 | Accept |       0.665 |     0.22394 |     0.61214 |     0.61456 |          689 |       cosine |        equal |
+|   82 | Accept |     0.64143 |      0.1503 |     0.61214 |     0.61459 |          699 |       cosine |      inverse |
+|   83 | Accept |        0.75 |    0.083683 |     0.61214 |     0.61467 |           98 |      hamming |        equal |
+|   84 | Accept |     0.66071 |     0.18942 |     0.61214 |     0.61466 |          660 |    chebychev | squaredinver |
+|   85 | Accept |     0.65714 |    0.091938 |     0.61214 |     0.61465 |           10 |    chebychev | squaredinver |
+|   86 | Accept |     0.62643 |    0.087034 |     0.61214 |     0.61464 |           24 |    cityblock | squaredinver |
+|   87 | Accept |     0.61429 |    0.097097 |     0.61214 |     0.61468 |          106 |    cityblock | squaredinver |
+|   88 | Accept |     0.62429 |     0.12593 |     0.61214 |     0.61475 |          318 |    cityblock | squaredinver |
+|   89 | Accept |        0.62 |    0.091375 |     0.61214 |     0.61478 |           66 |    cityblock | squaredinver |
+|   90 | Accept |     0.61786 |    0.099181 |     0.61214 |     0.61481 |          145 |    cityblock | squaredinver |
+|   91 | Accept |     0.67357 |    0.075364 |     0.61214 |      0.6148 |            3 |    cityblock | squaredinver |
+|   92 | Accept |     0.61357 |    0.093744 |     0.61214 |     0.61477 |          150 |    cityblock |      inverse |
+|   93 | Accept |     0.63429 |     0.10461 |     0.61214 |     0.61477 |          404 |    cityblock |      inverse |
+|   94 | Accept |     0.62929 |    0.083332 |     0.61214 |     0.61475 |           55 |    cityblock |      inverse |
+|   95 | Accept |       0.615 |    0.093113 |     0.61214 |     0.61468 |          133 |    cityblock |      inverse |
+|   96 | Accept |     0.69714 |    0.077177 |     0.61214 |      0.6147 |            1 |    cityblock |      inverse |
+|   97 | Accept |     0.61857 |    0.089457 |     0.61214 |     0.61476 |          140 |    cityblock |      inverse |
+|   98 | Accept |        0.65 |    0.099911 |     0.61214 |     0.61475 |          217 |    chebychev |      inverse |
+|   99 | Accept |     0.64857 |    0.085821 |     0.61214 |     0.61475 |           11 |    chebychev |      inverse |
+|  100 | Accept |     0.69214 |     0.09015 |     0.61214 |     0.61474 |            1 |    chebychev |      inverse |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  101 | Accept |     0.61357 |     0.10496 |     0.61214 |     0.61473 |          156 |    cityblock |        equal |
+|  102 | Accept |     0.64714 |     0.12052 |     0.61214 |     0.61466 |          411 |    cityblock |        equal |
+|  103 | Accept |     0.62786 |    0.088944 |     0.61214 |     0.61462 |           59 |    cityblock |        equal |
+|  104 | Accept |        0.62 |     0.11804 |     0.61214 |     0.61473 |          123 |    cityblock |        equal |
+|  105 | Accept |     0.67214 |    0.078243 |     0.61214 |     0.61474 |            3 |    cityblock |        equal |
+|  106 | Accept |     0.75071 |    0.098392 |     0.61214 |     0.61484 |            1 |      jaccard |      inverse |
+|  107 | Accept |     0.65714 |     0.10036 |     0.61214 |     0.61482 |          323 |  correlation |        equal |
+|  108 | Accept |     0.70429 |    0.076091 |     0.61214 |     0.61484 |            8 |  correlation |        equal |
+|  109 | Accept |     0.74286 |     0.34988 |     0.61214 |     0.61494 |          680 |  mahalanobis |      inverse |
+|  110 | Accept |     0.69571 |     0.20858 |     0.61214 |     0.61495 |            1 |     spearman |      inverse |
+|  111 | Accept |     0.75071 |    0.086901 |     0.61214 |     0.61516 |            1 |      hamming |      inverse |
+|  112 | Accept |     0.69571 |     0.21611 |     0.61214 |     0.61519 |            1 |     spearman |        equal |
+|  113 | Accept |     0.75071 |     0.10984 |     0.61214 |     0.61572 |            1 |      jaccard | squaredinver |
+|  114 | Accept |     0.66357 |     0.14114 |     0.61214 |     0.61522 |          695 |    minkowski |        equal |
+|  115 | Accept |        0.75 |     0.16925 |     0.61214 |     0.61546 |          693 |      jaccard |        equal |
+|  116 | Accept |        0.66 |      0.1825 |     0.61214 |      0.6154 |          677 |  correlation |      inverse |
+|  117 | Accept |     0.70143 |     0.28308 |     0.61214 |     0.61546 |            1 |  mahalanobis |      inverse |
+|  118 | Accept |        0.75 |     0.17114 |     0.61214 |     0.61574 |          699 |      jaccard |      inverse |
+|  119 | Accept |     0.75071 |     0.11085 |     0.61214 |     0.61592 |            1 |      jaccard |        equal |
+|  120 | Accept |        0.75 |     0.17476 |     0.61214 |     0.61606 |          699 |      jaccard | squaredinver |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  121 | Accept |        0.75 |     0.15426 |     0.61214 |     0.61619 |          699 |      hamming |      inverse |
+|  122 | Best   |     0.61143 |    0.086171 |     0.61143 |     0.61618 |          100 |    cityblock | squaredinver |
+|  123 | Accept |       0.615 |    0.092217 |     0.61143 |     0.61524 |           97 |    cityblock | squaredinver |
+|  124 | Accept |     0.75071 |    0.089138 |     0.61143 |     0.61526 |            1 |      hamming | squaredinver |
+|  125 | Accept |     0.70143 |     0.27503 |     0.61143 |     0.61526 |            1 |  mahalanobis | squaredinver |
+|  126 | Accept |     0.70143 |     0.29464 |     0.61143 |     0.61526 |            1 |  mahalanobis |        equal |
+|  127 | Accept |     0.75071 |     0.07624 |     0.61143 |     0.61528 |            1 |      hamming |        equal |
+|  128 | Accept |     0.67786 |    0.065369 |     0.61143 |     0.61529 |            1 |    minkowski |        equal |
+|  129 | Accept |     0.74286 |     0.31012 |     0.61143 |      0.6153 |           26 |  mahalanobis |      inverse |
+|  130 | Accept |        0.75 |    0.092523 |     0.61143 |     0.61532 |           26 |      hamming |      inverse |
+|  131 | Accept |        0.75 |     0.11017 |     0.61143 |     0.61533 |           26 |      jaccard | squaredinver |
+|  132 | Accept |        0.75 |     0.11588 |     0.61143 |     0.61535 |           26 |      jaccard |      inverse |
+|  133 | Accept |     0.69214 |    0.081513 |     0.61143 |     0.61535 |            1 |    chebychev | squaredinver |
+|  134 | Accept |        0.75 |     0.11241 |     0.61143 |     0.61536 |           26 |      jaccard |        equal |
+|  135 | Accept |     0.67357 |     0.23135 |     0.61143 |     0.61537 |           22 |     spearman |        equal |
+|  136 | Accept |     0.68643 |    0.077793 |     0.61143 |     0.61537 |            1 |       cosine |        equal |
+|  137 | Accept |     0.65214 |    0.079208 |     0.61143 |     0.61538 |           37 |  correlation |      inverse |
+|  138 | Accept |     0.68786 |     0.12955 |     0.61143 |     0.61538 |            1 |  correlation |        equal |
+|  139 | Accept |     0.67786 |     0.10147 |     0.61143 |     0.61539 |            1 |   seuclidean |      inverse |
+|  140 | Accept |        0.75 |     0.14729 |     0.61143 |      0.6154 |          699 |      hamming |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  141 | Accept |     0.63643 |     0.49562 |     0.61143 |     0.61541 |          697 |     spearman | squaredinver |
+|  142 | Accept |     0.74714 |     0.74139 |     0.61143 |     0.61542 |          699 |  mahalanobis |        equal |
+|  143 | Accept |     0.65857 |     0.49209 |     0.61143 |     0.61543 |          696 |     spearman |      inverse |
+|  144 | Accept |     0.73929 |     0.67724 |     0.61143 |     0.61544 |          699 |  mahalanobis | squaredinver |
+|  145 | Accept |        0.75 |     0.13783 |     0.61143 |     0.61546 |           13 |      hamming | squaredinver |
+|  146 | Accept |     0.67786 |     0.17061 |     0.61143 |     0.61545 |            1 |   seuclidean |        equal |
+|  147 | Accept |     0.67786 |     0.11356 |     0.61143 |     0.61546 |            1 |    euclidean |      inverse |
+|  148 | Accept |     0.68643 |     0.13321 |     0.61143 |     0.61547 |            1 |       cosine |      inverse |
+|  149 | Accept |     0.67786 |     0.42235 |     0.61143 |     0.61548 |           10 |     spearman |      inverse |
+|  150 | Accept |     0.70357 |     0.53523 |     0.61143 |     0.61547 |           10 |  mahalanobis | squaredinver |
+|  151 | Accept |     0.71429 |     0.52124 |     0.61143 |     0.61549 |            9 |  mahalanobis |        equal |
+|  152 | Accept |     0.75071 |     0.14137 |     0.61143 |      0.6155 |            9 |      hamming |        equal |
+|  153 | Accept |        0.75 |     0.39521 |     0.61143 |     0.61552 |          698 |      hamming | squaredinver |
+|  154 | Accept |     0.64786 |     0.17931 |     0.61143 |     0.61553 |           91 |    chebychev | squaredinver |
+|  155 | Accept |     0.67929 |     0.26621 |     0.61143 |     0.61552 |          700 |    chebychev |      inverse |
+|  156 | Accept |     0.69571 |       0.536 |     0.61143 |     0.61552 |            1 |     spearman | squaredinver |
+|  157 | Accept |     0.69714 |     0.18556 |     0.61143 |     0.61554 |            1 |    cityblock |        equal |
+|  158 | Accept |     0.66071 |     0.14972 |     0.61143 |     0.61552 |           58 |  correlation |        equal |
+|  159 | Accept |     0.66143 |     0.25762 |     0.61143 |     0.61551 |          699 |    euclidean |        equal |
+|  160 | Accept |     0.69714 |     0.10793 |     0.61143 |     0.61555 |            1 |    cityblock | squaredinver |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  161 | Accept |     0.68786 |     0.15125 |     0.61143 |     0.61554 |           10 |  correlation | squaredinver |
+|  162 | Accept |     0.67286 |     0.16189 |     0.61143 |     0.61554 |            6 |    cityblock |      inverse |
+|  163 | Accept |     0.66143 |     0.26724 |     0.61143 |     0.61548 |          699 |   seuclidean |        equal |
+|  164 | Accept |     0.73214 |     0.49883 |     0.61143 |     0.61548 |            5 |  mahalanobis |      inverse |
+|  165 | Accept |        0.75 |     0.17914 |     0.61143 |     0.61549 |          141 |      jaccard |      inverse |
+|  166 | Accept |        0.75 |      0.2372 |     0.61143 |      0.6155 |          141 |      jaccard | squaredinver |
+|  167 | Accept |        0.75 |     0.17906 |     0.61143 |      0.6155 |          140 |      hamming |      inverse |
+|  168 | Accept |        0.75 |     0.31099 |     0.61143 |     0.61551 |          140 |      jaccard |        equal |
+|  169 | Accept |     0.66643 |     0.11191 |     0.61143 |      0.6155 |            5 |    minkowski |        equal |
+|  170 | Accept |     0.64714 |     0.13164 |     0.61143 |     0.61551 |            5 |    euclidean | squaredinver |
+|  171 | Accept |     0.66214 |     0.40979 |     0.61143 |     0.61551 |          106 |     spearman |        equal |
+|  172 | Accept |     0.65214 |      0.3165 |     0.61143 |      0.6155 |          700 |    minkowski |      inverse |
+|  173 | Accept |     0.67357 |     0.42237 |     0.61143 |      0.6155 |           19 |     spearman | squaredinver |
+|  174 | Accept |       0.665 |     0.27869 |     0.61143 |      0.6155 |          168 |  correlation |      inverse |
+|  175 | Accept |     0.74357 |     0.57817 |     0.61143 |     0.61551 |          154 |  mahalanobis |      inverse |
+|  176 | Accept |        0.75 |     0.15721 |     0.61143 |     0.61551 |            4 |      jaccard |      inverse |
+|  177 | Accept |        0.75 |     0.16301 |     0.61143 |     0.61551 |            4 |      jaccard | squaredinver |
+|  178 | Accept |        0.75 |     0.14561 |     0.61143 |     0.61552 |            4 |      hamming |      inverse |
+|  179 | Accept |     0.75071 |     0.16465 |     0.61143 |     0.61552 |            4 |      jaccard |        equal |
+|  180 | Accept |     0.68714 |     0.45941 |     0.61143 |     0.61552 |            4 |     spearman |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  181 | Accept |     0.68786 |      0.1581 |     0.61143 |     0.61552 |            1 |  correlation |      inverse |
+|  182 | Accept |     0.67714 |     0.31548 |     0.61143 |     0.61551 |          700 |  correlation |        equal |
+|  183 | Accept |     0.68643 |     0.13514 |     0.61143 |     0.61551 |            1 |       cosine | squaredinver |
+|  184 | Accept |     0.66286 |     0.16743 |     0.61143 |     0.61555 |           45 |    chebychev |      inverse |
+|  185 | Accept |     0.67786 |     0.14248 |     0.61143 |     0.61554 |            1 |    minkowski | squaredinver |
+|  186 | Accept |     0.65429 |     0.33928 |     0.61143 |     0.61552 |          699 |   seuclidean |      inverse |
+|  187 | Accept |     0.64071 |     0.42676 |     0.61143 |     0.61552 |          686 |   seuclidean | squaredinver |
+|  188 | Accept |     0.67786 |      0.1255 |     0.61143 |     0.61554 |            1 |    euclidean |        equal |
+|  189 | Accept |     0.68786 |     0.13706 |     0.61143 |     0.61554 |            1 |  correlation | squaredinver |
+|  190 | Accept |     0.70214 |     0.12898 |     0.61143 |     0.61556 |            3 |    chebychev |        equal |
+|  191 | Accept |     0.75071 |     0.19465 |     0.61143 |     0.61556 |            3 |      hamming | squaredinver |
+|  192 | Accept |     0.66214 |     0.15849 |     0.61143 |     0.61556 |            3 |   seuclidean | squaredinver |
+|  193 | Accept |     0.70643 |     0.12489 |     0.61143 |     0.61555 |            3 |       cosine |        equal |
+|  194 | Accept |     0.65786 |     0.16753 |     0.61143 |     0.61558 |          232 |  correlation | squaredinver |
+|  195 | Accept |     0.68286 |     0.12494 |     0.61143 |     0.61559 |            9 |  correlation |      inverse |
+|  196 | Accept |     0.66214 |     0.12814 |     0.61143 |     0.61557 |           12 |    cityblock |        equal |
+|  197 | Accept |     0.65929 |     0.42634 |     0.61143 |     0.61557 |           34 |     spearman |      inverse |
+|  198 | Accept |     0.70357 |     0.15467 |     0.61143 |     0.61561 |            3 |    chebychev | squaredinver |
+|  199 | Accept |     0.70714 |     0.49435 |     0.61143 |     0.61561 |            3 |  mahalanobis | squaredinver |
+|  200 | Accept |     0.70357 |     0.14512 |     0.61143 |     0.61575 |            3 |    chebychev |      inverse |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 200 reached.
+Total function evaluations: 200
+Total elapsed time: 219.0193 seconds
+Total objective function evaluation time: 34.2978
+
+Best observed feasible point:
+    <strong>NumNeighbors</strong>    <strong>Distance</strong>     <strong>DistanceWeight</strong>
+    <strong>____________</strong>    <strong>_________</strong>    <strong>______________</strong>
+
+        100         cityblock    squaredinverse
+
+Observed objective function value = 0.61143
+Estimated objective function value = 0.61575
+Function evaluation time = 0.086171
+
+Best estimated feasible point (according to models):
+    <strong>NumNeighbors</strong>    <strong>Distance</strong>     <strong>DistanceWeight</strong>
+    <strong>____________</strong>    <strong>_________</strong>    <strong>______________</strong>
+
+        100         cityblock    squaredinverse
+
+Estimated objective function value = 0.61575
+Estimated function evaluation time = 0.098807
+
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|    1 | Best   |        0.75 |      0.2876 |        0.75 |        0.75 |           34 |      jaccard |        equal |
+|    2 | Accept |        0.75 |    0.087316 |        0.75 |        0.75 |           40 |      hamming | squaredinver |
+|    3 | Best   |        0.69 |     0.12298 |        0.69 |     0.69244 |          431 |    chebychev |        equal |
+|    4 | Best   |     0.68857 |    0.084664 |     0.68857 |     0.68985 |            2 |  correlation |      inverse |
+|    5 | Best   |     0.65929 |     0.14426 |     0.65929 |     0.66279 |          673 |  correlation |      inverse |
+|    6 | Accept |     0.66071 |     0.14309 |     0.65929 |     0.66002 |          685 |  correlation |      inverse |
+|    7 | Accept |     0.68786 |     0.16116 |     0.65929 |     0.66002 |          693 |    chebychev |      inverse |
+|    8 | Accept |     0.69429 |    0.094864 |     0.65929 |     0.66002 |            1 |    chebychev |      inverse |
+|    9 | Accept |        0.68 |     0.17281 |     0.65929 |     0.66002 |          682 |  correlation |        equal |
+|   10 | Accept |     0.68857 |    0.083988 |     0.65929 |     0.66003 |            1 |  correlation |        equal |
+|   11 | Best   |     0.64714 |      0.1488 |     0.64714 |     0.64719 |          641 |       cosine |      inverse |
+|   12 | Accept |     0.69643 |    0.076625 |     0.64714 |     0.64721 |            1 |       cosine |      inverse |
+|   13 | Best   |        0.63 |    0.091984 |        0.63 |     0.63008 |          186 |       cosine |      inverse |
+|   14 | Best   |     0.62786 |     0.10269 |     0.62786 |      0.6279 |           70 |       cosine |      inverse |
+|   15 | Best   |     0.62643 |     0.10062 |     0.62643 |     0.62674 |          100 |       cosine |      inverse |
+|   16 | Accept |     0.62643 |    0.084791 |     0.62643 |     0.62658 |          100 |       cosine |      inverse |
+|   17 | Accept |       0.635 |     0.10119 |     0.62643 |     0.62657 |          228 |       cosine |        equal |
+|   18 | Accept |     0.65214 |    0.076832 |     0.62643 |     0.62659 |           18 |       cosine |        equal |
+|   19 | Accept |     0.67071 |     0.15999 |     0.62643 |     0.62646 |          695 |       cosine |        equal |
+|   20 | Accept |     0.63857 |    0.084476 |     0.62643 |     0.62645 |           88 |       cosine |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   21 | Accept |     0.64429 |    0.086902 |     0.62643 |     0.62645 |           77 |  correlation |      inverse |
+|   22 | Accept |     0.69643 |     0.08206 |     0.62643 |     0.62644 |            1 |       cosine |        equal |
+|   23 | Accept |     0.62643 |     0.10304 |     0.62643 |     0.62644 |          162 |       cosine | squaredinver |
+|   24 | Best   |     0.62214 |     0.14422 |     0.62214 |     0.62215 |          541 |       cosine | squaredinver |
+|   25 | Accept |        0.63 |     0.11503 |     0.62214 |     0.62225 |          341 |       cosine | squaredinver |
+|   26 | Accept |     0.64143 |     0.10005 |     0.62214 |     0.62225 |           35 |       cosine | squaredinver |
+|   27 | Accept |     0.62357 |     0.16088 |     0.62214 |     0.62286 |          693 |       cosine | squaredinver |
+|   28 | Accept |     0.69643 |    0.089603 |     0.62214 |     0.62286 |            1 |       cosine | squaredinver |
+|   29 | Accept |     0.62286 |      0.1421 |     0.62214 |     0.62245 |          696 |       cosine | squaredinver |
+|   30 | Accept |     0.62571 |    0.091805 |     0.62214 |     0.62257 |           89 |       cosine | squaredinver |
+|   31 | Accept |     0.65643 |    0.081351 |     0.62214 |     0.62267 |           17 |       cosine |      inverse |
+|   32 | Accept |     0.65857 |    0.091905 |     0.62214 |     0.62265 |          214 |  correlation | squaredinver |
+|   33 | Accept |     0.67357 |    0.090686 |     0.62214 |     0.62267 |           16 |  correlation | squaredinver |
+|   34 | Accept |     0.63286 |    0.086287 |     0.62214 |     0.62264 |          181 |    euclidean |      inverse |
+|   35 | Best   |        0.62 |    0.076219 |        0.62 |     0.62008 |           45 |    euclidean |      inverse |
+|   36 | Accept |     0.64286 |    0.072144 |        0.62 |     0.62012 |           13 |    euclidean |      inverse |
+|   37 | Best   |     0.61786 |    0.073742 |     0.61786 |      0.6181 |           68 |    euclidean |      inverse |
+|   38 | Accept |     0.62357 |    0.074861 |     0.61786 |     0.62051 |           66 |    euclidean |      inverse |
+|   39 | Accept |     0.62214 |    0.085318 |     0.61786 |     0.62079 |           53 |    euclidean |      inverse |
+|   40 | Accept |     0.61857 |     0.07579 |     0.61786 |     0.62078 |           70 |    euclidean |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   41 | Accept |     0.64786 |    0.072654 |     0.61786 |     0.62078 |           19 |    euclidean |        equal |
+|   42 | Accept |     0.63143 |     0.10427 |     0.61786 |     0.62078 |          255 |    euclidean |        equal |
+|   43 | Accept |     0.62857 |    0.079959 |     0.61786 |     0.62088 |           99 |    euclidean |        equal |
+|   44 | Accept |        0.65 |     0.13603 |     0.61786 |     0.62087 |          692 |    euclidean | squaredinver |
+|   45 | Accept |     0.65071 |    0.072569 |     0.61786 |     0.62088 |           32 |    euclidean | squaredinver |
+|   46 | Accept |        0.66 |    0.068408 |     0.61786 |     0.62089 |            1 |    euclidean | squaredinver |
+|   47 | Accept |        0.65 |     0.30394 |     0.61786 |     0.62088 |          563 |     spearman | squaredinver |
+|   48 | Accept |     0.67643 |     0.21033 |     0.61786 |     0.62089 |           25 |     spearman | squaredinver |
+|   49 | Accept |     0.62143 |     0.08531 |     0.61786 |     0.62088 |           59 |    euclidean |      inverse |
+|   50 | Accept |        0.67 |     0.29008 |     0.61786 |     0.62088 |          683 |     spearman |      inverse |
+|   51 | Accept |     0.69714 |     0.20053 |     0.61786 |     0.62088 |            2 |     spearman |      inverse |
+|   52 | Accept |     0.65071 |     0.16498 |     0.61786 |     0.62088 |          684 |   seuclidean | squaredinver |
+|   53 | Accept |     0.64429 |    0.082857 |     0.61786 |     0.62089 |           35 |   seuclidean | squaredinver |
+|   54 | Accept |        0.66 |    0.076423 |     0.61786 |     0.62089 |            2 |   seuclidean | squaredinver |
+|   55 | Accept |     0.62071 |     0.09621 |     0.61786 |     0.62088 |           77 |    minkowski | squaredinver |
+|   56 | Accept |     0.64143 |    0.073389 |     0.61786 |     0.62088 |           24 |    minkowski | squaredinver |
+|   57 | Accept |     0.62214 |     0.08486 |     0.61786 |      0.6209 |          249 |    minkowski | squaredinver |
+|   58 | Accept |     0.62286 |    0.088923 |     0.61786 |     0.62092 |          129 |    minkowski | squaredinver |
+|   59 | Accept |        0.65 |      0.1454 |     0.61786 |     0.62091 |          697 |    minkowski | squaredinver |
+|   60 | Accept |       0.625 |    0.084801 |     0.61786 |      0.6209 |          134 |    minkowski | squaredinver |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   61 | Accept |     0.61786 |    0.077596 |     0.61786 |     0.62089 |           84 |    minkowski |      inverse |
+|   62 | Accept |        0.63 |    0.096136 |     0.61786 |     0.62091 |          256 |    minkowski |      inverse |
+|   63 | Accept |     0.64214 |    0.070009 |     0.61786 |     0.62088 |           25 |    minkowski |      inverse |
+|   64 | Accept |     0.62714 |    0.079951 |     0.61786 |     0.62102 |          105 |    minkowski |      inverse |
+|   65 | Accept |     0.66071 |     0.14237 |     0.61786 |     0.62102 |          679 |   seuclidean |      inverse |
+|   66 | Accept |     0.67357 |       0.145 |     0.61786 |     0.62102 |          693 |    minkowski |        equal |
+|   67 | Accept |     0.74571 |     0.35394 |     0.61786 |     0.62104 |          694 |  mahalanobis |      inverse |
+|   68 | Accept |     0.64786 |    0.075284 |     0.61786 |     0.62104 |            8 |   seuclidean |      inverse |
+|   69 | Accept |        0.66 |    0.073209 |     0.61786 |     0.62105 |            1 |   seuclidean |      inverse |
+|   70 | Accept |     0.64571 |    0.088512 |     0.61786 |     0.62105 |           25 |   seuclidean |        equal |
+|   71 | Accept |     0.66357 |     0.12672 |     0.61786 |     0.62105 |          533 |   seuclidean |        equal |
+|   72 | Accept |        0.66 |    0.080056 |     0.61786 |     0.62106 |            1 |   seuclidean |        equal |
+|   73 | Accept |       0.665 |     0.24698 |     0.61786 |     0.62106 |          329 |     spearman |        equal |
+|   74 | Accept |     0.70786 |     0.25652 |     0.61786 |     0.62107 |            1 |  mahalanobis | squaredinver |
+|   75 | Accept |     0.64214 |     0.15872 |     0.61786 |     0.62106 |          694 |    cityblock | squaredinver |
+|   76 | Accept |     0.61786 |    0.076986 |     0.61786 |     0.62107 |           44 |    cityblock | squaredinver |
+|   77 | Accept |     0.64429 |    0.080816 |     0.61786 |     0.62105 |           12 |    cityblock | squaredinver |
+|   78 | Best   |     0.60929 |    0.081752 |     0.60929 |     0.61057 |           97 |    cityblock | squaredinver |
+|   79 | Accept |     0.61714 |    0.096727 |     0.60929 |     0.61348 |          110 |    cityblock | squaredinver |
+|   80 | Accept |     0.61286 |    0.081957 |     0.60929 |     0.61309 |           82 |    cityblock | squaredinver |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   81 | Accept |     0.61643 |     0.08106 |     0.60929 |     0.61387 |           81 |    cityblock | squaredinver |
+|   82 | Accept |     0.67643 |     0.17343 |     0.60929 |     0.61387 |          674 |    chebychev | squaredinver |
+|   83 | Accept |     0.65714 |     0.19832 |     0.60929 |     0.61387 |          694 |    cityblock |      inverse |
+|   84 | Accept |     0.68571 |    0.075709 |     0.60929 |     0.61387 |            1 |    cityblock |        equal |
+|   85 | Accept |        0.75 |     0.14363 |     0.60929 |     0.61389 |          667 |      hamming |        equal |
+|   86 | Accept |     0.74857 |     0.16733 |     0.60929 |     0.61391 |          697 |      jaccard | squaredinver |
+|   87 | Accept |     0.70786 |     0.29382 |     0.60929 |     0.61391 |            1 |  mahalanobis |        equal |
+|   88 | Accept |     0.74929 |     0.08663 |     0.60929 |     0.61392 |            1 |      hamming |      inverse |
+|   89 | Accept |     0.74929 |     0.14267 |     0.60929 |     0.61394 |            1 |      jaccard |      inverse |
+|   90 | Accept |     0.68571 |     0.10297 |     0.60929 |     0.61394 |            1 |    cityblock |      inverse |
+|   91 | Accept |        0.66 |    0.066871 |     0.60929 |     0.61394 |            1 |    minkowski |        equal |
+|   92 | Accept |     0.69429 |    0.081105 |     0.60929 |     0.61394 |            1 |    chebychev | squaredinver |
+|   93 | Accept |       0.665 |     0.16088 |     0.60929 |     0.61394 |          676 |    cityblock |        equal |
+|   94 | Accept |     0.75071 |     0.34189 |     0.60929 |     0.61395 |          695 |  mahalanobis |        equal |
+|   95 | Accept |        0.74 |     0.32502 |     0.60929 |     0.61396 |          697 |  mahalanobis | squaredinver |
+|   96 | Accept |     0.70786 |      0.2606 |     0.60929 |     0.61397 |            1 |  mahalanobis |      inverse |
+|   97 | Accept |     0.74929 |    0.088936 |     0.60929 |       0.614 |            1 |      jaccard | squaredinver |
+|   98 | Accept |     0.74857 |     0.16135 |     0.60929 |     0.61402 |          695 |      jaccard |      inverse |
+|   99 | Accept |     0.74857 |     0.14539 |     0.60929 |     0.61404 |          679 |      hamming |      inverse |
+|  100 | Accept |     0.74929 |    0.078068 |     0.60929 |     0.61406 |            1 |      hamming |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  101 | Accept |     0.60929 |    0.080729 |     0.60929 |     0.61325 |           97 |    cityblock | squaredinver |
+|  102 | Accept |     0.69429 |    0.074004 |     0.60929 |     0.61325 |            1 |    chebychev |        equal |
+|  103 | Accept |     0.69714 |     0.21073 |     0.60929 |     0.61325 |            1 |     spearman |        equal |
+|  104 | Accept |     0.74929 |    0.080805 |     0.60929 |     0.61327 |            1 |      hamming | squaredinver |
+|  105 | Accept |     0.74929 |     0.10293 |     0.60929 |     0.61329 |            1 |      jaccard |        equal |
+|  106 | Accept |     0.69714 |      0.2236 |     0.60929 |      0.6133 |            1 |     spearman | squaredinver |
+|  107 | Accept |        0.75 |     0.16824 |     0.60929 |     0.61332 |          699 |      jaccard |        equal |
+|  108 | Accept |     0.74857 |     0.14478 |     0.60929 |     0.61333 |          698 |      hamming | squaredinver |
+|  109 | Accept |     0.68857 |    0.073919 |     0.60929 |     0.61335 |            1 |  correlation | squaredinver |
+|  110 | Accept |        0.66 |    0.068239 |     0.60929 |     0.61336 |            1 |    minkowski | squaredinver |
+|  111 | Accept |        0.66 |    0.070442 |     0.60929 |     0.61338 |            1 |    minkowski |      inverse |
+|  112 | Accept |     0.64429 |    0.075614 |     0.60929 |     0.61339 |           26 |    minkowski |        equal |
+|  113 | Accept |     0.62714 |    0.079528 |     0.60929 |     0.61335 |           27 |    cityblock |      inverse |
+|  114 | Accept |     0.62929 |    0.087332 |     0.60929 |     0.61332 |           26 |    cityblock |        equal |
+|  115 | Accept |     0.65357 |    0.081759 |     0.60929 |     0.61331 |           26 |  correlation |        equal |
+|  116 | Accept |     0.65214 |    0.091737 |     0.60929 |     0.61329 |           26 |    chebychev |      inverse |
+|  117 | Accept |     0.65714 |    0.087344 |     0.60929 |     0.61329 |           26 |    chebychev | squaredinver |
+|  118 | Accept |     0.72643 |     0.28573 |     0.60929 |      0.6133 |           26 |  mahalanobis | squaredinver |
+|  119 | Accept |     0.72643 |     0.27866 |     0.60929 |     0.61332 |           26 |  mahalanobis |      inverse |
+|  120 | Accept |     0.73357 |      0.2981 |     0.60929 |     0.61333 |           26 |  mahalanobis |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  121 | Accept |        0.66 |    0.068961 |     0.60929 |     0.61335 |            1 |    euclidean |        equal |
+|  122 | Accept |        0.75 |    0.097826 |     0.60929 |     0.61337 |           26 |      jaccard | squaredinver |
+|  123 | Accept |        0.75 |     0.11364 |     0.60929 |     0.61338 |           26 |      jaccard |      inverse |
+|  124 | Accept |        0.75 |    0.083088 |     0.60929 |      0.6134 |           26 |      hamming |      inverse |
+|  125 | Accept |        0.75 |    0.088238 |     0.60929 |     0.61342 |           26 |      hamming |        equal |
+|  126 | Accept |     0.67786 |    0.082999 |     0.60929 |     0.61343 |           21 |    chebychev |        equal |
+|  127 | Accept |     0.65286 |     0.22105 |     0.60929 |     0.61341 |           37 |     spearman |      inverse |
+|  128 | Accept |     0.68143 |     0.21442 |     0.60929 |     0.61343 |           18 |     spearman |        equal |
+|  129 | Accept |        0.66 |    0.063468 |     0.60929 |     0.61345 |            1 |    euclidean |      inverse |
+|  130 | Accept |     0.68571 |    0.075582 |     0.60929 |     0.61344 |            1 |    cityblock | squaredinver |
+|  131 | Accept |        0.62 |    0.082104 |     0.60929 |     0.61338 |           83 |   seuclidean |      inverse |
+|  132 | Accept |     0.63857 |     0.15831 |     0.60929 |     0.61337 |          699 |  correlation | squaredinver |
+|  133 | Accept |     0.74929 |    0.084476 |     0.60929 |     0.61339 |            6 |      hamming | squaredinver |
+|  134 | Accept |     0.64929 |    0.066143 |     0.60929 |      0.6134 |            5 |    euclidean | squaredinver |
+|  135 | Accept |     0.68429 |      0.0809 |     0.60929 |     0.61336 |           11 |  correlation |      inverse |
+|  136 | Accept |     0.74857 |    0.098807 |     0.60929 |     0.61337 |            6 |      jaccard |        equal |
+|  137 | Accept |        0.65 |    0.079333 |     0.60929 |     0.61338 |            5 |    cityblock |      inverse |
+|  138 | Accept |       0.625 |    0.091503 |     0.60929 |     0.61337 |          135 |    cityblock |        equal |
+|  139 | Accept |     0.63214 |     0.08559 |     0.60929 |     0.61333 |          137 |    minkowski |        equal |
+|  140 | Accept |       0.655 |     0.10848 |     0.60929 |     0.61333 |          139 |    chebychev |      inverse |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  141 | Accept |     0.65143 |    0.087382 |     0.60929 |     0.61333 |          140 |  correlation |        equal |
+|  142 | Accept |     0.64643 |     0.18667 |     0.60929 |     0.61331 |          138 |    chebychev | squaredinver |
+|  143 | Accept |     0.66429 |    0.086693 |     0.60929 |     0.61331 |            5 |   seuclidean |        equal |
+|  144 | Accept |     0.71857 |     0.28621 |     0.60929 |     0.61332 |            5 |  mahalanobis |      inverse |
+|  145 | Accept |     0.71857 |     0.28327 |     0.60929 |     0.61333 |            5 |  mahalanobis | squaredinver |
+|  146 | Accept |     0.72929 |     0.27652 |     0.60929 |     0.61333 |            5 |  mahalanobis |        equal |
+|  147 | Accept |     0.69357 |     0.20746 |     0.60929 |     0.61333 |            5 |     spearman | squaredinver |
+|  148 | Accept |        0.75 |     0.11823 |     0.60929 |     0.61334 |          142 |      jaccard | squaredinver |
+|  149 | Accept |        0.75 |     0.11412 |     0.60929 |     0.61335 |          141 |      jaccard |      inverse |
+|  150 | Accept |        0.75 |    0.094477 |     0.60929 |     0.61336 |          140 |      hamming |      inverse |
+|  151 | Accept |     0.66286 |      0.1438 |     0.60929 |     0.61334 |          700 |    euclidean |      inverse |
+|  152 | Accept |     0.74857 |    0.080215 |     0.60929 |     0.61334 |            5 |      hamming |        equal |
+|  153 | Accept |     0.62071 |    0.094744 |     0.60929 |     0.61334 |          157 |    cityblock |      inverse |
+|  154 | Accept |     0.68286 |    0.068036 |     0.60929 |     0.61333 |            5 |       cosine | squaredinver |
+|  155 | Accept |     0.66429 |    0.064748 |     0.60929 |     0.61332 |            4 |    minkowski |        equal |
+|  156 | Accept |     0.67429 |    0.074327 |     0.60929 |     0.61329 |            5 |    cityblock |        equal |
+|  157 | Accept |     0.68929 |    0.087517 |     0.60929 |     0.61327 |            5 |  correlation |        equal |
+|  158 | Accept |       0.685 |    0.078458 |     0.60929 |     0.61326 |            5 |    chebychev |      inverse |
+|  159 | Accept |     0.68357 |    0.085914 |     0.60929 |     0.61326 |            5 |    chebychev | squaredinver |
+|  160 | Accept |     0.68786 |    0.093773 |     0.60929 |     0.61327 |            4 |    chebychev |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  161 | Accept |     0.61714 |    0.094054 |     0.60929 |     0.61324 |          161 |   seuclidean | squaredinver |
+|  162 | Accept |     0.75429 |     0.29402 |     0.60929 |     0.61323 |          153 |  mahalanobis | squaredinver |
+|  163 | Accept |     0.75357 |     0.27182 |     0.60929 |     0.61323 |          153 |  mahalanobis |      inverse |
+|  164 | Accept |     0.75429 |     0.30038 |     0.60929 |     0.61323 |          152 |  mahalanobis |        equal |
+|  165 | Accept |     0.61857 |    0.091743 |     0.60929 |      0.6132 |          165 |    euclidean | squaredinver |
+|  166 | Accept |     0.74929 |     0.10596 |     0.60929 |     0.61321 |            5 |      jaccard | squaredinver |
+|  167 | Accept |     0.74929 |    0.094057 |     0.60929 |     0.61321 |            5 |      jaccard |      inverse |
+|  168 | Accept |     0.68143 |     0.27619 |     0.60929 |     0.61321 |          697 |     spearman |        equal |
+|  169 | Accept |     0.74929 |    0.082392 |     0.60929 |     0.61322 |            5 |      hamming |      inverse |
+|  170 | Accept |        0.66 |     0.22605 |     0.60929 |     0.61322 |          166 |     spearman |      inverse |
+|  171 | Accept |       0.665 |     0.23179 |     0.60929 |     0.61322 |          136 |     spearman | squaredinver |
+|  172 | Accept |        0.75 |    0.095054 |     0.60929 |     0.61323 |          149 |      hamming |        equal |
+|  173 | Accept |     0.63357 |     0.08963 |     0.60929 |     0.61321 |          130 |   seuclidean |        equal |
+|  174 | Accept |     0.65286 |    0.062532 |     0.60929 |     0.61322 |            4 |    minkowski | squaredinver |
+|  175 | Accept |       0.655 |     0.10019 |     0.60929 |      0.6132 |          107 |    chebychev |        equal |
+|  176 | Accept |     0.65286 |     0.12009 |     0.60929 |     0.61321 |            4 |    minkowski |      inverse |
+|  177 | Accept |         0.7 |     0.20737 |     0.60929 |     0.61321 |            4 |     spearman |        equal |
+|  178 | Accept |        0.66 |    0.070426 |     0.60929 |     0.61321 |            1 |   seuclidean | squaredinver |
+|  179 | Accept |     0.66714 |     0.13784 |     0.60929 |     0.61321 |          699 |    euclidean |        equal |
+|  180 | Accept |        0.75 |     0.12437 |     0.60929 |     0.61321 |          173 |      jaccard |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  181 | Accept |     0.65929 |     0.15542 |     0.60929 |      0.6132 |          697 |    minkowski |      inverse |
+|  182 | Accept |     0.68143 |     0.21973 |     0.60929 |      0.6132 |            8 |     spearman |      inverse |
+|  183 | Accept |     0.68714 |    0.069745 |     0.60929 |      0.6132 |            4 |  correlation | squaredinver |
+|  184 | Accept |     0.69571 |    0.072522 |     0.60929 |     0.61321 |            4 |       cosine |        equal |
+|  185 | Accept |        0.75 |    0.096274 |     0.60929 |     0.61321 |          183 |      hamming | squaredinver |
+|  186 | Accept |     0.66429 |    0.065364 |     0.60929 |     0.61321 |            4 |    euclidean |        equal |
+|  187 | Accept |     0.69429 |    0.098623 |     0.60929 |      0.6132 |            4 |       cosine |      inverse |
+|  188 | Accept |     0.68857 |      0.2128 |     0.60929 |      0.6132 |            1 |  correlation |      inverse |
+|  189 | Accept |     0.65714 |     0.46598 |     0.60929 |     0.61319 |           74 |     spearman |        equal |
+|  190 | Accept |     0.69714 |     0.75643 |     0.60929 |     0.61318 |            1 |     spearman |      inverse |
+|  191 | Accept |     0.63857 |     0.17011 |     0.60929 |     0.61323 |            9 |   seuclidean | squaredinver |
+|  192 | Accept |       0.655 |     0.12425 |     0.60929 |     0.61323 |            3 |    euclidean |      inverse |
+|  193 | Accept |     0.64429 |     0.15637 |     0.60929 |     0.61325 |           26 |   seuclidean |      inverse |
+|  194 | Accept |     0.67714 |     0.24427 |     0.60929 |      0.6132 |            3 |    cityblock | squaredinver |
+|  195 | Accept |     0.65714 |     0.28873 |     0.60929 |      0.6132 |           59 |  correlation | squaredinver |
+|  196 | Accept |     0.62714 |     0.14306 |     0.60929 |     0.61318 |          263 |   seuclidean |      inverse |
+|  197 | Accept |       0.655 |     0.10398 |     0.60929 |     0.61318 |            3 |   seuclidean |      inverse |
+|  198 | Accept |     0.69429 |     0.16887 |     0.60929 |     0.61319 |          699 |    chebychev |        equal |
+|  199 | Accept |     0.66071 |     0.11817 |     0.60929 |     0.61322 |          198 |  correlation |      inverse |
+|  200 | Accept |     0.64071 |     0.10552 |     0.60929 |     0.61328 |           13 |    euclidean | squaredinver |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 200 reached.
+Total function evaluations: 200
+Total elapsed time: 164.5095 seconds
+Total objective function evaluation time: 26.7554
+
+Best observed feasible point:
+    <strong>NumNeighbors</strong>    <strong>Distance</strong>     <strong>DistanceWeight</strong>
+    <strong>____________</strong>    <strong>_________</strong>    <strong>______________</strong>
+
+         97         cityblock    squaredinverse
+
+Observed objective function value = 0.60929
+Estimated objective function value = 0.61326
+Function evaluation time = 0.081752
+
+Best estimated feasible point (according to models):
+    <strong>NumNeighbors</strong>    <strong>Distance</strong>     <strong>DistanceWeight</strong>
+    <strong>____________</strong>    <strong>_________</strong>    <strong>______________</strong>
+
+         82         cityblock    squaredinverse
+
+Estimated objective function value = 0.61328
+Estimated function evaluation time = 0.093082
+

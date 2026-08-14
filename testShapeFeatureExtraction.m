@@ -30,8 +30,8 @@ X_shape = zeros(nImages, nFeatures);
 
 % save("initial_shape_features.mat", "X_shape", "y", "-v7.3"); 
 
-img = imread("initial_subset_2000\initial_subset_2000\images\fulgoromorpha\203142606.jpg");
-process_bug(img)
+img = imread("initial_subset_2000\initial_subset_2000\images\cicadomorpha\474797630.jpg");
+process_bug(img); 
 
 function features = process_bug(img)
     figure(2); 
