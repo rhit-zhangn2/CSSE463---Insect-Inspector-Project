@@ -29,12 +29,19 @@ disp(classCounts);
 %   fc7:
 %       higher-level semantic features
 %
-% ResNet:
+% ResNet18:
 %   pool5
+%
+% ResNet50:
+%   avg_pool
+%
+% EfficientNet-B0:
+%   efficientnet-b0|model|head|global_average_pooling2d|GlobAvgPool
+%
 
-networkName = "resnet18"; %for printing convenience
-net = resnet18;
-featureLayer = "pool5";
+networkName = "efficientnetb0"; %for printing convenience
+net = efficientnetb0;
+featureLayer = "efficientnet-b0|model|head|global_average_pooling2d|GlobAvgPool";
 
 inputSize = net.Layers(1).InputSize;
 
@@ -106,7 +113,7 @@ load("initial_LST_features.mat", "dataSplit");
 %% Save
 
 save( ...
-    "CNN_features_resnet18_pool5.mat",...
+    "CNN_features_efficientnetb0_globalAvgPool.mat",...
     "X_CNN",...
     "Y",...
     "files",...

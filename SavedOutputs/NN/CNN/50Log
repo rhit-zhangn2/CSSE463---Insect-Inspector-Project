@@ -1,0 +1,104 @@
+|=============================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   |  Activations |       Lambda |            LayerSizes |
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              |                       |
+|=============================================================================================================================|
+|    1 | Best   |     0.38714 |      2.1683 |     0.38714 |     0.38714 |      sigmoid |   4.4906e-07 |  61                   |
+|    2 | Best   |     0.37929 |      1.6948 |     0.37929 |     0.37989 |         none |      0.01455 |  14                   |
+|    3 | Accept |     0.38857 |      16.922 |     0.37929 |      0.3793 |         tanh |   0.00014626 | [ 25   4]             |
+|    4 | Accept |       0.685 |      3.1314 |     0.37929 |     0.37939 |      sigmoid |     0.012204 | [ 39  25]             |
+|    5 | Best   |     0.37286 |      21.514 |     0.37286 |     0.37304 |         relu |     0.001405 |  25                   |
+|    6 | Accept |     0.42214 |      45.788 |     0.37286 |     0.37289 |         relu |   1.1454e-07 | [ 25   5]             |
+|    7 | Accept |     0.44929 |      1.5979 |     0.37286 |     0.37479 |         none |   1.1304e-07 | [ 14   8]             |
+|    8 | Accept |        0.38 |      10.528 |     0.37286 |     0.37289 |      sigmoid |    1.275e-05 | [ 61  29]             |
+|    9 | Accept |     0.53857 |       5.546 |     0.37286 |     0.37289 |         tanh |     0.060005 | [ 61  29]             |
+|   10 | Best   |     0.36357 |      2.0398 |     0.36357 |     0.36358 |         none |     0.049173 | [ 61  18]             |
+|   11 | Accept |     0.39214 |      30.601 |     0.36357 |     0.36359 |         relu |   5.3757e-05 | [ 25  12]             |
+|   12 | Accept |     0.41786 |      7.6289 |     0.36357 |     0.36359 |         tanh |   2.8121e-06 | [ 12  21]             |
+|   13 | Accept |        0.75 |     0.73072 |     0.36357 |     0.36358 |         relu |     0.097715 | [  5  12]             |
+|   14 | Accept |     0.37714 |      22.312 |     0.36357 |     0.36358 |         relu |   0.00035972 | [ 18  21]             |
+|   15 | Accept |     0.37143 |      38.874 |     0.36357 |     0.36358 |         relu |   0.00051233 | [ 62  20]             |
+|   16 | Accept |     0.45429 |      7.8788 |     0.36357 |     0.36358 |         none |   5.8457e-05 |  61                   |
+|   17 | Accept |     0.39714 |      2.8119 |     0.36357 |     0.36358 |      sigmoid |   2.7091e-06 |  34                   |
+|   18 | Accept |     0.38643 |      3.7594 |     0.36357 |     0.36358 |         relu |   2.5823e-06 | [ 52  16]             |
+|   19 | Accept |     0.44214 |      18.009 |     0.36357 |     0.36358 |         tanh |   1.0067e-07 | [  8   7]             |
+|   20 | Accept |     0.45571 |      27.254 |     0.36357 |     0.36358 |      sigmoid |   1.0022e-07 | [  7  18]             |
+|=============================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   |  Activations |       Lambda |            LayerSizes |
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              |                       |
+|=============================================================================================================================|
+|   21 | Accept |     0.36571 |     0.64081 |     0.36357 |     0.36359 |         none |     0.099864 |  5                    |
+|   22 | Accept |     0.39071 |      7.8751 |     0.36357 |     0.36359 |         tanh |   2.8574e-05 | [ 36  25]             |
+|   23 | Accept |     0.38857 |      19.506 |     0.36357 |     0.36359 |      sigmoid |   6.4564e-05 |  58                   |
+|   24 | Accept |     0.46286 |      6.7752 |     0.36357 |      0.3636 |         none |   2.2669e-06 | [ 53  14]             |
+|   25 | Accept |     0.44714 |      4.3548 |     0.36357 |     0.36358 |         none |    0.0012117 | [  7   7]             |
+|   26 | Accept |     0.39786 |      16.389 |     0.36357 |     0.36358 |         tanh |    0.0012722 |  13                   |
+|   27 | Accept |        0.42 |      21.766 |     0.36357 |     0.36357 |         relu |   9.8855e-06 | [  8  12]             |
+|   28 | Accept |     0.42286 |      36.674 |     0.36357 |     0.36357 |         relu |   7.1608e-07 |  6                    |
+|   29 | Best   |     0.35714 |     0.79772 |     0.35714 |     0.35731 |         none |     0.065666 |  10                   |
+|   30 | Best   |     0.35571 |       1.225 |     0.35571 |     0.35576 |         none |     0.043383 |  57                   |
+|   31 | Best   |     0.35357 |     0.76698 |     0.35357 |     0.35399 |         none |     0.049816 |  5                    |
+|   32 | Accept |       0.355 |     0.98052 |     0.35357 |     0.35451 |         none |     0.044802 |  6                    |
+|   33 | Accept |     0.35429 |      1.2482 |     0.35357 |     0.35443 |         none |     0.049789 |  6                    |
+|   34 | Accept |       0.355 |     0.92579 |     0.35357 |     0.35466 |         none |     0.048227 |  5                    |
+|   35 | Accept |        0.39 |      20.763 |     0.35357 |     0.35464 |         relu |   0.00066781 |  22                   |
+|   36 | Accept |     0.36071 |      21.848 |     0.35357 |     0.35464 |         relu |    0.0015953 | [ 24   5]             |
+|   37 | Accept |     0.41857 |      16.293 |     0.35357 |     0.35465 |         relu |    0.0016007 | [  5  30]             |
+|   38 | Accept |     0.40786 |      2.8345 |     0.35357 |     0.35465 |         relu |   4.3329e-07 | [ 15  32]             |
+|   39 | Accept |     0.37643 |      35.061 |     0.35357 |     0.35464 |         tanh |   0.00035605 | [ 54  32]             |
+|   40 | Accept |     0.36929 |     0.98728 |     0.35357 |     0.35463 |         none |     0.051385 | [  6   6]             |
+|=============================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   |  Activations |       Lambda |            LayerSizes |
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              |                       |
+|=============================================================================================================================|
+|   41 | Accept |     0.39143 |      4.4264 |     0.35357 |     0.35462 |      sigmoid |   1.3899e-06 | [ 55  32]             |
+|   42 | Accept |     0.41429 |      17.544 |     0.35357 |     0.35464 |         relu |   0.00093684 | [  9   4]             |
+|   43 | Accept |     0.44429 |       15.31 |     0.35357 |     0.35429 |         relu |    0.0010638 | [  4   9]             |
+|   44 | Accept |     0.36143 |      40.949 |     0.35357 |     0.35435 |         relu |    0.0031509 | [ 63   7]             |
+|   45 | Accept |     0.37857 |      37.321 |     0.35357 |     0.35435 |         relu |    0.0016988 | [ 44  28]             |
+|   46 | Accept |     0.45214 |       18.32 |     0.35357 |     0.35435 |         tanh |   0.00020124 | [  4  29]             |
+|   47 | Accept |     0.44571 |      17.666 |     0.35357 |     0.35435 |      sigmoid |   3.7088e-05 | [  4  21]             |
+|   48 | Accept |     0.36857 |      39.034 |     0.35357 |     0.35425 |         relu |    0.0013774 | [ 57   4]             |
+|   49 | Accept |     0.36929 |      43.508 |     0.35357 |     0.35426 |         relu |   0.00019419 | [ 63   8]             |
+|   50 | Accept |     0.36571 |      25.702 |     0.35357 |     0.35431 |         relu |    0.0036646 | [ 23   6]             |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 50 reached.
+Total function evaluations: 50
+Total elapsed time: 771.4169 seconds
+Total objective function evaluation time: 748.2834
+
+Best observed feasible point:
+    <strong>Activations</strong>     <strong>Lambda</strong>     <strong>LayerSizes</strong>
+    <strong>___________</strong>    <strong>________</strong>    <strong>__________</strong>
+
+       none        0.049816        5     
+
+Observed objective function value = 0.35357
+Estimated objective function value = 0.35431
+Function evaluation time = 0.76698
+
+Best estimated feasible point (according to models):
+    <strong>Activations</strong>     <strong>Lambda</strong>     <strong>LayerSizes</strong>
+    <strong>___________</strong>    <strong>________</strong>    <strong>__________</strong>
+
+       none        0.049816        5     
+
+Estimated objective function value = 0.35431
+Estimated function evaluation time = 0.92059
+
+[Warning: Solver failed to converge. Try changing the initial step size.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.impl/NeuralNetworkImpl/trainNetwork', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\NeuralNetworkImpl.m', 328)" style="font-weight:bold">classreg.learning.impl/NeuralNetworkImpl/trainNetwork</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+impl\NeuralNetworkImpl.m',328,0)">line 328</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationNeuralNetwork', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationNeuralNetwork.m', 150)" style="font-weight:bold">ClassificationNeuralNetwork</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationNeuralNetwork.m',150,0)">line 150</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning/FitTemplate/fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m', 277)" style="font-weight:bold">classreg.learning/FitTemplate/fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\FitTemplate.m',277,0)">line 277</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationNeuralNetwork.fit', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationNeuralNetwork.m', 188)" style="font-weight:bold">ClassificationNeuralNetwork.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\ClassificationNeuralNetwork.m',188,0)">line 188</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcnet', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcnet.m', 23)" style="font-weight:bold">fitcnet</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcnet.m',23,0)">line 23</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitToFullDataset', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitToFullDataset.m', 9)" style="font-weight:bold">classreg.learning.paramoptim.fitToFullDataset</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitToFullDataset.m',9,0)">line 9</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.paramoptim.fitoptimizing', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m', 67)" style="font-weight:bold">classreg.learning.paramoptim.fitoptimizing</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+paramoptim\fitoptimizing.m',67,0)">line 67</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitcnet', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcnet.m', 20)" style="font-weight:bold">fitcnet</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\fitcnet.m',20,0)">line 20</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testNNPerformance>createNN', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m', 120)" style="font-weight:bold">testNNPerformance>createNN</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testNNPerformance>createNN_wrapper', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m', 62)" style="font-weight:bold">testNNPerformance>createNN_wrapper</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testNNPerformance', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m', 51)" style="font-weight:bold">testNNPerformance</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m',51,0)">line 51</a>)] 
+
+Refitting best observed CNN NN...
+Layer1 size: 5 | Layer2 size: NaN | Activation: none | Lambda: 0.04982

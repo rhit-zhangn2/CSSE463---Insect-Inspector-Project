@@ -1,0 +1,35 @@
+{Unrecognized function or variable 'cvp'.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testNNPerformance>createNN/objectiveFunction', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m', 194)" style="font-weight:bold">testNNPerformance>createNN/objectiveFunction</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m',194,0)">line 194</a>)
+            "CVPartition", cvp);
+                           ^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjNormally', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m', 13)" style="font-weight:bold">BayesianOptimization/callObjNormally</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjNormally.m',13,0)">line 13</a>)
+            Objective = this.ObjectiveFcn(conditionalizeX(this, X));
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/callObjFcn', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m', 11)" style="font-weight:bold">BayesianOptimization/callObjFcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\callObjFcn.m',11,0)">line 11</a>)
+        = callObjNormally(this, X);
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/runSerial', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m', 24)" style="font-weight:bold">BayesianOptimization/runSerial</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\runSerial.m',24,0)">line 24</a>)
+        ObjectiveFcnObjectiveEvaluationTime, ObjectiveNargout] = callObjFcn(this, this.XNext);
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization/run', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m', 9)" style="font-weight:bold">BayesianOptimization/run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\run.m',9,0)">line 9</a>)
+    this = runSerial(this);
+           ^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('BayesianOptimization', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m', 64)" style="font-weight:bold">BayesianOptimization</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\@BayesianOptimization\BayesianOptimization.m',64,0)">line 64</a>)
+                this = run(this);
+                       ^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('bayesopt', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\bayesopt.m', 12)" style="font-weight:bold">bayesopt</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\bayesoptim\bayesopt.m',12,0)">line 12</a>)
+Results = BayesianOptimization(Options);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testNNPerformance>createNN', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m', 128)" style="font-weight:bold">testNNPerformance>createNN</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m',128,0)">line 128</a>)
+    optimizationResults = bayesopt( ...
+                          ^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testNNPerformance>createNN_wrapper', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m', 62)" style="font-weight:bold">testNNPerformance>createNN_wrapper</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m',62,0)">line 62</a>)
+        nn = createNN(X_train, y_train, iterations, type);
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testNNPerformance', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m', 42)" style="font-weight:bold">testNNPerformance</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testNNPerformance.m',42,0)">line 42</a>)
+createNN_wrapper("nn_lst.mat", X_train_lst, y_train, X_valid_lst, y_valid, "LST", fresh, iter);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testNNPerformance
+Creating LST Neural Network...

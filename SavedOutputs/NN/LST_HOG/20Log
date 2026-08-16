@@ -1,0 +1,51 @@
+|=============================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   |  Activations |       Lambda |            LayerSizes |
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              |                       |
+|=============================================================================================================================|
+|    1 | Best   |     0.64571 |      47.814 |     0.64571 |     0.64571 |      sigmoid |   8.7307e-08 |  275                  |
+|    2 | Accept |        0.75 |      1.8526 |     0.64571 |     0.65381 |         none |       2.8749 |  13                   |
+|    3 | Accept |     0.70143 |      164.45 |     0.64571 |     0.65268 |         tanh |    0.0013461 | [ 44   1  80]         |
+|    4 | Accept |        0.75 |      3.1943 |     0.64571 |     0.65074 |      sigmoid |       2.1448 | [107 152  51]         |
+|    5 | Accept |     0.65571 |      22.964 |     0.64571 |     0.64574 |      sigmoid |   3.7469e-08 |  213                  |
+|    6 | Best   |     0.63786 |      17.697 |     0.63786 |     0.63785 |      sigmoid |   1.1177e-06 |  52                   |
+|    7 | Accept |     0.66714 |      73.915 |     0.63786 |     0.63788 |      sigmoid |   0.00023221 |  5                    |
+|    8 | Accept |     0.65786 |      76.706 |     0.63786 |     0.63787 |      sigmoid |   9.7179e-07 |  2                    |
+|    9 | Accept |     0.64786 |      138.21 |     0.63786 |     0.64585 |      sigmoid |   7.1872e-06 |  297                  |
+|   10 | Accept |     0.64286 |      96.342 |     0.63786 |     0.63988 |      sigmoid |    1.389e-06 |  296                  |
+|   11 | Accept |     0.63786 |      18.501 |     0.63786 |      0.6378 |      sigmoid |   9.6511e-07 |  68                   |
+|   12 | Accept |     0.63857 |       20.99 |     0.63786 |     0.63789 |      sigmoid |    4.643e-07 |  78                   |
+|   13 | Accept |     0.64143 |      34.198 |     0.63786 |     0.63789 |      sigmoid |   3.4988e-06 |  35                   |
+|   14 | Accept |        0.75 |      28.009 |     0.63786 |      0.6379 |      sigmoid |      0.25351 |  263                  |
+|   15 | Accept |     0.65929 |      20.586 |     0.63786 |     0.63789 |         tanh |   7.3376e-09 | [233  27]             |
+|   16 | Accept |       0.695 |      45.673 |     0.63786 |     0.63788 |         tanh |   7.3281e-09 | [  1  73]             |
+|   17 | Accept |     0.63929 |      42.833 |     0.63786 |     0.63789 |         tanh |    7.538e-07 |  293                  |
+|   18 | Accept |     0.64071 |      25.864 |     0.63786 |     0.63789 |         tanh |   1.9826e-07 |  294                  |
+|   19 | Accept |         0.7 |      151.13 |     0.63786 |     0.63788 |         tanh |   9.4173e-07 | [ 34   1]             |
+|   20 | Accept |     0.65143 |      57.222 |     0.63786 |     0.63788 |      sigmoid |   8.6775e-07 | [149 273]             |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 20 reached.
+Total function evaluations: 20
+Total elapsed time: 1101.997 seconds
+Total objective function evaluation time: 1088.1514
+
+Best observed feasible point:
+    Activations      Lambda      LayerSizes
+    ___________    __________    __________
+
+      sigmoid      1.1177e-06        52    
+
+Observed objective function value = 0.63786
+Estimated objective function value = 0.63798
+Function evaluation time = 17.6968
+
+Best estimated feasible point (according to models):
+    Activations      Lambda      LayerSizes
+    ___________    __________    __________
+
+      sigmoid      9.6511e-07        68    
+
+Estimated objective function value = 0.63788
+Estimated function evaluation time = 18.9501
+

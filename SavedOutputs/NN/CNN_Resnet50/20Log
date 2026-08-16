@@ -1,0 +1,54 @@
+|=============================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   |  Activations |       Lambda |            LayerSizes |
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              |                       |
+|=============================================================================================================================|
+|    1 | Best   |     0.34071 |      5.3089 |     0.34071 |     0.34071 |      sigmoid |   4.4906e-07 |  61                   |
+|    2 | Accept |        0.35 |      5.8039 |     0.34071 |     0.34143 |         none |      0.01455 |  14                   |
+|    3 | Accept |     0.35786 |      42.656 |     0.34071 |     0.34276 |         tanh |   0.00014626 | [ 25   4]             |
+|    4 | Accept |     0.52929 |       13.76 |     0.34071 |     0.34081 |      sigmoid |     0.012204 | [ 39  25]             |
+|    5 | Accept |        0.75 |      5.0383 |     0.34071 |     0.34362 |      sigmoid |     0.054277 | [ 61   5]             |
+|    6 | Accept |     0.39286 |      72.264 |     0.34071 |     0.34135 |      sigmoid |   3.1174e-07 |  9                    |
+|    7 | Accept |     0.35643 |      49.747 |     0.34071 |     0.36282 |      sigmoid |   1.4021e-06 |  9                    |
+|    8 | Accept |     0.42357 |      62.907 |     0.34071 |     0.36366 |         tanh |   1.3141e-07 | [  4  14]             |
+|    9 | Accept |     0.35429 |      50.051 |     0.34071 |     0.36426 |         tanh |   0.00022867 |  64                   |
+|   10 | Best   |     0.33286 |       110.1 |     0.33286 |      0.3363 |         relu |   0.00021173 |  63                   |
+|   11 | Accept |     0.39643 |        90.7 |     0.33286 |     0.33665 |         relu |     0.036029 | [ 62   4]             |
+|   12 | Accept |     0.36857 |      3.5043 |     0.33286 |     0.33687 |         none |   2.0971e-06 | [  5  32]             |
+|   13 | Accept |     0.34571 |      8.2969 |     0.33286 |     0.33684 |         none |     0.070475 | [ 58   4]             |
+|   14 | Accept |        0.34 |      44.158 |     0.33286 |     0.33682 |         relu |     0.022071 | [  5  32]             |
+|   15 | Accept |     0.35786 |      5.5473 |     0.33286 |      0.3363 |         none |   2.4632e-05 | [  4  10]             |
+|   16 | Accept |     0.38643 |      107.14 |     0.33286 |     0.36421 |         relu |   1.0143e-07 |  7                    |
+|   17 | Accept |       0.345 |      18.147 |     0.33286 |     0.34325 |         relu |   1.0429e-07 | [ 12  32]             |
+|   18 | Accept |     0.41214 |       79.21 |     0.33286 |     0.34672 |         relu |   9.1284e-06 | [  4  15]             |
+|   19 | Accept |     0.36357 |      4.6349 |     0.33286 |     0.34954 |         none |   1.8834e-06 | [  4   4]             |
+|   20 | Accept |        0.36 |      1.9089 |     0.33286 |     0.34863 |         none |   1.0425e-07 |  4                    |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 20 reached.
+Total function evaluations: 20
+Total elapsed time: 791.3828 seconds
+Total objective function evaluation time: 780.8804
+
+Best observed feasible point:
+    <strong>Activations</strong>      <strong>Lambda</strong>      <strong>LayerSizes</strong>
+    <strong>___________</strong>    <strong>__________</strong>    <strong>__________</strong>
+
+       relu        0.00021173        63    
+
+Observed objective function value = 0.33286
+Estimated objective function value = 0.36057
+Function evaluation time = 110.0982
+
+Best estimated feasible point (according to models):
+    <strong>Activations</strong>     <strong>Lambda</strong>     <strong>LayerSizes</strong>
+    <strong>___________</strong>    <strong>________</strong>    <strong>__________</strong>
+
+       relu        0.022071     5    32  
+
+Estimated objective function value = 0.34863
+Estimated function evaluation time = 45.2145
+
+
+Refitting best observed CNN_Resnet50 NN...
+Layer1 size: 5 | Layer2 size: 32 | Activation: relu | Lambda: 0.02207

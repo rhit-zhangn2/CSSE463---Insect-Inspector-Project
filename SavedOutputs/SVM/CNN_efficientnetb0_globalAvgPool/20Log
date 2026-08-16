@@ -1,0 +1,289 @@
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m', 10)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m',10,0)">line 10</a>)
+    ,HyperparameterOptimizationOptions=hpoOptions, Coding=coding);
+                                                          ^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 23)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',23,0)">line 23</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 86)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',86,0)">line 86</a>)
+createSVM_wrapper("CNN_SVM_efficientnetb0_globalAvgPool.mat", X_CNN_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+
+ HOG SVM Results...
+Overall Accuracy: 0.3367 
+ HOG Class AUCs:     0.6135    0.5671    0.5931    0.6220
+
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.internal.numPredictorsCheck', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+internal\numPredictorsCheck.m', 29)" style="font-weight:bold">classreg.learning.internal.numPredictorsCheck</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+internal\numPredictorsCheck.m',29,0)">line 29</a>)
+X data must have 1 column(s).
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('classreg.learning.classif.CompactClassificationECOC/predict', 'C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\CompactClassificationECOC.m', 157)" style="font-weight:bold">classreg.learning.classif.CompactClassificationECOC/predict</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\stats\classreg\+classreg\+learning\+classif\CompactClassificationECOC.m',157,0)">line 157</a>)
+            classreg.learning.internal.numPredictorsCheck(X,...
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('analyzeSVM', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\analyzeSVM.m', 3)" style="font-weight:bold">analyzeSVM</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\analyzeSVM.m',3,0)">line 3</a>)
+[label, score] = predict(mdl, xValid);
+                 ^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 27)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',27,0)">line 27</a>)
+    [accuracy, classAUCs] = analyzeSVM(svm, X_valid, y_valid);
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 90)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',90,0)">line 90</a>)
+createSVM_wrapper("LST_HOG_SVM.mat", X_COMB_LST_HOG_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+Loaded 2000 image paths
+        <strong>Label</strong>         <strong>Count</strong>
+    <strong>______________</strong>    <strong>_____</strong>
+
+    cicadomorpha       500 
+    fulgoromorpha      500 
+    heteroptera        500 
+    sternorrhyncha     500 
+
+
+Network: resnet50
+Input size: 224 x 224 x 3
+Feature layer: avg_pool
+
+Raw activation size:
+           1           1        2048
+
+Feature vector length:
+        2048
+
+testCNNFeatureExtraction
+Loaded 2000 image paths
+        <strong>Label</strong>         <strong>Count</strong>
+    <strong>______________</strong>    <strong>_____</strong>
+
+    cicadomorpha       500 
+    fulgoromorpha      500 
+    heteroptera        500 
+    sternorrhyncha     500 
+
+
+Network: resnet50
+Input size: 224 x 224 x 3
+Feature layer: avg_pool
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.FusedLayer/cacheLearnables', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m', 355)" style="font-weight:bold">nnet.internal.cnn.layer.FusedLayer/cacheLearnables</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m',355,0)">line 355</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.FusedFunctionalStatefulLayer/cacheLearnables', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedFunctionalStatefulLayer.m', 88)" style="font-weight:bold">nnet.internal.cnn.layer.FusedFunctionalStatefulLayer/cacheLearnables</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedFunctionalStatefulLayer.m',88,0)">line 88</a>)
+            this = cacheLearnables@nnet.internal.cnn.layer.FusedFunctionalLayer(this);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.ConvolutionBatchNorm/cacheLearnables', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\ConvolutionBatchNorm.m', 155)" style="font-weight:bold">nnet.internal.cnn.layer.ConvolutionBatchNorm/cacheLearnables</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\ConvolutionBatchNorm.m',155,0)">line 155</a>)
+            this = cacheLearnables@nnet.internal.cnn.layer.FusedConvolutionLayer(this);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.GraphExecutor/set.OriginalLayers', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\GraphExecutor.m', 133)" style="font-weight:bold">nnet.internal.cnn.layer.GraphExecutor/set.OriginalLayers</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\GraphExecutor.m',133,0)">line 133</a>)
+            this = cacheLearnables( this );
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.FusedLayer/configureForInputs', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m', 235)" style="font-weight:bold">nnet.internal.cnn.layer.FusedLayer/configureForInputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m',235,0)">line 235</a>)
+            this.OriginalLayers = configuredLayers;
+            ^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.FusedLayer/configureForInputs/nInferAndPropagate', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m', 227)" style="font-weight:bold">nnet.internal.cnn.layer.FusedLayer/configureForInputs/nInferAndPropagate</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m',227,0)">line 227</a>)
+                layer = configureForInputs( layer, in );
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.GraphExecutor/propagate', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\GraphExecutor.m', 324)" style="font-weight:bold">nnet.internal.cnn.layer.GraphExecutor/propagate</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\GraphExecutor.m',324,0)">line 324</a>)
+                            Z = propagateFcn(currentLayer, matlab.lang.internal.move(inputsForCurrentLayer));
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.FusedLayer/configureForInputs', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m', 234)" style="font-weight:bold">nnet.internal.cnn.layer.FusedLayer/configureForInputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m',234,0)">line 234</a>)
+            this.propagate(@nInferAndPropagate, inputs, locations(:,1), locations(:,2));
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.FusedLayer/configureForInputs/nInferAndPropagate', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m', 227)" style="font-weight:bold">nnet.internal.cnn.layer.FusedLayer/configureForInputs/nInferAndPropagate</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m',227,0)">line 227</a>)
+                layer = configureForInputs( layer, in );
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.GraphExecutor/propagate', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\GraphExecutor.m', 324)" style="font-weight:bold">nnet.internal.cnn.layer.GraphExecutor/propagate</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\GraphExecutor.m',324,0)">line 324</a>)
+                            Z = propagateFcn(currentLayer, matlab.lang.internal.move(inputsForCurrentLayer));
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.FusedLayer/configureForInputs', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m', 234)" style="font-weight:bold">nnet.internal.cnn.layer.FusedLayer/configureForInputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m',234,0)">line 234</a>)
+            this.propagate(@nInferAndPropagate, inputs, locations(:,1), locations(:,2));
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.FusedLayer/configureForInputs/nInferAndPropagate', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m', 227)" style="font-weight:bold">nnet.internal.cnn.layer.FusedLayer/configureForInputs/nInferAndPropagate</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m',227,0)">line 227</a>)
+                layer = configureForInputs( layer, in );
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.GraphExecutor/propagate', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\GraphExecutor.m', 324)" style="font-weight:bold">nnet.internal.cnn.layer.GraphExecutor/propagate</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\GraphExecutor.m',324,0)">line 324</a>)
+                            Z = propagateFcn(currentLayer, matlab.lang.internal.move(inputsForCurrentLayer));
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.StrideOptimizedSubgraph/propagate', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\StrideOptimizedSubgraph.m', 57)" style="font-weight:bold">nnet.internal.cnn.layer.StrideOptimizedSubgraph/propagate</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\StrideOptimizedSubgraph.m',57,0)">line 57</a>)
+            [varargout{1:nargout}] = propagate@nnet.internal.cnn.layer.FusedFunctionalStatefulLayer( ...
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.layer.FusedLayer/configureForInputs', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m', 234)" style="font-weight:bold">nnet.internal.cnn.layer.FusedLayer/configureForInputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\+layer\FusedLayer.m',234,0)">line 234</a>)
+            this.propagate(@nInferAndPropagate, inputs, locations(:,1), locations(:,2));
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('nnet.internal.cnn.DAGNetwork/updateLayersAndOutputSizes', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\DAGNetwork.m', 1165)" style="font-weight:bold">nnet.internal.cnn.DAGNetwork/updateLayersAndOutputSizes</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\+nnet\+internal\+cnn\DAGNetwork.m',1165,0)">line 1165</a>)
+                    currentLayer = currentLayer.configureForInputs(inputsForThisLayer);
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('DAGNetwork/setupPredictionEnvironment', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\@DAGNetwork\DAGNetwork.m', 560)" style="font-weight:bold">DAGNetwork/setupPredictionEnvironment</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\@DAGNetwork\DAGNetwork.m',560,0)">line 560</a>)
+                        predictNetwork = predictNetwork.updateLayersAndOutputSizes();
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('DAGNetwork/calculateActivations', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\@DAGNetwork\calculateActivations.m', 35)" style="font-weight:bold">DAGNetwork/calculateActivations</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\@DAGNetwork\calculateActivations.m',35,0)">line 35</a>)
+[predictNetwork, gpuShouldBeUsed, workerLoad, useParallel] = setupPredictionEnvironment(this, inferenceInfo);
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('DAGNetwork/activations', 'C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\@DAGNetwork\activations.m', 60)" style="font-weight:bold">DAGNetwork/activations</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2026a\toolbox\nnet\cnn\@DAGNetwork\activations.m',60,0)">line 60</a>)
+    Y = this.calculateActivations(X, layerIndex, layerOutputIndex, nameValuePairs{:});
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testCNNFeatureExtraction', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testCNNFeatureExtraction.m', 62)" style="font-weight:bold">testCNNFeatureExtraction</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testCNNFeatureExtraction.m',62,0)">line 62</a>)
+activation = activations(net, imgPrepared, featureLayer);
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testCNNFeatureExtraction
+Loaded 2000 image paths
+        <strong>Label</strong>         <strong>Count</strong>
+    <strong>______________</strong>    <strong>_____</strong>
+
+    cicadomorpha       500 
+    fulgoromorpha      500 
+    heteroptera        500 
+    sternorrhyncha     500 
+
+
+Network: resnet50
+Input size: 224 x 224 x 3
+Feature layer: avg_pool
+
+Raw activation size:
+           1           1        2048
+
+Feature vector length:
+        2048
+
+Processed 100/2000 images
+Processed 200/2000 images
+Processed 300/2000 images
+Processed 400/2000 images
+Processed 500/2000 images
+Processed 600/2000 images
+Processed 700/2000 images
+Processed 800/2000 images
+Processed 900/2000 images
+Processed 1000/2000 images
+Processed 1100/2000 images
+Processed 1200/2000 images
+Processed 1300/2000 images
+Processed 1400/2000 images
+Processed 1500/2000 images
+Processed 1600/2000 images
+Processed 1700/2000 images
+Processed 1800/2000 images
+Processed 1900/2000 images
+Processed 2000/2000 images
+
+Finished CNN extraction
+        2000        2048
+
+Saved: initial_CNN_features.mat
+testNNPerformance
+
+LST Neural Network Results...
+Overall Accuracy: 0.4033 
+LST Class AUCs:     0.6492    0.5487    0.6313    0.7615
+
+
+LST_HOG Neural Network Results...
+Overall Accuracy: 0.3500 
+LST_HOG Class AUCs:     0.6312    0.5321    0.5349    0.6727
+
+
+LST_shape Neural Network Results...
+Overall Accuracy: 0.4167 
+LST_shape Class AUCs:     0.6520    0.5357    0.6674    0.7618
+
+Creating CNN_Resnet50 Neural Network...
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m', 10)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m',10,0)">line 10</a>)
+    ,HyperparameterOptimizationOptions=hpoOptions, Coding=coding);
+                                                          ^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 23)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',23,0)">line 23</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 87)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',87,0)">line 87</a>)
+createSVM_wrapper("CNN_features_efficientnetb0_globalAvgPool.mat", X_CNN_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+testSVMPerformance
+Creating CNN_efficientnetb0_globalAvgPool SVM...[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m',3,0)">line 3</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 23)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',23,0)">line 23</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 87)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',87,0)">line 87</a>)] 
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m', 10)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m',10,0)">line 10</a>)
+    ,HyperparameterOptimizationOptions=hpoOptions, Coding=coding);
+                                                          ^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 23)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',23,0)">line 23</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 87)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',87,0)">line 87</a>)
+createSVM_wrapper("CNN_SVM_efficientnetb0_globalAvgPool.mat", X_CNN_Train, Y_Train, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+Creating CNN_efficientnetb0_globalAvgPool SVM...[Warning: Directory already exists.] 
+Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m', 10)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m',10,0)">line 10</a>)
+    ,HyperparameterOptimizationOptions=hpoOptions, Coding=coding);
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 23)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',23,0)">line 23</a>)
+        svm = createSVM(iterations, X_train, y_train, type);
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 87)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',87,0)">line 87</a>)
+createSVM_wrapper("CNN_SVM_efficientnetb0_globalAvgPool.mat", X_CNN_Train, Y_Train, ...
+
+testSVMPerformance
+Creating CNN_efficientnetb0_globalAvgPool SVM...[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createSVM', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m', 3)" style="font-weight:bold">createSVM</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\createSVM.m',3,0)">line 3</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance>createSVM_wrapper', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 23)" style="font-weight:bold">testSVMPerformance>createSVM_wrapper</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',23,0)">line 23</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('testSVMPerformance', 'C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m', 87)" style="font-weight:bold">testSVMPerformance</a> (<a href="matlab: opentoline('C:\Users\zhangn2\Documents\MATLAB\Insect Inspector Project\testSVMPerformance.m',87,0)">line 87</a>)] 
+|===================================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | BoxConstraint|  KernelScale | KernelFuncti-| PolynomialOr-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | on           | der          |
+|===================================================================================================================================|
+|    1 | Best   |     0.49571 |      5.7181 |     0.49571 |     0.49571 |       48.606 |        16.01 |     gaussian |            - |
+|    2 | Best   |       0.365 |      2.5368 |       0.365 |     0.37696 |      0.47978 |            - |       linear |            - |
+|    3 | Accept |        0.75 |       3.198 |       0.365 |     0.38041 |     0.004325 |     0.054895 |     gaussian |            - |
+|    4 | Accept |     0.57071 |      212.38 |       0.365 |     0.37884 |    0.0046779 |            - |   polynomial |            4 |
+|    5 | Accept |       0.365 |      2.4226 |       0.365 |     0.36501 |      0.38159 |            - |       linear |            - |
+|    6 | Accept |       0.475 |      2.3903 |       0.365 |     0.36501 |       46.504 |       17.098 |     gaussian |            - |
+|    7 | Best   |     0.30929 |      2.1636 |     0.30929 |     0.30931 |       307.15 |       34.015 |     gaussian |            - |
+|    8 | Accept |     0.33429 |      8.3189 |     0.30929 |     0.30932 |       640.14 |       72.088 |     gaussian |            - |
+|    9 | Accept |     0.74929 |      150.84 |     0.30929 |     0.30931 |        13.67 |       522.02 |     gaussian |            - |
+|   10 | Accept |     0.45143 |      2.6173 |     0.30929 |     0.30931 |     0.015148 |       46.786 |     gaussian |            - |
+|   11 | Accept |     0.31571 |      2.3452 |     0.30929 |     0.30942 |       962.62 |       46.128 |     gaussian |            - |
+|   12 | Accept |     0.31286 |      2.4831 |     0.30929 |     0.30943 |       56.599 |       41.594 |     gaussian |            - |
+|   13 | Accept |        0.75 |       192.5 |     0.30929 |     0.30947 |       726.45 |    0.0010088 |     gaussian |            - |
+|   14 | Accept |       0.365 |      2.1145 |     0.30929 |     0.30945 |       996.64 |            - |       linear |            - |
+|   15 | Accept |        0.75 |      2.7299 |     0.30929 |      0.3095 |        856.3 |      0.74552 |     gaussian |            - |
+|   16 | Accept |     0.31429 |      2.4775 |     0.30929 |     0.31119 |       257.72 |       39.137 |     gaussian |            - |
+|   17 | Accept |     0.31214 |      2.4883 |     0.30929 |     0.31067 |       47.482 |       35.314 |     gaussian |            - |
+|   18 | Accept |     0.32143 |      9.8252 |     0.30929 |     0.31124 |       137.38 |        54.64 |     gaussian |            - |
+|   19 | Accept |     0.31286 |      2.4797 |     0.30929 |     0.31098 |       210.83 |       35.927 |     gaussian |            - |
+|   20 | Accept |     0.31214 |      2.6592 |     0.30929 |     0.31131 |       154.24 |       35.169 |     gaussian |            - |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 20 reached.
+Total function evaluations: 20
+Total elapsed time: 623.2522 seconds
+Total objective function evaluation time: 614.6835
+
+Best observed feasible point:
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       307.15          34.015          gaussian             NaN      
+
+Observed objective function value = 0.30929
+Estimated objective function value = 0.31124
+Function evaluation time = 2.1636
+
+Best estimated feasible point (according to models):
+    <strong>BoxConstraint</strong>    <strong>KernelScale</strong>    <strong>KernelFunction</strong>    <strong>PolynomialOrder</strong>
+    <strong>_____________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>_______________</strong>
+
+       154.24          35.169          gaussian             NaN      
+
+Estimated objective function value = 0.31131
+Estimated function evaluation time = 2.361
+
