@@ -3,7 +3,7 @@ fresh = false;
 load("initial_HOG_features.mat", "X_HOG", "Y", "dataSplit");
 load("initial_LST_features.mat", "X_LST");
 load("initial_shape_features.mat", "X_shape");
-load("CNN_features_resnet18_pool5.mat", "X_CNN");
+load("CNN_features_efficientnetb0_globalAvgPool.mat", "X_CNN");
 
 trainMask = (dataSplit == "train");
 validMask = (dataSplit == "validation");
