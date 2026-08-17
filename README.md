@@ -101,7 +101,7 @@ Main Scripts:
 Saved Features:
 - `CNN_features_alexnet_fc7.mat`
 - `CNN_features_alexnet_pool5.mat`
-- `CNN_features_efficientnetb0_globalAvgPool.mat'
+- `CNN_features_efficientnetb0_globalAvgPool.mat`
 - `CNN_features_resnet18_pool5.mat`
 - `CNN_features_resnet50_avgPool.mat`
 - `initial_HOG_features.mat`
