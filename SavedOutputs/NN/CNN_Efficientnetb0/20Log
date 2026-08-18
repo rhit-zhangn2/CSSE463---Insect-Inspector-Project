@@ -52,3 +52,57 @@ Estimated function evaluation time = 69.5731
 
 Refitting best observed CNN_Efficientnetb0 NN...
 Layer1 size: 61 | Layer2 size: 7 | Activation: relu | Lambda: 0.005721
+|=============================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   |  Activations |       Lambda |            LayerSizes |
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              |                       |
+|=============================================================================================================================|
+|    1 | Best   |     0.29427 |      130.29 |     0.29427 |     0.29427 |         tanh |   4.4832e-07 | [ 40  21]             |
+|    2 | Best   |     0.23574 |      103.84 |     0.23574 |     0.23885 |         tanh |     0.001305 | [  4   8]             |
+|    3 | Best   |     0.22783 |      105.29 |     0.22783 |     0.22809 |      sigmoid |   3.5339e-05 |  11                   |
+|    4 | Accept |     0.61258 |      18.462 |     0.22783 |     0.22788 |         relu |     0.094424 | [ 23  32]             |
+|    5 | Accept |     0.73186 |      8.0003 |     0.22783 |     0.22791 |      sigmoid |     0.098137 | [  5  32]             |
+|    6 | Accept |     0.25157 |      105.98 |     0.22783 |     0.22787 |         tanh |   3.5509e-05 |  16                   |
+|    7 | Accept |     0.23763 |      22.583 |     0.22783 |     0.22787 |         none |    3.707e-07 |  64                   |
+|    8 | Accept |     0.23761 |       38.75 |     0.22783 |     0.22787 |         none |   2.2592e-07 | [ 54  16]             |
+|    9 | Accept |     0.43579 |      5.5704 |     0.22783 |     0.22787 |         none |     0.091055 | [ 31   8]             |
+|   10 | Accept |     0.24646 |      102.71 |     0.22783 |     0.22848 |      sigmoid |   3.6854e-07 |  9                    |
+|   11 | Accept |     0.24612 |      49.554 |     0.22783 |     0.24029 |      sigmoid |    0.0027031 |  64                   |
+|   12 | Accept |     0.29416 |      119.31 |     0.22783 |     0.24025 |         tanh |   3.0027e-06 | [ 40  22]             |
+|   13 | Accept |     0.23763 |      45.003 |     0.22783 |     0.22812 |         none |   1.2478e-07 | [ 31  32]             |
+|   14 | Accept |     0.53717 |      9.4778 |     0.22783 |     0.22803 |         tanh |      0.05841 | [ 63   4]             |
+|   15 | Accept |     0.23263 |       116.3 |     0.22783 |     0.22809 |         tanh |   1.2161e-05 | [  4  20]             |
+|   16 | Accept |     0.73186 |      9.5162 |     0.22783 |     0.22783 |         tanh |     0.086267 | [  4  13]             |
+|   17 | Best   |      0.1886 |       108.3 |      0.1886 |     0.18862 |      sigmoid |   0.00025199 |  64                   |
+|   18 | Accept |     0.22062 |      115.57 |      0.1886 |     0.18859 |         tanh |   0.00014563 | [  7  19]             |
+|   19 | Accept |     0.23762 |      82.049 |      0.1886 |     0.18859 |         none |   2.5134e-05 | [  4   6]             |
+|   20 | Accept |     0.26464 |      108.14 |      0.1886 |     0.18928 |      sigmoid |   5.4937e-06 |  64                   |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 20 reached.
+Total function evaluations: 20
+Total elapsed time: 1418.7752 seconds
+Total objective function evaluation time: 1404.6863
+
+Best observed feasible point:
+    <strong>Activations</strong>      <strong>Lambda</strong>      <strong>LayerSizes</strong>
+    <strong>___________</strong>    <strong>__________</strong>    <strong>__________</strong>
+
+      sigmoid      0.00025199        64    
+
+Observed objective function value = 0.1886
+Estimated objective function value = 0.18928
+Function evaluation time = 108.3004
+
+Best estimated feasible point (according to models):
+    <strong>Activations</strong>      <strong>Lambda</strong>      <strong>LayerSizes</strong>
+    <strong>___________</strong>    <strong>__________</strong>    <strong>__________</strong>
+
+      sigmoid      0.00025199        64    
+
+Estimated objective function value = 0.18928
+Estimated function evaluation time = 108.2533
+
+
+Refitting best observed CNN_Efficientnetb0 NN...
+Layer1 size: 64 | Layer2 size: NaN | Activation: sigmoid | Lambda: 0.000252
