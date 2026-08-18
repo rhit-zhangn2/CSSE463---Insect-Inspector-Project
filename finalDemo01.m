@@ -15,7 +15,8 @@ classCounts = countEachLabel(imds);
 disp(classCounts);
 
 fprintf("Sampling images...");
-sample = splitEachLabel(imds, 3, 'randomized');
+sample = splitEachLabel(imds, 2, 'randomized');
+sample = shuffle(sample);
 numImages = numel(sample.Files);
 
 networkName = "efficientnetb0"; %for printing convenience
@@ -76,7 +77,10 @@ gnames = gnames.gnames;
 
 [accuracy, label] = analyzeNN(mdl, X_CNN, Y, gnames);
 
+%disp(label(:, 1));
 fprintf("Overall Accuracy: %f\n", accuracy);
+%label = label(randperm(length(label)));
+
 disp(label);
 for i = 1: numImages
     imtool(readimage(sample, i));
@@ -89,7 +93,7 @@ predicted = gnames(gather(predicted));
 trueLabels = cellstr(gather(yValid));
 isCorrect = strcmp(predicted, trueLabels);
 accuracy = sum(isCorrect, "all") / numel(yValid);
-label = [(num2cell(1:numel(yValid))'), predicted(:), num2cell(isCorrect(:))];
+label = [(num2cell(1:numel(yValid))'), predicted(:), trueLabels(:), num2cell(isCorrect(:))];
 end
 
 %% Prepare Image Function
