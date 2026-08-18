@@ -1,33 +1,44 @@
 % Confusion matrix
-clear; 
+%% Warning: this likes crashing 
+clear;  
 clc; 
 type = "EfficientNetB0"; 
 
-load("CNN_features_efficientnetb0_globalAvgPool.mat", "X_CNN");
-load("initial_LST_features.mat", "Y", "dataSplit");
+fprintf("Loading features\n");
+load("final_CNN_features.mat", "X_CNN", "Y");
+fprintf("Loaded features\n")
+load("final_dataSplit.mat", "dataSplit");
 trainMask = (dataSplit == "train");
 validMask = (dataSplit == "validation");
+testMask = (dataSplit == "test"); 
 
 y_train = Y(trainMask);
 y_valid = Y(validMask);
+y_test = Y(testMask); 
+[Y_numeric, gnames] = grp2idx(Y);
 
 X_train_cnn = X_CNN(trainMask, :);
 X_valid_cnn = X_CNN(validMask, :);
+X_test_cnn = X_CNN(testMask, :);
 
-nn = load("nn_cnn_efficientnetb0.mat"); 
+filenames = [dir("initial_subset_2000\initial_subset_2000\images\cicadomorpha\")]
+
+fprintf("Loading trained network\n"); 
+nn = load("NN_EfficientnetB0FINAL02.mat"); 
 nn = nn.nn; 
+fprintf("Loaded trained network\n");  
 
-[accuracy, classAUCs] = analyzeNN(nn, X_valid_cnn, y_valid);
+[accuracy, classAUCs, cm] = analyzeNN(nn, X_test_cnn, y_test, gnames);
 fprintf("\n%s Neural Network Results...\nOverall Accuracy: %.4f ", type, accuracy);
 fprintf("\n%s Class AUCs: ", type);
 disp(classAUCs);
+fprintf("\n Confusion Matrix:\n");
+disp(cm); 
 
-generateConfusionMatrix(nn, X_valid_cnn, y_valid); 
-
-function confusionMatrix = generateConfusionMatrix(mdl, X_valid, y_valid)
+function confusionMatrix = generateConfusionMatrix(y_valid, y_pred)
 % first character: actual
 % second character: predicted 
-y_pred = predict(mdl, X_valid); 
+
 c_c = sum(y_valid == "cicadomorpha" & y_pred == "cicadomorpha"); 
 c_f = sum(y_valid == "cicadomorpha" & y_pred == "fulgoromorpha");
 c_h = sum(y_valid == "cicadomorpha" & y_pred == "heteroptera");
@@ -49,22 +60,28 @@ s_h = sum(y_valid == "sternorrhyncha" & y_pred == "heteroptera");
 s_s = sum(y_valid == "sternorrhyncha" & y_pred == "sternorrhyncha");
 
 
-[c_c, c_f, c_h, c_s; 
- f_c, f_f, f_h, f_s;
- h_c, h_f, h_h, h_s; 
- s_c, s_f, s_h, s_s; 
-    ]
-confusionMatrix = 4; 
+confusionMatrix = [c_c, c_f, c_h, c_s; 
+    f_c, f_f, f_h, f_s;
+    h_c, h_f, h_h, h_s; 
+    s_c, s_f, s_h, s_s; 
+    ]; 
 end
 
 
 
 % Analyze
-function [accuracy, classAUCs] = analyzeNN(mdl, xValid, yValid)
-[label, score] = predict(mdl, xValid);
-accuracy = sum((label == yValid), "all") / numel(yValid);
-rocObj = rocmetrics(yValid, score, mdl.ClassNames);
-classAUCs = auc(rocObj);
-end
+function [accuracy, classAUCs, confusionMatrix] = analyzeNN(mdl, xValid, yValid, gnames)
+    [label, score] = predict(mdl, xValid);
 
+    catLabels = gnames(label);
+    classNames = gnames(mdl.ClassNames);
+    arr_score = gather(score);
+
+    rocObj = rocmetrics(yValid, arr_score, classNames);
+    accuracy = sum((catLabels == yValid), "all") / numel(yValid);
+    classAUCs = auc(rocObj);
+
+    confusionMatrix = generateConfusionMatrix(yValid, catLabels); 
+
+end
 

@@ -102,9 +102,8 @@ The final model is large, so it could not be stored in GitHub, so hopefully it r
 We can't test it.: 
 - `final_CNN_features.mat`
 - `final_dataSplit.mat`
-- `finalDemo01.m` : the code from the demo in the presentation
+- `finalDemo01.m` : the code f
 - `gnames.mat`
-- `createFinalNN.m`: trains the final neural network 
 
 
 Saved Features:
