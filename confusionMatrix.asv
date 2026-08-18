@@ -1,0 +1,63 @@
+% Confusion matrix
+clear; 
+clc; 
+type = "EfficientNetB0"; 
+
+load("CNN_features_efficientnetb0_globalAvgPool.mat", "X_CNN");
+load("initial_LST_features.mat", "Y", "dataSplit");
+trainMask = (dataSplit == "train");
+validMask = (dataSplit == "validation");
+
+y_train = Y(trainMask);
+y_valid = Y(validMask);
+
+X_train_cnn = X_CNN(trainMask, :);
+X_valid_cnn = X_CNN(validMask, :);
+
+nn = load("nn_cnn_efficientnetb0.mat"); 
+nn = nn.nn; 
+
+[accuracy, classAUCs] = analyzeNN(nn, X_valid_cnn, y_valid);
+fprintf("\n%s Neural Network Results...\nOverall Accuracy: %.4f ", type, accuracy);
+fprintf("\n%s Class AUCs: ", type);
+disp(classAUCs);
+
+generateConfusionMatrix(nn, X_CNN, Y); 
+
+function confusionMatrix = generateConfusionMatrix(mdl, X_valid, y_valid)
+% first character: actual
+% second character: predicted 
+y_pred = predict(mdl, X_valid); 
+c_c = sum(y_valid == "cicadomorpha" & y_pred == "cicadomorpha"); 
+c_f = sum(y_valid == "cicadomorpha" & y_pred == "fulgoromorpha");
+c_h = sum(y_valid == "cicadomorpha" & y_pred == "heteroptera");
+c_s = sum(y_valid == "cicadomorpha" & y_pred == "sternorrhyncha");
+
+f_c = sum(y_valid == "fulgoromorpha" & y_pred == "cicadomorpha"); 
+f_f = sum(y_valid == "fulgoromorpha" & y_pred == "fulgoromorpha");
+f_h = sum(y_valid == "fulgoromorpha" & y_pred == "heteroptera");
+f_s = sum(y_valid == "fulgoromorpha" & y_pred == "sternorrhyncha");
+
+h_c = sum(y_valid == "heteroptera" & y_pred == "cicadomorpha"); 
+h_f = sum(y_valid == "heteroptera" & y_pred == "fulgoromorpha");
+h_h = sum(y_valid == "heteroptera" & y_pred == "heteroptera");
+h_s = sum(y_valid == "heteroptera" & y_pred == "sternorrhyncha");
+
+
+[c_c, c_f, c_h, c_s ; 
+    f_c, f_f, f_h, f_s;
+    ]
+confusionMatrix = 4; 
+end
+
+
+
+% Analyze
+function [accuracy, classAUCs] = analyzeNN(mdl, xValid, yValid)
+[label, score] = predict(mdl, xValid);
+accuracy = sum((label == yValid), "all") / numel(yValid);
+rocObj = rocmetrics(yValid, score, mdl.ClassNames);
+classAUCs = auc(rocObj);
+end
+
+

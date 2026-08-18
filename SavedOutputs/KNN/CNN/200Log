@@ -1,0 +1,267 @@
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|    1 | Best   |        0.75 |      3.0716 |        0.75 |        0.75 |            3 |      jaccard |        equal |
+|    2 | Best   |     0.42857 |      2.7376 |     0.42857 |     0.44135 |            2 |   seuclidean | squaredinver |
+|    3 | Accept |       0.435 |      2.5995 |     0.42857 |     0.43523 |          542 |  correlation |      inverse |
+|    4 | Accept |        0.49 |      1.4068 |     0.42857 |     0.42909 |          157 |    minkowski | squaredinver |
+|    5 | Accept |     0.42857 |      2.0409 |     0.42857 |      0.4287 |            2 |   seuclidean |      inverse |
+|    6 | Best   |     0.41071 |      1.0488 |     0.41071 |     0.41075 |            4 |    minkowski |      inverse |
+|    7 | Accept |     0.57857 |      1.1776 |     0.41071 |     0.41082 |          442 |    minkowski |      inverse |
+|    8 | Best   |     0.40929 |      1.1165 |     0.40929 |     0.40933 |            7 |    minkowski |      inverse |
+|    9 | Accept |       0.465 |      1.4164 |     0.40929 |     0.40934 |           82 |   seuclidean | squaredinver |
+|   10 | Accept |        0.48 |      1.3942 |     0.40929 |     0.40934 |           96 |   seuclidean |      inverse |
+|   11 | Best   |     0.32571 |      1.9788 |     0.32571 |     0.32573 |            8 |  correlation |      inverse |
+|   12 | Accept |     0.38643 |      1.8921 |     0.32571 |     0.32574 |            1 |  correlation |      inverse |
+|   13 | Accept |     0.32786 |      1.7779 |     0.32571 |     0.32575 |           23 |  correlation |      inverse |
+|   14 | Best   |       0.325 |      1.9485 |       0.325 |     0.32501 |            9 |  correlation | squaredinver |
+|   15 | Accept |     0.39071 |      1.9605 |       0.325 |     0.32502 |          156 |  correlation | squaredinver |
+|   16 | Accept |     0.38643 |      1.7184 |       0.325 |     0.32504 |            1 |  correlation | squaredinver |
+|   17 | Accept |     0.48357 |      1.5429 |       0.325 |     0.32503 |           13 |    chebychev | squaredinver |
+|   18 | Accept |     0.49071 |      1.5347 |       0.325 |     0.32503 |            9 |    chebychev |      inverse |
+|   19 | Best   |     0.31929 |      1.8449 |     0.31929 |     0.31938 |           18 |  correlation | squaredinver |
+|   20 | Accept |     0.33929 |        1.79 |     0.31929 |     0.31938 |            7 |       cosine | squaredinver |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   21 | Accept |     0.39286 |       1.007 |     0.31929 |     0.31938 |          155 |       cosine | squaredinver |
+|   22 | Accept |        0.39 |     0.61562 |     0.31929 |     0.31937 |            1 |       cosine | squaredinver |
+|   23 | Accept |        0.34 |     0.44625 |     0.31929 |     0.31937 |           11 |       cosine |      inverse |
+|   24 | Accept |     0.41929 |     0.51437 |     0.31929 |     0.31936 |          245 |       cosine |      inverse |
+|   25 | Accept |        0.39 |     0.56251 |     0.31929 |     0.31936 |            1 |       cosine |      inverse |
+|   26 | Accept |     0.39071 |     0.37419 |     0.31929 |     0.31935 |           14 |    euclidean | squaredinver |
+|   27 | Accept |     0.55357 |     0.52899 |     0.31929 |     0.31935 |          697 |    euclidean | squaredinver |
+|   28 | Accept |     0.42857 |     0.95407 |     0.31929 |     0.31934 |            1 |    euclidean | squaredinver |
+|   29 | Accept |     0.42857 |     0.96065 |     0.31929 |     0.31934 |            2 |    euclidean |      inverse |
+|   30 | Accept |       0.565 |      1.0945 |     0.31929 |     0.31934 |          695 |    euclidean |      inverse |
+|   31 | Accept |     0.33214 |       1.831 |     0.31929 |     0.31934 |            9 |  correlation |        equal |
+|   32 | Accept |     0.38214 |      1.9818 |     0.31929 |     0.31934 |          104 |  correlation |        equal |
+|   33 | Accept |     0.38643 |      1.7947 |     0.31929 |     0.31934 |            1 |  correlation |        equal |
+|   34 | Accept |     0.35429 |      1.6934 |     0.31929 |     0.31934 |            9 |       cosine |        equal |
+|   35 | Accept |     0.43214 |      1.6393 |     0.31929 |     0.31934 |          210 |       cosine |        equal |
+|   36 | Accept |        0.39 |      1.7535 |     0.31929 |     0.31934 |            1 |       cosine |        equal |
+|   37 | Accept |     0.50286 |      1.4769 |     0.31929 |     0.31934 |           13 |    chebychev |        equal |
+|   38 | Accept |     0.42857 |     0.97176 |     0.31929 |     0.31933 |            1 |    euclidean |        equal |
+|   39 | Accept |     0.59857 |      1.2249 |     0.31929 |     0.31934 |          585 |    euclidean |        equal |
+|   40 | Accept |     0.37857 |      5.9978 |     0.31929 |     0.31934 |            1 |     spearman | squaredinver |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   41 | Accept |     0.35786 |      5.8391 |     0.31929 |     0.31934 |           52 |     spearman | squaredinver |
+|   42 | Accept |     0.44071 |      3.9303 |     0.31929 |     0.31934 |          677 |     spearman | squaredinver |
+|   43 | Accept |     0.32643 |      4.8852 |     0.31929 |     0.31934 |            9 |     spearman | squaredinver |
+|   44 | Accept |     0.37857 |      5.3401 |     0.31929 |     0.31934 |            2 |     spearman |      inverse |
+|   45 | Accept |     0.39214 |      5.7376 |     0.31929 |     0.31934 |          111 |     spearman |      inverse |
+|   46 | Accept |     0.34286 |      5.5881 |     0.31929 |     0.31934 |            8 |     spearman |        equal |
+|   47 | Accept |     0.40786 |      5.5442 |     0.31929 |     0.31933 |          136 |     spearman |        equal |
+|   48 | Accept |     0.37857 |      5.6713 |     0.31929 |     0.31934 |            1 |     spearman |        equal |
+|   49 | Accept |     0.47643 |      1.1299 |     0.31929 |     0.31933 |            2 |   seuclidean |        equal |
+|   50 | Accept |     0.75214 |      1.3839 |     0.31929 |     0.31936 |            1 |      hamming | squaredinver |
+|   51 | Accept |     0.42857 |     0.93752 |     0.31929 |     0.31936 |            1 |    minkowski |        equal |
+|   52 | Accept |     0.58857 |      1.0645 |     0.31929 |     0.31936 |          696 |    minkowski |        equal |
+|   53 | Error  |         NaN |       1.838 |     0.31929 |     0.31936 |            1 |  mahalanobis |      inverse |
+|   54 | Accept |     0.52143 |      1.5976 |     0.31929 |     0.31936 |          690 |    cityblock | squaredinver |
+|   55 | Error  |         NaN |       1.258 |     0.31929 |     0.31936 |            1 |  mahalanobis | squaredinver |
+|   56 | Accept |     0.54143 |      1.5543 |     0.31929 |     0.31936 |          699 |    cityblock |        equal |
+|   57 | Accept |        0.44 |      1.4377 |     0.31929 |     0.31936 |            1 |    cityblock |      inverse |
+|   58 | Accept |     0.53143 |      1.9106 |     0.31929 |     0.31936 |          691 |    cityblock |      inverse |
+|   59 | Accept |     0.74571 |      1.6191 |     0.31929 |     0.31938 |          698 |      jaccard | squaredinver |
+|   60 | Accept |     0.74571 |      1.7849 |     0.31929 |      0.3194 |          669 |      hamming |      inverse |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   61 | Error  |         NaN |      1.3635 |     0.31929 |      0.3194 |            1 |  mahalanobis |        equal |
+|   62 | Accept |     0.75214 |      1.5519 |     0.31929 |     0.31942 |            1 |      hamming |        equal |
+|   63 | Accept |     0.75214 |      1.5608 |     0.31929 |     0.31944 |            1 |      jaccard |      inverse |
+|   64 | Accept |     0.58857 |       1.375 |     0.31929 |     0.31944 |          699 |   seuclidean |        equal |
+|   65 | Accept |        0.44 |      1.3504 |     0.31929 |     0.31944 |            1 |    cityblock | squaredinver |
+|   66 | Accept |     0.42857 |     0.91669 |     0.31929 |     0.31944 |            1 |    minkowski | squaredinver |
+|   67 | Accept |        0.44 |      1.3768 |     0.31929 |     0.31943 |            1 |    cityblock |        equal |
+|   68 | Accept |     0.67571 |      1.5423 |     0.31929 |     0.31943 |          693 |    chebychev |      inverse |
+|   69 | Accept |     0.66214 |      1.5814 |     0.31929 |     0.31943 |          680 |    chebychev | squaredinver |
+|   70 | Accept |     0.69214 |      1.6489 |     0.31929 |     0.31943 |          690 |    chebychev |        equal |
+|   71 | Accept |        0.54 |      1.3687 |     0.31929 |     0.31941 |            1 |    chebychev | squaredinver |
+|   72 | Accept |        0.54 |      1.4479 |     0.31929 |      0.3194 |            1 |    chebychev |        equal |
+|   73 | Accept |     0.33857 |      5.3235 |     0.31929 |      0.3194 |           14 |     spearman |      inverse |
+|   74 | Accept |     0.32143 |      1.6182 |     0.31929 |     0.32032 |           16 |  correlation | squaredinver |
+|   75 | Accept |     0.33357 |      1.5237 |     0.31929 |     0.32032 |           23 |       cosine | squaredinver |
+|   76 | Accept |     0.31929 |       1.613 |     0.31929 |     0.31993 |           18 |  correlation | squaredinver |
+|   77 | Accept |     0.75214 |      1.4472 |     0.31929 |     0.31994 |            1 |      jaccard | squaredinver |
+|   78 | Accept |     0.75214 |      1.4363 |     0.31929 |     0.32003 |            1 |      hamming |      inverse |
+|   79 | Accept |     0.32643 |      1.6085 |     0.31929 |      0.3211 |           20 |  correlation | squaredinver |
+|   80 | Best   |     0.31357 |       1.655 |     0.31357 |     0.31941 |           14 |  correlation | squaredinver |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|   81 | Accept |     0.31714 |      1.6025 |     0.31357 |     0.31894 |           13 |  correlation | squaredinver |
+|   82 | Accept |     0.74571 |      1.5403 |     0.31357 |     0.31897 |          700 |      jaccard |      inverse |
+|   83 | Accept |     0.74571 |      1.5393 |     0.31357 |     0.31899 |          699 |      hamming | squaredinver |
+|   84 | Accept |        0.75 |      1.6683 |     0.31357 |     0.31901 |          699 |      hamming |        equal |
+|   85 | Accept |        0.75 |      1.5433 |     0.31357 |     0.31903 |          700 |      jaccard |        equal |
+|   86 | Accept |        0.54 |      1.4757 |     0.31357 |       0.319 |            1 |    chebychev |      inverse |
+|   87 | Accept |     0.41714 |      1.4368 |     0.31357 |       0.319 |           26 |    cityblock | squaredinver |
+|   88 | Accept |     0.42643 |      1.3867 |     0.31357 |     0.31901 |           26 |    cityblock |        equal |
+|   89 | Accept |     0.41643 |       1.441 |     0.31357 |       0.319 |           25 |    cityblock |      inverse |
+|   90 | Accept |     0.42071 |      0.9493 |     0.31357 |     0.31899 |           25 |    minkowski |        equal |
+|   91 | Accept |     0.42714 |     0.93955 |     0.31357 |     0.31898 |           23 |    euclidean |        equal |
+|   92 | Accept |       0.555 |      1.4302 |     0.31357 |     0.31898 |          700 |   seuclidean | squaredinver |
+|   93 | Accept |        0.75 |      1.5122 |     0.31357 |     0.31899 |           26 |      jaccard |      inverse |
+|   94 | Accept |        0.75 |      1.4899 |     0.31357 |       0.319 |           26 |      hamming | squaredinver |
+|   95 | Accept |        0.75 |     0.54506 |     0.31357 |     0.31901 |           26 |      jaccard | squaredinver |
+|   96 | Accept |        0.75 |      0.4797 |     0.31357 |     0.31902 |           26 |      hamming |        equal |
+|   97 | Accept |        0.75 |     0.40289 |     0.31357 |     0.31903 |           26 |      hamming |      inverse |
+|   98 | Accept |     0.57071 |      0.3685 |     0.31357 |     0.31903 |          700 |   seuclidean |      inverse |
+|   99 | Accept |     0.42857 |     0.27728 |     0.31357 |     0.31903 |           36 |    euclidean |      inverse |
+|  100 | Accept |     0.43571 |     0.38784 |     0.31357 |       0.319 |           37 |   seuclidean |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  101 | Accept |       0.465 |     0.47191 |     0.31357 |     0.31901 |          700 |  correlation |        equal |
+|  102 | Accept |     0.55571 |      0.3215 |     0.31357 |     0.31901 |          699 |    minkowski | squaredinver |
+|  103 | Accept |        0.75 |     0.55574 |     0.31357 |     0.31902 |           46 |      jaccard |        equal |
+|  104 | Accept |       0.455 |      1.8683 |     0.31357 |     0.31903 |          697 |     spearman |      inverse |
+|  105 | Accept |       0.465 |        5.53 |     0.31357 |     0.31904 |          698 |     spearman |        equal |
+|  106 | Accept |     0.40714 |      1.0023 |     0.31357 |     0.31905 |           10 |    minkowski | squaredinver |
+|  107 | Accept |       0.425 |      1.7238 |     0.31357 |     0.31893 |          700 |  correlation | squaredinver |
+|  108 | Accept |     0.31429 |      1.5911 |     0.31357 |     0.31824 |           12 |  correlation | squaredinver |
+|  109 | Accept |     0.44357 |      1.7261 |     0.31357 |     0.31825 |          697 |       cosine | squaredinver |
+|  110 | Accept |     0.47286 |      1.7184 |     0.31357 |     0.31804 |          700 |       cosine |        equal |
+|  111 | Accept |     0.54071 |      1.4567 |     0.31357 |     0.31804 |           90 |    chebychev |      inverse |
+|  112 | Accept |     0.45429 |      1.7734 |     0.31357 |     0.31805 |          700 |       cosine |      inverse |
+|  113 | Accept |     0.47929 |     0.97483 |     0.31357 |     0.31805 |          108 |    euclidean | squaredinver |
+|  114 | Accept |     0.54714 |      1.5573 |     0.31357 |     0.31806 |          103 |    chebychev | squaredinver |
+|  115 | Accept |     0.75214 |      1.5197 |     0.31357 |     0.31806 |            1 |      jaccard |        equal |
+|  116 | Accept |     0.56643 |      1.6503 |     0.31357 |     0.31807 |          102 |    chebychev |        equal |
+|  117 | Accept |       0.395 |      1.2557 |     0.31357 |     0.31805 |           12 |   seuclidean |      inverse |
+|  118 | Accept |     0.42857 |     0.86339 |     0.31357 |     0.31805 |            1 |    minkowski |      inverse |
+|  119 | Accept |     0.39714 |      1.2646 |     0.31357 |     0.31804 |           11 |   seuclidean | squaredinver |
+|  120 | Accept |        0.46 |     0.96147 |     0.31357 |     0.31803 |           79 |    minkowski |      inverse |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  121 | Accept |     0.41357 |      1.3708 |     0.31357 |     0.31804 |            5 |    cityblock | squaredinver |
+|  122 | Accept |     0.43929 |      1.3674 |     0.31357 |     0.31804 |            5 |    cityblock |        equal |
+|  123 | Accept |     0.49214 |      1.4276 |     0.31357 |     0.31803 |          139 |    cityblock |      inverse |
+|  124 | Accept |     0.42786 |     0.90285 |     0.31357 |     0.31802 |            5 |    minkowski |        equal |
+|  125 | Accept |     0.44143 |     0.88003 |     0.31357 |     0.31822 |            4 |    euclidean |        equal |
+|  126 | Accept |     0.42857 |     0.87154 |     0.31357 |     0.31822 |            1 |    euclidean |      inverse |
+|  127 | Accept |        0.75 |      1.4618 |     0.31357 |     0.31823 |          147 |      jaccard |      inverse |
+|  128 | Accept |        0.75 |       1.428 |     0.31357 |     0.31802 |          147 |      hamming | squaredinver |
+|  129 | Accept |     0.42857 |      1.2282 |     0.31357 |      0.3182 |            1 |   seuclidean |        equal |
+|  130 | Accept |        0.75 |      1.4406 |     0.31357 |     0.31821 |          146 |      jaccard | squaredinver |
+|  131 | Accept |        0.75 |      1.4489 |     0.31357 |     0.31822 |          146 |      hamming |        equal |
+|  132 | Accept |        0.75 |      1.4085 |     0.31357 |     0.31823 |            5 |      hamming |      inverse |
+|  133 | Accept |     0.42071 |      1.3744 |     0.31357 |     0.31823 |            4 |    cityblock |      inverse |
+|  134 | Accept |     0.50286 |     0.94174 |     0.31357 |     0.31824 |          154 |    minkowski |        equal |
+|  135 | Accept |     0.50071 |      1.4524 |     0.31357 |     0.31824 |          160 |    cityblock |        equal |
+|  136 | Accept |       0.495 |      1.4184 |     0.31357 |     0.31823 |          159 |    cityblock | squaredinver |
+|  137 | Accept |     0.49429 |     0.25923 |     0.31357 |     0.31823 |          133 |    euclidean |        equal |
+|  138 | Accept |        0.39 |     0.46164 |     0.31357 |     0.31822 |          137 |  correlation |      inverse |
+|  139 | Accept |     0.50071 |     0.26716 |     0.31357 |     0.31823 |          174 |    euclidean |      inverse |
+|  140 | Accept |     0.50714 |     0.39106 |     0.31357 |     0.31827 |          171 |   seuclidean |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  141 | Accept |        0.75 |     0.49369 |     0.31357 |     0.31828 |            4 |      jaccard |      inverse |
+|  142 | Accept |        0.75 |     0.44065 |     0.31357 |     0.31828 |            4 |      hamming | squaredinver |
+|  143 | Accept |        0.75 |     0.56878 |     0.31357 |     0.31829 |            4 |      jaccard | squaredinver |
+|  144 | Accept |        0.75 |     0.41945 |     0.31357 |      0.3183 |            4 |      hamming |        equal |
+|  145 | Accept |     0.37857 |      1.8364 |     0.31357 |     0.31834 |            1 |     spearman |      inverse |
+|  146 | Accept |     0.31857 |     0.41334 |     0.31357 |     0.31806 |           11 |  correlation | squaredinver |
+|  147 | Accept |        0.75 |     0.40813 |     0.31357 |     0.31806 |          159 |      hamming |      inverse |
+|  148 | Accept |     0.37286 |     0.46387 |     0.31357 |     0.31806 |           40 |       cosine |        equal |
+|  149 | Accept |     0.36786 |     0.41323 |     0.31357 |     0.31806 |           46 |       cosine |      inverse |
+|  150 | Accept |     0.42857 |     0.42291 |     0.31357 |      0.3181 |            1 |   seuclidean |      inverse |
+|  151 | Accept |     0.42857 |     0.40888 |     0.31357 |     0.31817 |            1 |   seuclidean | squaredinver |
+|  152 | Accept |     0.41857 |     0.21961 |     0.31357 |     0.31823 |            3 |    euclidean | squaredinver |
+|  153 | Accept |        0.35 |      1.8407 |     0.31357 |     0.31821 |           32 |     spearman |        equal |
+|  154 | Accept |     0.41286 |      1.8225 |     0.31357 |     0.31817 |          211 |     spearman | squaredinver |
+|  155 | Accept |       0.525 |     0.45919 |     0.31357 |     0.31815 |            3 |    chebychev | squaredinver |
+|  156 | Accept |        0.75 |     0.53503 |     0.31357 |     0.31816 |          198 |      jaccard |        equal |
+|  157 | Accept |       0.555 |     0.48483 |     0.31357 |     0.31827 |            3 |    chebychev |        equal |
+|  158 | Accept |     0.42571 |     0.30561 |     0.31357 |     0.31816 |           37 |    minkowski | squaredinver |
+|  159 | Accept |       0.365 |     0.41956 |     0.31357 |     0.31818 |            3 |       cosine |      inverse |
+|  160 | Accept |     0.34429 |     0.42351 |     0.31357 |     0.31813 |           30 |  correlation |        equal |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  161 | Accept |         0.4 |     0.27832 |     0.31357 |     0.31825 |            9 |    euclidean |      inverse |
+|  162 | Accept |     0.42929 |     0.54357 |     0.31357 |     0.31858 |            9 |   seuclidean |        equal |
+|  163 | Accept |     0.36286 |      5.4557 |     0.31357 |     0.31861 |            3 |     spearman | squaredinver |
+|  164 | Accept |     0.41857 |     0.89529 |     0.31357 |      0.3186 |            3 |    minkowski | squaredinver |
+|  165 | Accept |     0.37286 |      1.6257 |     0.31357 |     0.31858 |            3 |       cosine |        equal |
+|  166 | Accept |       0.525 |      1.4428 |     0.31357 |     0.31857 |            3 |    chebychev |      inverse |
+|  167 | Accept |     0.38357 |      1.7202 |     0.31357 |     0.31868 |            3 |  correlation |        equal |
+|  168 | Accept |     0.37357 |      5.5638 |     0.31357 |     0.31869 |            3 |     spearman |        equal |
+|  169 | Accept |     0.52857 |      1.2903 |     0.31357 |     0.31866 |          261 |   seuclidean | squaredinver |
+|  170 | Accept |     0.36929 |      1.7651 |     0.31357 |      0.3187 |            3 |  correlation |      inverse |
+|  171 | Accept |       0.355 |      5.6838 |     0.31357 |     0.31867 |           40 |     spearman |      inverse |
+|  172 | Accept |        0.57 |      1.1541 |     0.31357 |     0.31878 |          699 |    minkowski |      inverse |
+|  173 | Accept |        0.39 |      1.5845 |     0.31357 |     0.31881 |            2 |       cosine | squaredinver |
+|  174 | Accept |     0.54071 |      1.2675 |     0.31357 |     0.31878 |          278 |   seuclidean |      inverse |
+|  175 | Accept |     0.60571 |      1.5476 |     0.31357 |     0.31877 |          268 |    chebychev |      inverse |
+|  176 | Accept |        0.75 |      1.5093 |     0.31357 |     0.31875 |           12 |      jaccard |        equal |
+|  177 | Accept |     0.41286 |     0.96286 |     0.31357 |     0.31871 |           26 |    minkowski |      inverse |
+|  178 | Accept |     0.42214 |      0.8042 |     0.31357 |     0.31871 |          302 |  correlation |        equal |
+|  179 | Accept |     0.43071 |     0.44406 |     0.31357 |     0.31869 |           40 |    euclidean | squaredinver |
+|  180 | Accept |     0.38643 |     0.42242 |     0.31357 |     0.31949 |            2 |  correlation | squaredinver |
+|====================================================================================================================|
+| Iter | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | NumNeighbors |     Distance | DistanceWeig-|
+|      | result |             | runtime     | (observed)  | (estim.)    |              |              | ht           |
+|====================================================================================================================|
+|  181 | Accept |     0.59571 |     0.48786 |     0.31357 |     0.31952 |          278 |    chebychev | squaredinver |
+|  182 | Accept |     0.60929 |     0.46123 |     0.31357 |     0.31964 |          283 |    chebychev |        equal |
+|  183 | Accept |     0.42929 |      1.7053 |     0.31357 |     0.31961 |          314 |     spearman |      inverse |
+|  184 | Accept |     0.42357 |     0.44686 |     0.31357 |     0.31957 |           31 |   seuclidean |      inverse |
+|  185 | Accept |     0.36571 |     0.48037 |     0.31357 |     0.31956 |           62 |       cosine | squaredinver |
+|  186 | Accept |     0.49571 |     0.47335 |     0.31357 |     0.31953 |           28 |    chebychev |      inverse |
+|  187 | Accept |     0.40857 |     0.34066 |     0.31357 |     0.31947 |           28 |   seuclidean | squaredinver |
+|  188 | Accept |        0.44 |     0.38087 |     0.31357 |     0.31946 |            2 |    cityblock | squaredinver |
+|  189 | Accept |        0.41 |     0.36817 |     0.31357 |     0.31943 |           10 |    cityblock |      inverse |
+|  190 | Accept |     0.47643 |     0.23692 |     0.31357 |     0.31969 |            2 |    minkowski |        equal |
+|  191 | Accept |     0.48786 |     0.32575 |     0.31357 |     0.31989 |            2 |    cityblock |        equal |
+|  192 | Accept |     0.53857 |     0.34931 |     0.31357 |     0.31985 |          313 |    euclidean | squaredinver |
+|  193 | Accept |     0.43714 |      1.8544 |     0.31357 |     0.31983 |          334 |     spearman |        equal |
+|  194 | Accept |     0.34357 |       1.718 |     0.31357 |     0.31983 |            5 |     spearman |      inverse |
+|  195 | Accept |     0.34429 |      1.7787 |     0.31357 |     0.31982 |           22 |     spearman | squaredinver |
+|  196 | Accept |     0.41214 |     0.45185 |     0.31357 |     0.31979 |          355 |  correlation | squaredinver |
+|  197 | Accept |     0.35714 |     0.42375 |     0.31357 |     0.31977 |           58 |  correlation |      inverse |
+|  198 | Accept |     0.50357 |     0.48515 |     0.31357 |     0.31976 |           34 |    chebychev | squaredinver |
+|  199 | Accept |     0.42214 |     0.21412 |     0.31357 |     0.31975 |           10 |    euclidean |        equal |
+|  200 | Accept |        0.46 |      0.3437 |     0.31357 |     0.31973 |           64 |    cityblock | squaredinver |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 200 reached.
+Total function evaluations: 200
+Total elapsed time: 731.1804 seconds
+Total objective function evaluation time: 292.876
+
+Best observed feasible point:
+    <strong>NumNeighbors</strong>     <strong>Distance</strong>      <strong>DistanceWeight</strong>
+    <strong>____________</strong>    <strong>___________</strong>    <strong>______________</strong>
+
+         14         correlation    squaredinverse
+
+Observed objective function value = 0.31357
+Estimated objective function value = 0.31973
+Function evaluation time = 1.655
+
+Best estimated feasible point (according to models):
+    <strong>NumNeighbors</strong>     <strong>Distance</strong>      <strong>DistanceWeight</strong>
+    <strong>____________</strong>    <strong>___________</strong>    <strong>______________</strong>
+
+         14         correlation    squaredinverse
+
+Estimated objective function value = 0.31973
+Estimated function evaluation time = 1.248
+

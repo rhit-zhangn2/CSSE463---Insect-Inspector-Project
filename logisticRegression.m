@@ -5,13 +5,13 @@ clear;
 clc; 
 iter = 200; 
 learningRate = 0.1; 
-fresh = false; 
+fresh = true; 
 
 % Load in the previously extracted features 
 load("initial_HOG_features.mat", "X_HOG");
 load("initial_LST_features.mat", "X_LST");
 load("initial_shape_features.mat", "X_shape");
-load("CNN_features_resnet18_pool5.mat", "X_CNN");
+load("CNN_features_efficientnetb0_globalAvgPool.mat", "X_CNN");
 
 % Load the labels and split 
 load("initial_LST_features.mat", "Y", "dataSplit");
@@ -55,7 +55,7 @@ X_valid_lst_shape = [X_valid_lst, X_valid_shape];
 logisticRegressor("logreg_lst.mat", X_train_lst, y_train, X_valid_lst, y_valid, iter, learningRate, "LST"); 
 logisticRegressor("logreg_lst_hog.mat", X_train_lst_hog, y_train, X_valid_lst_hog, y_valid, iter, learningRate, "LST-HOG"); 
 logisticRegressor("logreg_lst_shape.mat", X_train_lst_shape, y_train, X_valid_lst_shape, y_valid, iter, learningRate, "LST-Shape"); 
-logisticRegressor("logreg_cnn.mat", X_train_cnn, y_train, X_valid_cnn, y_valid, iter, learningRate, "CNN"); 
+logisticRegressor("logreg_cnn_efficientnet.mat", X_train_cnn, y_train, X_valid_cnn, y_valid, iter, learningRate, "CNN"); 
 
 
 function accuracy = logisticRegressor(filename, X_train, y_train, X_valid, y_valid, iter, learningRate, type)
